@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RTurk::Requester</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Class</span> 
+            RTurk::Requester 
+            
+                <span class="parent">&lt; 
+                    
+                    <a href="../Object.html">Object</a>
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/rturk/requester_rb.html">lib/rturk/requester.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>R</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000153">request</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+    <div class="sectiontitle">Included Modules</div>
+    <ul>
+        
+        <li>
+            
+            <a href="../RTurk.html">RTurk</a>
+            
+            START:includes
+        </li>
+        
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+            <div class="sectiontitle">Class Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000153">
+                    
+                    <a name="M000153"></a><b>request</b>(params = {})
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+@param [Hash] params @option [String] &#8216;Operation&#8217; The operation
+- Required @option [String] Any Pass any other params and they will be
+included in the request
+</p>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000153_source')" id="l_M000153_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/3e1e11e79fbdaadc1bade3c48d34c6398f4f843b/lib/rturk/requester.rb#L18" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000153_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/requester.rb, line 18</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">request</span>(<span class="ruby-identifier">params</span> = {})
+        <span class="ruby-identifier">params</span>.<span class="ruby-identifier">delete_if</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">nil?</span> }
+        <span class="ruby-identifier">params</span> = <span class="ruby-identifier">stringify_keys</span>(<span class="ruby-identifier">params</span>)
+        <span class="ruby-identifier">base_params</span> = {
+          <span class="ruby-value str">'Service'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'AWSMechanicalTurkRequester'</span>,
+          <span class="ruby-value str">'AWSAccessKeyId'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">credentials</span>.<span class="ruby-identifier">access_key</span>,
+          <span class="ruby-value str">'Timestamp'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">iso8601</span>,
+          <span class="ruby-value str">'Version'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">API_VERSION</span>
+        }
+
+        <span class="ruby-identifier">params</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-identifier">base_params</span>)
+        <span class="ruby-identifier">signature</span> = <span class="ruby-identifier">sign</span>(<span class="ruby-identifier">credentials</span>.<span class="ruby-identifier">secret_key</span>, <span class="ruby-identifier">params</span>[<span class="ruby-value str">'Service'</span>], <span class="ruby-identifier">params</span>[<span class="ruby-value str">'Operation'</span>], <span class="ruby-identifier">params</span>[<span class="ruby-value str">&quot;Timestamp&quot;</span>])
+        <span class="ruby-identifier">params</span>[<span class="ruby-value str">'Signature'</span>] = <span class="ruby-identifier">signature</span>
+
+        <span class="ruby-identifier">querystring</span> = <span class="ruby-identifier">params</span>.<span class="ruby-identifier">inject</span>([]) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">pairs</span>, (<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)<span class="ruby-operator">|</span>
+          <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Array</span>)
+            <span class="ruby-identifier">value</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">multi_value</span><span class="ruby-operator">|</span>
+              <span class="ruby-identifier">pairs</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-constant">CGI</span>.<span class="ruby-identifier">escape</span>(<span class="ruby-identifier">key</span>.<span class="ruby-identifier">to_s</span>), <span class="ruby-constant">CGI</span>.<span class="ruby-identifier">escape</span>(<span class="ruby-identifier">multi_value</span>.<span class="ruby-identifier">to_s</span>)].<span class="ruby-identifier">join</span>(<span class="ruby-value str">'='</span>)
+            <span class="ruby-keyword kw">end</span>
+          <span class="ruby-keyword kw">else</span>
+            <span class="ruby-identifier">pairs</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-constant">CGI</span>.<span class="ruby-identifier">escape</span>(<span class="ruby-identifier">key</span>.<span class="ruby-identifier">to_s</span>), <span class="ruby-constant">CGI</span>.<span class="ruby-identifier">escape</span>(<span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>)].<span class="ruby-identifier">join</span>(<span class="ruby-value str">'='</span>)
+          <span class="ruby-keyword kw">end</span>
+          <span class="ruby-identifier">pairs</span>
+        <span class="ruby-keyword kw">end</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">'&amp;'</span>) <span class="ruby-comment cmt"># order doesn't matter for the actual request</span>
+
+        <span class="ruby-constant">RTurk</span>.<span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span> <span class="ruby-node">&quot;Sending request:\n\t #{credentials.host}?#{querystring}&quot;</span>
+        <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">get</span>(<span class="ruby-node">&quot;#{credentials.host}?#{querystring}&quot;</span>)
+      <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    

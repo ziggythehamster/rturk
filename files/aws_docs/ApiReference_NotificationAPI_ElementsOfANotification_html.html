@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_NotificationAPI_ElementsOfANotification.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_NotificationAPI_ElementsOfANotification.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_NotificationAPI_ElementsOfANotification.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;Elements of a Notification Message&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot; title=&quot;Chapter&amp;nbsp;8.&amp;nbsp;The Notification Receptor API&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_NotificationAPI_BuildingANotificationReceptor.html&quot; title=&quot;Building A Notification Receptor&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_NotificationReceptorAPI_RESTTransportArticle.html&quot; title=&quot;The REST Transport&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_NotificationAPI_BuildingANotificationReceptor.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_NotificationAPI_ElementsOfANotification&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_NotificationReceptorAPI_RESTTransportArticle.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot;&gt;The Notification Receptor API&lt;/a&gt; &amp;raquo; &lt;strong&gt;Elements of a
+        Notification Message&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;Elements of a
+        Notification Message&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; Notification messages sent with either the REST or SOAP transports contain the following elements: &lt;/p&gt;&lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;p&gt; a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Signature&lt;/code&gt;&lt;/em&gt; and &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Timestamp&lt;/code&gt;&lt;/em&gt; that verify the
+                                notification message is coming from Amazon Mechanical Turk &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/em&gt; of the notification API used for the message &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; one or more &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Event&lt;/code&gt;&lt;/em&gt; data structures that describe recent activity for
+                                HITs of a HIT type &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20660&quot;&gt;How You Know Amazon Mechanical Turk Sent the Message&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; Similar to how you include a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Signature&lt;/code&gt;&lt;/em&gt; parameter with your requests to
+                        the Amazon Mechanical Turk Requester service that proves it is you, and not somebody else, sending the
+                        request, Amazon Mechanical Turk includes a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Signature&lt;/code&gt;&lt;/em&gt; with each notification
+                        message. The signature value is calculated in the same way: Amazon Mechanical Turk produces a string by
+                        concatenating several values from the notification message, then calculates a Keyed-Hashing for
+                        Message Authentication code (HMAC) with the SHA-1 hashing method using a key known only to your
+                        application and Amazon Mechanical Turk: your AWS Secret Access Key. &lt;/p&gt;&lt;p&gt; To verify the signature in a notification message: &lt;/p&gt;&lt;div class=&quot;orderedlist&quot;&gt;&lt;ol type=&quot;1&quot;&gt;&lt;li&gt;&lt;p&gt; Produce a string by concatenating the following values: &lt;/p&gt;&lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;p&gt;the string &quot;AWSMechanicalTurkRequesterNotification&quot; (the &quot;service&quot; name)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;the string &quot;Notify&quot; (the &quot;operation&quot; name)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;the value of the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Timestamp&lt;/code&gt;&lt;/em&gt; parameter included in the
+                                                        notification message&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Calculate an RFC 2104-compliant HMAC, using your AWS Secret Access Key as the key. This
+                                        is the same method you use to sign your requests to Amazon Mechanical Turk, and could be
+                                        performed using similar code. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Base64 encode the HMAC value. (This is also similar to request signing.) &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Compare the result to the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Signature&lt;/code&gt;&lt;/em&gt; value included in the
+                                        notification message. A matching value indicates the notification message is genuine.
+                                &lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;p&gt; For more information about the method used to produce signature values, see MakingRequests_RequestAuthenticationArticle. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20704&quot;&gt;The Notification API Version&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; Similar to how a REST request sent to the Amazon Mechanical Turk Requester service must include a
+                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/em&gt; parameter to indicate which version of the service API the
+                        client is expecting to use, a notification message also contains a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/em&gt;
+                        parameter. This version string will be identical to the version included in the notification
+                        specification for the HIT type. &lt;/p&gt;&lt;p&gt; For notifications sent over the SOAP transport, the version will be in the message header as
+                        part of the WSDL URL. See &lt;a class=&quot;link&quot; href=&quot;ApiReference_NotificationReceptorAPI_SOAPTransportArticle.html&quot; title=&quot;The SOAP Transport&quot;&gt;The SOAP Transport&lt;/a&gt; for more
+                        information. &lt;/p&gt;&lt;div class=&quot;tip&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Tip&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Tip]&quot; src=&quot;images/tip.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Tip&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; Your application may need to accommodate receiving notification messages of different
+                                versions at the same time if you want to upgrade your notification specifications to a new
+                                version without missing messages. You can avoid having to accommodate multiple API versions by
+                                first disabling the notification specifications that use the old version, upgrading your
+                                application to use the new version, then updating the notification specifications to use the
+                                new version and re-enable notifications. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; When a new version of the notification API is made available, all existing notification
+                        specifications will continue to use the API versions they were using previously. You must update
+                        your notification specifications to use a new version of the API. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20724&quot;&gt;Events&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e20727&quot;&gt;&lt;/a&gt;&lt;p&gt; A notification message describes one or more events that happened in regards to a HIT type.
+                        Each event includes: &lt;/p&gt;&lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;p&gt;the event type (&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;EventType&lt;/code&gt;&lt;/em&gt;), a value corresponding to the
+                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;EventType&lt;/code&gt;&lt;/em&gt; value in the &lt;a class=&quot;link&quot; href=&quot;ApiReference_NotificationDataStructureArticle.html&quot; title=&quot;Notification&quot;&gt;notification specification
+                                                data structure&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;the time of the event (&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;EventTime&lt;/code&gt;&lt;/em&gt;), as a &lt;a class=&quot;ulink&quot; href=&quot;http://www.w3.org/TR/xmlschema-2/#dateTime&quot; target=&quot;_blank&quot;&gt;dateTime&lt;/a&gt; in the Coordinated
+                                        Universal Time time zone, such as &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;2005-01-31T23:59:59Z&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;the HIT type ID for the event (&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HITTypeId&lt;/code&gt;&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;the HIT ID for the event (&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HITId&lt;/code&gt;&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;the assignment ID for the event, if applicable
+                                (&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AssignmentId&lt;/code&gt;&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p&gt; Multiple events may be batched into a single notification message. &lt;/p&gt;&lt;p&gt; Amazon Mechanical Turk may send a &quot;Ping&quot; event to your notification receptor at any time. &quot;Ping&quot;
+                        events are for diagnostic purposes, and do not correspond to HIT activity. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;navfooter&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation footer&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_NotificationAPI_BuildingANotificationReceptor.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_NotificationAPI_ElementsOfANotification&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;copyrightinfo.html&quot;&gt;Copyright Information&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_NotificationReceptorAPI_RESTTransportArticle.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a accesskey=&quot;h&quot; href=&quot;#top&quot;&gt;&lt;img src=&quot;images/home.gif&quot; alt=&quot;Home&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot; valign=&quot;top&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+</pre>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RTurk::AssignmentParser</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Class</span> 
+            RTurk::AssignmentParser 
+            
+                <span class="parent">&lt; 
+                    
+                    <a href="Parser.html">RTurk::Parser</a>
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/rturk/parsers/assignment_parser_rb.html">lib/rturk/parsers/assignment_parser.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>A</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000129">answers</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>N</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000128">new</a>,</li>
+                
+                <li><a href="#M000131">normalized_answers</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="sectiontitle">Attributes</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>assignment_id</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>hit_id</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>worker_id</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>status</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>accepted_at</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>submitted_at</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>approved_at</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>auto_approval_time</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+    </table>
+    
+
+    
+            <div class="sectiontitle">Class Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000128">
+                    
+                    <a name="M000128"></a><b>new</b>(assignment_xml)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000128_source')" id="l_M000128_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8263da34dad203e9e2fc6bdf43c5fbb9dfa0c066/lib/rturk/parsers/assignment_parser.rb#L28" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000128_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/parsers/assignment_parser.rb, line 28</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">assignment_xml</span>)
+      <span class="ruby-ivar">@xml_obj</span> = <span class="ruby-identifier">assignment_xml</span>
+      <span class="ruby-identifier">map_content</span>(<span class="ruby-ivar">@xml_obj</span>,
+                  <span class="ruby-identifier">:assignment_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'AssignmentId'</span>,
+                  <span class="ruby-identifier">:hit_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'HITId'</span>,
+                  <span class="ruby-identifier">:worker_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'WorkerId'</span>,
+                  <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'AssignmentStatus'</span>,
+                  <span class="ruby-identifier">:accepted_at</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'AcceptTime'</span>,
+                  <span class="ruby-identifier">:submitted_at</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'SubmitTime'</span>,
+                  <span class="ruby-identifier">:approved_at</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'ApprovalTime'</span>,
+                  <span class="ruby-identifier">:auto_approval_time</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'AutoApprovalTime'</span>
+                  )
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="sectiontitle">Instance Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000129">
+                    
+                    <a name="M000129"></a><b>answers</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000129_source')" id="l_M000129_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8263da34dad203e9e2fc6bdf43c5fbb9dfa0c066/lib/rturk/parsers/assignment_parser.rb#L42" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000129_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/parsers/assignment_parser.rb, line 42</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">answers</span>
+      <span class="ruby-constant">AnswerParser</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-ivar">@xml_obj</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'Answer'</span>).<span class="ruby-identifier">children</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000131">
+                    
+                    <a name="M000131"></a><b>normalized_answers</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Normalizes a hash of answers that include nested params such as the ones
+you&#8217;ll find in Rails Example &#8216;tweet[text]&#8217; =>
+&#8216;Tweet!&#8217; becomes {&#8216;tweet&#8217; => {&#8216;text&#8217; =>
+&#8216;Tweet!&#8217;}}
+</p>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000131_source')" id="l_M000131_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8263da34dad203e9e2fc6bdf43c5fbb9dfa0c066/lib/rturk/parsers/assignment_parser.rb#L50" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000131_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/parsers/assignment_parser.rb, line 50</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">normalized_answers</span>
+      <span class="ruby-identifier">normalize_nested_params</span>(<span class="ruby-identifier">answers</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    

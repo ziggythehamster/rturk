@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RTurk::Question</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Class</span> 
+            RTurk::Question 
+            
+                <span class="parent">&lt; 
+                    
+                    <a href="../Object.html">Object</a>
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/rturk/builders/question_builder_rb.html">lib/rturk/builders/question_builder.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>N</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000033">new</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>P</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000036">params</a>,</li>
+                
+                <li><a href="#M000037">params=</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>Q</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000034">querystring</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>T</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000038">to_params</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>U</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000035">url</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="sectiontitle">Attributes</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>url</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>url_params</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>frame_height</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+    </table>
+    
+
+    
+            <div class="sectiontitle">Class Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000033">
+                    
+                    <a name="M000033"></a><b>new</b>(url, opts = {})
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000033_source')" id="l_M000033_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8df5d5d45530ba658384c42f4aa0943ce45511ae/lib/rturk/builders/question_builder.rb#L9" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000033_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/question_builder.rb, line 9</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">opts</span> = {})
+      <span class="ruby-ivar">@url</span> = <span class="ruby-identifier">url</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">frame_height</span> = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">:frame_height</span>) <span class="ruby-operator">||</span> <span class="ruby-value">400</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">url_params</span> = <span class="ruby-identifier">opts</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="sectiontitle">Instance Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000036">
+                    
+                    <a name="M000036"></a><b>params</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000036_source')" id="l_M000036_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8df5d5d45530ba658384c42f4aa0943ce45511ae/lib/rturk/builders/question_builder.rb#L29" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000036_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/question_builder.rb, line 29</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">params</span>
+      <span class="ruby-ivar">@url_params</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000037">
+                    
+                    <a name="M000037"></a><b>params=</b>(param_set)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000037_source')" id="l_M000037_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8df5d5d45530ba658384c42f4aa0943ce45511ae/lib/rturk/builders/question_builder.rb#L33" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000037_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/question_builder.rb, line 33</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">params=</span>(<span class="ruby-identifier">param_set</span>)
+      <span class="ruby-ivar">@url_params</span> = <span class="ruby-identifier">param_set</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000034">
+                    
+                    <a name="M000034"></a><b>querystring</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000034_source')" id="l_M000034_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8df5d5d45530ba658384c42f4aa0943ce45511ae/lib/rturk/builders/question_builder.rb#L15" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000034_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/question_builder.rb, line 15</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">querystring</span>
+      <span class="ruby-ivar">@url_params</span>.<span class="ruby-identifier">collect</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span> [<span class="ruby-constant">CGI</span>.<span class="ruby-identifier">escape</span>(<span class="ruby-identifier">key</span>.<span class="ruby-identifier">to_s</span>), <span class="ruby-constant">CGI</span>.<span class="ruby-identifier">escape</span>(<span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>)].<span class="ruby-identifier">join</span>(<span class="ruby-value str">'='</span>) }.<span class="ruby-identifier">join</span>(<span class="ruby-value str">'&amp;'</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000038">
+                    
+                    <a name="M000038"></a><b>to_params</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000038_source')" id="l_M000038_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8df5d5d45530ba658384c42f4aa0943ce45511ae/lib/rturk/builders/question_builder.rb#L37" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000038_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/question_builder.rb, line 37</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_params</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">MissingParameters</span>, <span class="ruby-value str">&quot;needs a url to build an external question&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@url</span>
+      <span class="ruby-comment cmt"># TODO: update the xmlns schema... maybe</span>
+      <span class="ruby-identifier">xml</span> = <span class="ruby-value str">&quot;&lt;ExternalQuestion xmlns=\&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd\&quot;&gt;\n&lt;ExternalURL&gt;\#{url}&lt;/ExternalURL&gt;\n&lt;FrameHeight&gt;\#{frame_height}&lt;/FrameHeight&gt;\n&lt;/ExternalQuestion&gt;\n&quot;</span>
+      <span class="ruby-identifier">xml</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000035">
+                    
+                    <a name="M000035"></a><b>url</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000035_source')" id="l_M000035_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8df5d5d45530ba658384c42f4aa0943ce45511ae/lib/rturk/builders/question_builder.rb#L19" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000035_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/question_builder.rb, line 19</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">url</span>
+      <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">querystring</span>.<span class="ruby-identifier">empty?</span>
+        <span class="ruby-comment cmt"># slam the params onto url, if url already has params, add 'em with a &amp;</span>
+        <span class="ruby-identifier">u</span> = <span class="ruby-ivar">@url</span>.<span class="ruby-identifier">index</span>(<span class="ruby-value str">'?'</span>) <span class="ruby-operator">?</span> <span class="ruby-node">&quot;#{@url}&amp;#{querystring}&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;#{@url}?#{querystring}&quot;</span> 
+      <span class="ruby-keyword kw">else</span>
+        <span class="ruby-identifier">u</span> = <span class="ruby-ivar">@url</span>
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-constant">CGI</span>.<span class="ruby-identifier">escapeHTML</span>(<span class="ruby-identifier">u</span>) <span class="ruby-comment cmt">#URL should be XML/HTML escaped</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    

@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RTurk</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" />
+    <script src="../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Module</span> 
+            RTurk 
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../files/lib/rturk/adapter_rb.html">lib/rturk/adapter.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/adapters/assignment_rb.html">lib/rturk/adapters/assignment.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/adapters/hit_rb.html">lib/rturk/adapters/hit.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/adapters/worker_rb.html">lib/rturk/adapters/worker.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/builders/notification_builder_rb.html">lib/rturk/builders/notification_builder.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/builders/qualification_builder_rb.html">lib/rturk/builders/qualification_builder.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/builders/qualifications_builder_rb.html">lib/rturk/builders/qualifications_builder.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/builders/question_builder_rb.html">lib/rturk/builders/question_builder.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/errors_rb.html">lib/rturk/errors.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/logger_rb.html">lib/rturk/logger.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operation_rb.html">lib/rturk/operation.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/approve_assignment_rb.html">lib/rturk/operations/approve_assignment.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/assign_qualification_rb.html">lib/rturk/operations/assign_qualification.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/block_worker_rb.html">lib/rturk/operations/block_worker.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/create_hit_rb.html">lib/rturk/operations/create_hit.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/create_qualification_type_rb.html">lib/rturk/operations/create_qualification_type.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/disable_hit_rb.html">lib/rturk/operations/disable_hit.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/dispose_hit_rb.html">lib/rturk/operations/dispose_hit.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/dispose_qualification_type_rb.html">lib/rturk/operations/dispose_qualification_type.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/extend_hit_rb.html">lib/rturk/operations/extend_hit.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/get_account_balance_rb.html">lib/rturk/operations/get_account_balance.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/force_expire_hit_rb.html">lib/rturk/operations/force_expire_hit.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/get_assignments_for_hit_rb.html">lib/rturk/operations/get_assignments_for_hit.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/get_hit_rb.html">lib/rturk/operations/get_hit.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/get_qualification_type_rb.html">lib/rturk/operations/get_qualification_type.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/get_qualifications_for_qualification_type_rb.html">lib/rturk/operations/get_qualifications_for_qualification_type.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/get_reviewable_hits_rb.html">lib/rturk/operations/get_reviewable_hits.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/grant_bonus_rb.html">lib/rturk/operations/grant_bonus.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/notify_workers_rb.html">lib/rturk/operations/notify_workers.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/register_hit_type_rb.html">lib/rturk/operations/register_hit_type.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/reject_assignment_rb.html">lib/rturk/operations/reject_assignment.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/revoke_qualification_rb.html">lib/rturk/operations/revoke_qualification.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/search_hits_rb.html">lib/rturk/operations/search_hits.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/send_test_event_notification_rb.html">lib/rturk/operations/send_test_event_notification.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/set_hit_type_notification_rb.html">lib/rturk/operations/set_hit_type_notification.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/unblock_worker_rb.html">lib/rturk/operations/unblock_worker.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/operations/update_qualification_type_rb.html">lib/rturk/operations/update_qualification_type.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parser_rb.html">lib/rturk/parser.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/answer_parser_rb.html">lib/rturk/parsers/answer_parser.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/assignment_parser_rb.html">lib/rturk/parsers/assignment_parser.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/hit_parser_rb.html">lib/rturk/parsers/hit_parser.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/response_rb.html">lib/rturk/parsers/response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/qualification_parser_rb.html">lib/rturk/parsers/qualification_parser.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/get_account_balance_response_rb.html">lib/rturk/parsers/responses/get_account_balance_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/create_hit_response_rb.html">lib/rturk/parsers/responses/create_hit_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/get_assignments_for_hit_response_rb.html">lib/rturk/parsers/responses/get_assignments_for_hit_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/get_hit_response_rb.html">lib/rturk/parsers/responses/get_hit_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/get_qualification_type_response_rb.html">lib/rturk/parsers/responses/get_qualification_type_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/get_qualifications_for_qualification_type_response_rb.html">lib/rturk/parsers/responses/get_qualifications_for_qualification_type_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/get_reviewable_hits_response_rb.html">lib/rturk/parsers/responses/get_reviewable_hits_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/register_hit_type_response_rb.html">lib/rturk/parsers/responses/register_hit_type_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/parsers/responses/search_hits_response_rb.html">lib/rturk/parsers/responses/search_hits_response.rb</a></li>
+            
+            <li><a href="../files/lib/rturk/requester_rb.html">lib/rturk/requester.rb</a></li>
+            
+            <li><a href="../files/lib/rturk_rb.html">lib/rturk.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<a href="RTurk/Operation.html">Operation</a> to approve an assignment
+</p>
+<p>
+<a
+href="http://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester">mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester</a>
+&amp;AWSAccessKeyId=[the Requester&#8217;s Access Key ID]
+&amp;Version=2008-08-02 &amp;Operation=<a
+href="RTurk.html#M000053">ApproveAssignment</a> &amp;Signature=[signature
+for this request] &amp;Timestamp=[your system&#8217;s local time]
+&amp;AssignmentId=123RVWYBAZW00EXAMPLE456RVWYBAZW00EXAMPLE
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to assign a qualification to a
+worker
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to block a worker
+</p>
+<p>
+The worker does not see the reason you gave. It&#8217;s for your records
+only.
+</p>
+<hr size="1"></hr><p>
+<a
+href="http://docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/ApiReference_DisposeHITOperation.html">docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/ApiReference_DisposeHITOperation.html</a>
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to create a qualification type
+</p>
+<hr size="1"></hr><p>
+<a
+href="http://docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/ApiReference_DisposeHITOperation.html">docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/ApiReference_DisposeHITOperation.html</a>
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to despose a qualification
+type
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to get info about
+qualification type
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to get qualifications for a
+qualification type
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to send email to a group of
+workers. #
+</p>
+<pre>
+                                                                      #
+</pre>
+<p>
+Caveats: #
+</p>
+<pre>
+  - A message can only be send to a maximum of 100 workers at a time. #
+  - The message length must be 4096 characters or less.               #
+  - The subject length must be 200 characters or less.                #
+</pre>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to revoke a qualification from
+a worker
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to block a worker
+</p>
+<p>
+The worker does not see the reason you gave. It&#8217;s for your records
+only.
+</p>
+<hr size="1"></hr><p>
+<a href="RTurk/Operation.html">Operation</a> to update a qualification type
+</p>
+<hr size="1"></hr><pre>
+  &lt;HIT&gt;
+    &lt;HITId&gt;ZZRZPTY4ERDZWJ868JCZ&lt;/HITId&gt;
+    &lt;HITTypeId&gt;NYVZTQ1QVKJZXCYZCZVZ&lt;/HITTypeId&gt;
+    &lt;CreationTime&gt;2009-07-07T00:56:40Z&lt;/CreationTime&gt;
+    &lt;Title&gt;Location&lt;/Title&gt;
+    &lt;Description&gt;Select the image that best represents&lt;/Description&gt;
+    &lt;HITStatus&gt;Assignable&lt;/HITStatus&gt;
+    &lt;MaxAssignments&gt;1&lt;/MaxAssignments&gt;
+    &lt;Reward&gt;
+      &lt;Amount&gt;5.00&lt;/Amount&gt;
+      &lt;CurrencyCode&gt;USD&lt;/CurrencyCode&gt;
+      &lt;FormattedPrice&gt;$5.00&lt;/FormattedPrice&gt;
+    &lt;/Reward&gt;
+    &lt;AutoApprovalDelayInSeconds&gt;2592000&lt;/AutoApprovalDelayInSeconds&gt;
+    &lt;Expiration&gt;2009-07-14T00:56:40Z&lt;/Expiration&gt;
+    &lt;AssignmentDurationInSeconds&gt;30&lt;/AssignmentDurationInSeconds&gt;
+    &lt;NumberOfAssignmentsPending&gt;0&lt;/NumberOfAssignmentsPending&gt;
+    &lt;NumberOfAssignmentsAvailable&gt;1&lt;/NumberOfAssignmentsAvailable&gt;
+    &lt;NumberOfAssignmentsCompleted&gt;0&lt;/NumberOfAssignmentsCompleted&gt;
+  &lt;/HIT&gt;
+</pre>
+<hr size="1"></hr><p>
+Parses: <Assignment>
+</p>
+<pre>
+  &lt;AssignmentId&gt;GYFTRHZ5J3DZREY48WNZE38ZR9RR1ZPMXGWE7WE0&lt;/AssignmentId&gt;
+  &lt;WorkerId&gt;AD20WXZZP9XXK&lt;/WorkerId&gt;
+  &lt;HITId&gt;GYFTRHZ5J3DZREY48WNZ&lt;/HITId&gt;
+  &lt;AssignmentStatus&gt;Approved&lt;/AssignmentStatus&gt;
+  &lt;AutoApprovalTime&gt;2009-08-12T19:21:54Z&lt;/AutoApprovalTime&gt;
+  &lt;AcceptTime&gt;2009-07-13T19:21:40Z&lt;/AcceptTime&gt;
+  &lt;SubmitTime&gt;2009-07-13T19:21:54Z&lt;/SubmitTime&gt;
+  &lt;ApprovalTime&gt;2009-07-13T19:27:54Z&lt;/ApprovalTime&gt;
+  &lt;Answer&gt;
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+    &lt;QuestionFormAnswers xmlns=&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionFormAnswers.xsd&quot;&gt;
+      &lt;Answer&gt;
+        &lt;QuestionIdentifier&gt;Question100&lt;/QuestionIdentifier&gt;
+        &lt;FreeText&gt;Move to X.&lt;/FreeText&gt;
+      &lt;/Answer&gt;
+    &lt;/QuestionFormAnswers&gt;
+  &lt;/Answer&gt;
+</pre>
+<p>
+</Assignment>
+</p>
+<hr size="1"></hr><p>
+Parses a <a href="RTurk/Qualification.html">Qualification</a> object
+</p>
+<hr size="1"></hr><p>
+Parses out the <a href="RTurk.html#M000068">CreateHIT</a> response
+</p>
+<p>
+Example response: <CreateHITResponse>
+</p>
+<pre>
+  &lt;OperationRequest&gt;
+    &lt;RequestId&gt;ece2785b-6292-4b12-a60e-4c34847a7916&lt;/RequestId&gt;
+  &lt;/OperationRequest&gt;
+  &lt;HIT&gt;
+    &lt;Request&gt;
+      &lt;IsValid&gt;True&lt;/IsValid&gt;
+    &lt;/Request&gt;
+    &lt;HITId&gt;GBHZVQX3EHXZ2AYDY2T0&lt;/HITId&gt;
+    &lt;HITTypeId&gt;NYVZTQ1QVKJZXCYZCZVZ&lt;/HITTypeId&gt;
+  &lt;/HIT&gt;
+</pre>
+<p>
+</CreateHITResponse>
+</p>
+<hr size="1"></hr><p>
+<GetAssignmentsForHITResult>
+</p>
+<pre>
+  &lt;Request&gt;
+    &lt;IsValid&gt;True&lt;/IsValid&gt;
+  &lt;/Request&gt;
+  &lt;NumResults&gt;1&lt;/NumResults&gt;
+  &lt;TotalNumResults&gt;1&lt;/TotalNumResults&gt;
+  &lt;PageNumber&gt;1&lt;/PageNumber&gt;
+  &lt;Assignment&gt;
+    &lt;AssignmentId&gt;GYFTRHZ5J3DZREY48WNZE38ZR9RR1ZPMXGWE7WE0&lt;/AssignmentId&gt;
+    &lt;WorkerId&gt;AD20WXZZP9XXK&lt;/WorkerId&gt;
+    &lt;HITId&gt;GYFTRHZ5J3DZREY48WNZ&lt;/HITId&gt;
+    &lt;AssignmentStatus&gt;Approved&lt;/AssignmentStatus&gt;
+    &lt;AutoApprovalTime&gt;2009-08-12T19:21:54Z&lt;/AutoApprovalTime&gt;
+    &lt;AcceptTime&gt;2009-07-13T19:21:40Z&lt;/AcceptTime&gt;
+    &lt;SubmitTime&gt;2009-07-13T19:21:54Z&lt;/SubmitTime&gt;
+    &lt;ApprovalTime&gt;2009-07-13T19:27:54Z&lt;/ApprovalTime&gt;
+    &lt;Answer&gt;
+      &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+      &lt;QuestionFormAnswers xmlns=&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionFormAnswers.xsd&quot;&gt;
+        &lt;Answer&gt;
+          &lt;QuestionIdentifier&gt;Question100&lt;/QuestionIdentifier&gt;
+          &lt;FreeText&gt;Move to X.&lt;/FreeText&gt;
+        &lt;/Answer&gt;
+      &lt;/QuestionFormAnswers&gt;
+    &lt;/Answer&gt;
+  &lt;/Assignment&gt;
+</pre>
+<p>
+</GetAssignmentsForHITResult>
+</p>
+<hr size="1"></hr><p>
+Parses the <a href="RTurk.html#M000089">GetHIT</a> <a
+href="RTurk/Response.html">Response</a>
+</p>
+<p>
+<?xml version=&#8220;1.0&#8220;?> <GetHITResponse>
+</p>
+<pre>
+  &lt;OperationRequest&gt;
+    &lt;RequestId&gt;49341251-fcbd-45c3-ab98-8fbe2e4d8060&lt;/RequestId&gt;
+  &lt;/OperationRequest&gt;
+  &lt;HIT&gt;
+    &lt;Request&gt;
+      &lt;IsValid&gt;True&lt;/IsValid&gt;
+    &lt;/Request&gt;
+    &lt;HITId&gt;GR4R3HY3YGBZXDCAPJWZ&lt;/HITId&gt;
+    &lt;HITTypeId&gt;YGKZ2W5X6YFZ08ZRXXZZ&lt;/HITTypeId&gt;
+    &lt;CreationTime&gt;2009-06-25T04:21:17Z&lt;/CreationTime&gt;
+    &lt;Title&gt;Write a twitter update&lt;/Title&gt;
+    &lt;Description&gt;Simply write a twitter update for me&lt;/Description&gt;
+    &lt;Question&gt;&amp;lt;ExternalQuestion xmlns=&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd&quot;&amp;gt;
+  &amp;lt;ExternalURL&amp;gt;http://s3.amazonaws.com/mpercival.com/newtweet.html?id=foo&amp;lt;/ExternalURL&amp;gt;
+  &amp;lt;FrameHeight&amp;gt;400&amp;lt;/FrameHeight&amp;gt;
+</pre>
+<p>
+&amp;lt;/ExternalQuestion&amp;gt; </Question>
+</p>
+<pre>
+    &lt;Keywords&gt;twitter, blogging, writing, english&lt;/Keywords&gt;
+    &lt;HITStatus&gt;Reviewable&lt;/HITStatus&gt;
+    &lt;MaxAssignments&gt;1&lt;/MaxAssignments&gt;
+    &lt;Reward&gt;
+      &lt;Amount&gt;0.10&lt;/Amount&gt;
+      &lt;CurrencyCode&gt;USD&lt;/CurrencyCode&gt;
+      &lt;FormattedPrice&gt;$0.10&lt;/FormattedPrice&gt;
+    &lt;/Reward&gt;
+    &lt;AutoApprovalDelayInSeconds&gt;3600&lt;/AutoApprovalDelayInSeconds&gt;
+    &lt;Expiration&gt;2009-06-25T05:21:17Z&lt;/Expiration&gt;
+    &lt;AssignmentDurationInSeconds&gt;3600&lt;/AssignmentDurationInSeconds&gt;
+    &lt;NumberOfSimilarHITs&gt;0&lt;/NumberOfSimilarHITs&gt;
+    &lt;RequesterAnnotation&gt;OptionalNote&lt;/RequesterAnnotation&gt;
+    &lt;QualificationRequirement&gt;
+      &lt;QualificationTypeId&gt;000000000000000000L0&lt;/QualificationTypeId&gt;
+      &lt;Comparator&gt;GreaterThan&lt;/Comparator&gt;
+      &lt;IntegerValue&gt;90&lt;/IntegerValue&gt;
+      &lt;RequiredToPreview&gt;0&lt;/RequiredToPreview&gt;
+    &lt;/QualificationRequirement&gt;
+    &lt;HITReviewStatus&gt;NotReviewed&lt;/HITReviewStatus&gt;
+  &lt;/HIT&gt;
+</pre>
+<p>
+</GetHITResponse>
+</p>
+<hr size="1"></hr><p>
+Parses the <a href="RTurk.html#M000092">GetQualificationType</a> <a
+href="RTurk/Response.html">Response</a>
+</p>
+<hr size="1"></hr><p>
+Parses the <a href="RTurk.html#M000092">GetQualificationType</a> <a
+href="RTurk/Response.html">Response</a>
+</p>
+<hr size="1"></hr><p>
+<GetReviewableHITsResult>
+</p>
+<pre>
+  &lt;Request&gt;
+    &lt;IsValid&gt;True&lt;/IsValid&gt;
+  &lt;/Request&gt;
+  &lt;NumResults&gt;3&lt;/NumResults&gt;
+  &lt;TotalNumResults&gt;3&lt;/TotalNumResults&gt;
+  &lt;PageNumber&gt;1&lt;/PageNumber&gt;
+  &lt;HIT&gt;
+    &lt;HITId&gt;GBHZVQX3EHXZ2AYDY2T0&lt;/HITId&gt;
+  &lt;/HIT&gt;
+  &lt;HIT&gt;
+    &lt;HITId&gt;GBHZVQX3EHXZ2AYDY2T1&lt;/HITId&gt;
+  &lt;/HIT&gt;
+  &lt;HIT&gt;
+    &lt;HITId&gt;GBHZVQX3EHXZ2AYDY2T2&lt;/HITId&gt;
+  &lt;/HIT&gt;
+</pre>
+<p>
+</GetReviewableHITsResult>
+</p>
+<hr size="1"></hr><p>
+Parses out the <a href="RTurk.html#M000111">RegisterHITType</a> response
+</p>
+<p>
+Example response: <RegisterHITTypeResult>
+</p>
+<pre>
+  &lt;Request&gt;
+    &lt;IsValid&gt;True&lt;/IsValid&gt;
+  &lt;/Request&gt;
+  &lt;HITTypeId&gt;KZ3GKTRXBWGYX8WXBW60&lt;/HITTypeId&gt;
+</pre>
+<p>
+</RegisterHITTypeResult>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>A</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000053">ApproveAssignment</a>,</li>
+                
+                <li><a href="#M000060">AssignQualification</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>B</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000062">BlockWorker</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>C</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000068">CreateHIT</a>,</li>
+                
+                <li><a href="#M000073">CreateQualificationType</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>D</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000070">DisableHIT</a>,</li>
+                
+                <li><a href="#M000075">DisposeHIT</a>,</li>
+                
+                <li><a href="#M000077">DisposeQualificationType</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>E</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000079">ExtendHIT</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>F</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000083">ForceExpireHIT</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>G</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000081">GetAccountBalance</a>,</li>
+                
+                <li><a href="#M000086">GetAssignmentsForHIT</a>,</li>
+                
+                <li><a href="#M000089">GetHIT</a>,</li>
+                
+                <li><a href="#M000092">GetQualificationType</a>,</li>
+                
+                <li><a href="#M000095">GetQualificationsForQualificationType</a>,</li>
+                
+                <li><a href="#M000100">GetReviewableHITs</a>,</li>
+                
+                <li><a href="#M000097">GrantBonus</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>L</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000041">Logger</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>N</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000102">NotifyWorkers</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>R</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000111">RegisterHITType</a>,</li>
+                
+                <li><a href="#M000105">RejectAssignment</a>,</li>
+                
+                <li><a href="#M000158">Request</a>,</li>
+                
+                <li><a href="#M000113">RevokeQualification</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>S</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000117">SearchHITs</a>,</li>
+                
+                <li><a href="#M000119">SendTestEventNotification</a>,</li>
+                
+                <li><a href="#M000124">SetHITTypeNotification</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>U</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000121">UnblockWorker</a>,</li>
+                
+                <li><a href="#M000126">UpdateQualificationType</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>L</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000168">logger</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>S</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000167">sandbox?</a>,</li>
+                
+                <li><a href="#M000166">setup</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+
+    
+
+    
+    <div class="sectiontitle">Classes and Modules</div>
+    <ul>
+        
+        <li><span class="type">MODULE</span> <a href="RTurk/Macros.html">RTurk::Macros</a></li>
+        
+        <li><span class="type">MODULE</span> <a href="RTurk/Utilities.html">RTurk::Utilities</a></li>
+        
+        <li><span class="type">MODULE</span> <a href="RTurk/XMLUtilities.html">RTurk::XMLUtilities</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Adapter.html">RTurk::Adapter</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/AnswerParser.html">RTurk::AnswerParser</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/ApproveAssignment.html">RTurk::ApproveAssignment</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/AssignQualification.html">RTurk::AssignQualification</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Assignment.html">RTurk::Assignment</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/AssignmentParser.html">RTurk::AssignmentParser</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/BlockWorker.html">RTurk::BlockWorker</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/CreateHIT.html">RTurk::CreateHIT</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/CreateHITResponse.html">RTurk::CreateHITResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/CreateQualificationType.html">RTurk::CreateQualificationType</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/DisableHIT.html">RTurk::DisableHIT</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/DisposeHIT.html">RTurk::DisposeHIT</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/DisposeQualificationType.html">RTurk::DisposeQualificationType</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/ExtendHIT.html">RTurk::ExtendHIT</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/ForceExpireHIT.html">RTurk::ForceExpireHIT</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetAccountBalance.html">RTurk::GetAccountBalance</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetAccountBalanceResponse.html">RTurk::GetAccountBalanceResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetAssignmentsForHIT.html">RTurk::GetAssignmentsForHIT</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetAssignmentsForHITResponse.html">RTurk::GetAssignmentsForHITResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetHIT.html">RTurk::GetHIT</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetHITResponse.html">RTurk::GetHITResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetQualificationType.html">RTurk::GetQualificationType</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetQualificationTypeResponse.html">RTurk::GetQualificationTypeResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetQualificationsForQualificationType.html">RTurk::GetQualificationsForQualificationType</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetQualificationsForQualificationTypeResponse.html">RTurk::GetQualificationsForQualificationTypeResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetReviewableHITs.html">RTurk::GetReviewableHITs</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GetReviewableHITsResponse.html">RTurk::GetReviewableHITsResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/GrantBonus.html">RTurk::GrantBonus</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/HITParser.html">RTurk::HITParser</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Hit.html">RTurk::Hit</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/InvalidRequest.html">RTurk::InvalidRequest</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Logger.html">RTurk::Logger</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/MissingParameters.html">RTurk::MissingParameters</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/NotifyWorkers.html">RTurk::NotifyWorkers</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Operation.html">RTurk::Operation</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Parser.html">RTurk::Parser</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Qualification.html">RTurk::Qualification</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/QualificationParser.html">RTurk::QualificationParser</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Qualifications.html">RTurk::Qualifications</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Question.html">RTurk::Question</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/RTurkError.html">RTurk::RTurkError</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/RegisterHITType.html">RTurk::RegisterHITType</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/RegisterHITTypeResponse.html">RTurk::RegisterHITTypeResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/RejectAssignment.html">RTurk::RejectAssignment</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Requester.html">RTurk::Requester</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Response.html">RTurk::Response</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/RevokeQualification.html">RTurk::RevokeQualification</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/SearchHITs.html">RTurk::SearchHITs</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/SearchHITsResponse.html">RTurk::SearchHITsResponse</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/SendTestEventNotification.html">RTurk::SendTestEventNotification</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/SetHITTypeNotification.html">RTurk::SetHITTypeNotification</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/UnblockWorker.html">RTurk::UnblockWorker</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/UpdateQualificationType.html">RTurk::UpdateQualificationType</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="RTurk/Worker.html">RTurk::Worker</a></li>
+        
+    </ul>
+    
+
+    
+    <div class="sectiontitle">Constants</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class="attr-name">Notification</td>
+            <td>=</td>
+            <td class="attr-value">Struct.new(:Destination, :Transport, :Version, :EventType) do     # EventType can be a single string or an array of strings     extend RTurk::Utilities      members.each do |member|       underscore = underscore(member)       alias_method underscore, member       alias_method &quot;#{underscore}=&quot;, &quot;#{member}=&quot;     end      def to_param_hash       self.version = RTurk::OLD_API_VERSION # enforce this blindly        hash = {}       missing = []       each_pair do |k, v|         raise MissingParameters, &quot;Missing parameter for #{k}&quot; if v.nil?         if (k == :EventType) &amp;&amp; (v.is_a? Array)             v.each_index do |i|               hash[&quot;Notification.1.#{k}.#{i+1}&quot;] = v[i]             end         else           hash[&quot;Notification.1.#{k}&quot;] = v</td>
+        </tr>
+        
+        
+        <tr valign='top'>
+            <td class="attr-name">SANDBOX</td>
+            <td>=</td>
+            <td class="attr-value">'http://mechanicalturk.sandbox.amazonaws.com/'</td>
+        </tr>
+        
+        
+        <tr valign='top'>
+            <td class="attr-name">PRODUCTION</td>
+            <td>=</td>
+            <td class="attr-value">'http://mechanicalturk.amazonaws.com/'</td>
+        </tr>
+        
+        
+        <tr valign='top'>
+            <td class="attr-name">API_VERSION</td>
+            <td>=</td>
+            <td class="attr-value">'2008-08-02'</td>
+        </tr>
+        
+        
+        <tr valign='top'>
+            <td class="attr-name">OLD_API_VERSION</td>
+            <td>=</td>
+            <td class="attr-value">'2006-05-05'</td>
+        </tr>
+        
+        
+    </table>
+    
+
+    
+    <div class="sectiontitle">Attributes</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>access_key</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>secret_key</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [R]
+            </td>
+            <td class='attr-name'>host</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+    </table>
+    
+
+    
+            <div class="sectiontitle">Class Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000053">
+                    
+                    <a name="M000053"></a><b>ApproveAssignment</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000053_source')" id="l_M000053_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/approve_assignment.rb#L23" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000053_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/approve_assignment.rb, line 23</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">ApproveAssignment</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">ApproveAssignment</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000060">
+                    
+                    <a name="M000060"></a><b>AssignQualification</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000060_source')" id="l_M000060_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/d13a6735bde9e2323d17e3f0e8e1d1e9e53ef2d1/lib/rturk/operations/assign_qualification.rb#L15" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000060_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/assign_qualification.rb, line 15</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">AssignQualification</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">AssignQualification</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000062">
+                    
+                    <a name="M000062"></a><b>BlockWorker</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000062_source')" id="l_M000062_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/97425a33708a95e01dc8ac2549df1f896cc52f45/lib/rturk/operations/block_worker.rb#L19" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000062_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/block_worker.rb, line 19</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">BlockWorker</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">BlockWorker</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000068">
+                    
+                    <a name="M000068"></a><b>CreateHIT</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000068_source')" id="l_M000068_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/f1146684f1fd1aad67c44babfe6875bb6ab85f93/lib/rturk/operations/create_hit.rb#L50" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000068_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/create_hit.rb, line 50</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">CreateHIT</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">CreateHIT</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000073">
+                    
+                    <a name="M000073"></a><b>CreateQualificationType</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000073_source')" id="l_M000073_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/baac0823a1bc9b770e5dbe7e32841a67e93c20f1/lib/rturk/operations/create_qualification_type.rb#L31" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000073_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/create_qualification_type.rb, line 31</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">CreateQualificationType</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">CreateQualificationType</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000070">
+                    
+                    <a name="M000070"></a><b>DisableHIT</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000070_source')" id="l_M000070_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/disable_hit.rb#L14" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000070_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/disable_hit.rb, line 14</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">DisableHIT</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">DisableHIT</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000075">
+                    
+                    <a name="M000075"></a><b>DisposeHIT</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000075_source')" id="l_M000075_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/dispose_hit.rb#L14" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000075_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/dispose_hit.rb, line 14</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">DisposeHIT</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">DisposeHIT</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000077">
+                    
+                    <a name="M000077"></a><b>DisposeQualificationType</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000077_source')" id="l_M000077_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/3e1e11e79fbdaadc1bade3c48d34c6398f4f843b/lib/rturk/operations/dispose_qualification_type.rb#L13" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000077_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/dispose_qualification_type.rb, line 13</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">DisposeQualificationType</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">DisposeQualificationType</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000079">
+                    
+                    <a name="M000079"></a><b>ExtendHIT</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000079_source')" id="l_M000079_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/26b229bc6dbf2321f2bc53c0d04d952c72574da4/lib/rturk/operations/extend_hit.rb#L19" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000079_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/extend_hit.rb, line 19</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">ExtendHIT</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">ExtendHIT</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000083">
+                    
+                    <a name="M000083"></a><b>ForceExpireHIT</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000083_source')" id="l_M000083_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/force_expire_hit.rb#L13" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000083_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/force_expire_hit.rb, line 13</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">ForceExpireHIT</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">ForceExpireHIT</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000081">
+                    
+                    <a name="M000081"></a><b>GetAccountBalance</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000081_source')" id="l_M000081_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/get_account_balance.rb#L9" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000081_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/get_account_balance.rb, line 9</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">GetAccountBalance</span>
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">GetAccountBalance</span>.<span class="ruby-identifier">create</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000086">
+                    
+                    <a name="M000086"></a><b>GetAssignmentsForHIT</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000086_source')" id="l_M000086_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/get_assignments_for_hit.rb#L19" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000086_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/get_assignments_for_hit.rb, line 19</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">GetAssignmentsForHIT</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">GetAssignmentsForHIT</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000089">
+                    
+                    <a name="M000089"></a><b>GetHIT</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000089_source')" id="l_M000089_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/get_hit.rb#L16" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000089_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/get_hit.rb, line 16</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">GetHIT</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">GetHIT</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000092">
+                    
+                    <a name="M000092"></a><b>GetQualificationType</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000092_source')" id="l_M000092_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/baac0823a1bc9b770e5dbe7e32841a67e93c20f1/lib/rturk/operations/get_qualification_type.rb#L17" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000092_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/get_qualification_type.rb, line 17</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">GetQualificationType</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">GetQualificationType</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000095">
+                    
+                    <a name="M000095"></a><b>GetQualificationsForQualificationType</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000095_source')" id="l_M000095_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/baac0823a1bc9b770e5dbe7e32841a67e93c20f1/lib/rturk/operations/get_qualifications_for_qualification_type.rb#L23" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000095_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/get_qualifications_for_qualification_type.rb, line 23</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">GetQualificationsForQualificationType</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">GetQualificationsForQualificationType</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000100">
+                    
+                    <a name="M000100"></a><b>GetReviewableHITs</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000100_source')" id="l_M000100_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/get_reviewable_hits.rb#L18" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000100_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/get_reviewable_hits.rb, line 18</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">GetReviewableHITs</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">GetReviewableHITs</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000097">
+                    
+                    <a name="M000097"></a><b>GrantBonus</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000097_source')" id="l_M000097_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/2dc58bfe93a067f8789d64fbda705464268ae8d8/lib/rturk/operations/grant_bonus.rb#L22" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000097_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/grant_bonus.rb, line 22</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">GrantBonus</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">GrantBonus</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000041">
+                    
+                    <a name="M000041"></a><b>Logger</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000041_source')" id="l_M000041_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/047709bcf1b1f8c9009049680d434d9dfa4037ce/lib/rturk/logger.rb#L20" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000041_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/logger.rb, line 20</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">Logger</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">Logger</span>.<span class="ruby-identifier">logger</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000102">
+                    
+                    <a name="M000102"></a><b>NotifyWorkers</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000102_source')" id="l_M000102_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/45bfb0fd4f8ace73e6d81ada8437493518ca83cd/lib/rturk/operations/notify_workers.rb#L36" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000102_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/notify_workers.rb, line 36</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">NotifyWorkers</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">NotifyWorkers</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000111">
+                    
+                    <a name="M000111"></a><b>RegisterHITType</b>(*args, &amp;blk)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000111_source')" id="l_M000111_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/a75aa90fbbf10439005b1e6f08c1130a7eb10cd9/lib/rturk/operations/register_hit_type.rb#L61" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000111_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/register_hit_type.rb, line 61</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">RegisterHITType</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">RegisterHITType</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000105">
+                    
+                    <a name="M000105"></a><b>RejectAssignment</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000105_source')" id="l_M000105_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/50a803862892b9d22c05f3b24853fadb263ce76b/lib/rturk/operations/reject_assignment.rb#L18" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000105_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/reject_assignment.rb, line 18</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">RejectAssignment</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">RejectAssignment</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000158">
+                    
+                    <a name="M000158"></a><b>Request</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000158_source')" id="l_M000158_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/3e1e11e79fbdaadc1bade3c48d34c6398f4f843b/lib/rturk/requester.rb#L78" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000158_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/requester.rb, line 78</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">Request</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">Requester</span>.<span class="ruby-identifier">request</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000113">
+                    
+                    <a name="M000113"></a><b>RevokeQualification</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000113_source')" id="l_M000113_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/ababec8db46b4a8102f998e7d8c2892f9e98a239/lib/rturk/operations/revoke_qualification.rb#L18" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000113_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/revoke_qualification.rb, line 18</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">RevokeQualification</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">RevokeQualification</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000117">
+                    
+                    <a name="M000117"></a><b>SearchHITs</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000117_source')" id="l_M000117_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8dfd2dc89a54a81e4e70053d914ac69ca4674d55/lib/rturk/operations/search_hits.rb#L40" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000117_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/search_hits.rb, line 40</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">SearchHITs</span>
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">SearchHITs</span>.<span class="ruby-identifier">create</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000119">
+                    
+                    <a name="M000119"></a><b>SendTestEventNotification</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000119_source')" id="l_M000119_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/51e2bc7304b452c8a2c872bf64199d5404082b05/lib/rturk/operations/send_test_event_notification.rb#L14" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000119_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/send_test_event_notification.rb, line 14</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">SendTestEventNotification</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">SendTestEventNotification</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000124">
+                    
+                    <a name="M000124"></a><b>SetHITTypeNotification</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000124_source')" id="l_M000124_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/51e2bc7304b452c8a2c872bf64199d5404082b05/lib/rturk/operations/set_hit_type_notification.rb#L15" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000124_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/set_hit_type_notification.rb, line 15</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">SetHITTypeNotification</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">SetHITTypeNotification</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000121">
+                    
+                    <a name="M000121"></a><b>UnblockWorker</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000121_source')" id="l_M000121_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/97425a33708a95e01dc8ac2549df1f896cc52f45/lib/rturk/operations/unblock_worker.rb#L19" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000121_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/unblock_worker.rb, line 19</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">UnblockWorker</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">UnblockWorker</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000126">
+                    
+                    <a name="M000126"></a><b>UpdateQualificationType</b>(*args)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000126_source')" id="l_M000126_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/baac0823a1bc9b770e5dbe7e32841a67e93c20f1/lib/rturk/operations/update_qualification_type.rb#L33" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000126_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/update_qualification_type.rb, line 33</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-constant">UpdateQualificationType</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">UpdateQualificationType</span>.<span class="ruby-identifier">create</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000168">
+                    
+                    <a name="M000168"></a><b>logger</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000168_source')" id="l_M000168_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/c9b84c3cae283cde0f4bd407cf814ac8c56c1416/lib/rturk.rb#L22" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000168_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk.rb, line 22</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">logger</span>
+      <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">Logger</span>.<span class="ruby-identifier">logger</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000167">
+                    
+                    <a name="M000167"></a><b>sandbox?</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000167_source')" id="l_M000167_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/c9b84c3cae283cde0f4bd407cf814ac8c56c1416/lib/rturk.rb#L18" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000167_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk.rb, line 18</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sandbox?</span>
+      <span class="ruby-ivar">@host</span> <span class="ruby-operator">==</span> <span class="ruby-constant">SANDBOX</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000166">
+                    
+                    <a name="M000166"></a><b>setup</b>(access_key, secret_key, opts ={})
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000166_source')" id="l_M000166_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/c9b84c3cae283cde0f4bd407cf814ac8c56c1416/lib/rturk.rb#L12" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000166_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk.rb, line 12</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setup</span>(<span class="ruby-identifier">access_key</span>, <span class="ruby-identifier">secret_key</span>, <span class="ruby-identifier">opts</span> ={})
+      <span class="ruby-ivar">@access_key</span> = <span class="ruby-identifier">access_key</span>
+      <span class="ruby-ivar">@secret_key</span> = <span class="ruby-identifier">secret_key</span>
+      <span class="ruby-ivar">@host</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-identifier">:sandbox</span>] <span class="ruby-operator">?</span> <span class="ruby-constant">SANDBOX</span> <span class="ruby-operator">:</span> <span class="ruby-constant">PRODUCTION</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_CreateQualificationTypeOperation.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_CreateQualificationTypeOperation.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_CreateQualificationTypeOperation.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;CreateQualificationType&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_OperationsArticle.html&quot; title=&quot;Chapter&amp;nbsp;5.&amp;nbsp;Operations&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_CreateHITOperation.html&quot; title=&quot;CreateHIT&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_DisableHITOperation.html&quot; title=&quot;DisableHIT&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_CreateHITOperation.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_CreateQualificationTypeOperation&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_DisableHITOperation.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_OperationsArticle.html&quot;&gt;Operations&lt;/a&gt; &amp;raquo; &lt;strong&gt;CreateQualificationType&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;CreateQualificationType&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2947&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2950&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2955&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2962&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2967&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2972&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2977&quot;&gt;&lt;/a&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e2982&quot;&gt;Description&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;CreateQualificationType&lt;/code&gt; operation creates a new
+                        Qualification type. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e2990&quot;&gt;Request Parameters&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;
+                        &lt;code class=&quot;function&quot;&gt;CreateQualificationType&lt;/code&gt; accepts parameters common to all
+                        operations. Some common parameters are required. See &lt;a class=&quot;link&quot; href=&quot;ApiReference_CommonParametersArticle.html&quot; title=&quot;Chapter&amp;nbsp;4.&amp;nbsp;Common Parameters&quot;&gt;Common Parameters&lt;/a&gt; for more
+                        information. &lt;/p&gt;&lt;p&gt; The following parameters are specific to the &lt;code class=&quot;function&quot;&gt;CreateQualificationType&lt;/code&gt; operation: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Operation&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The name of the operation&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: CreateQualificationType&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Name&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The name you give to the Qualification type. The type name is
+                                                                used to represent the Qualification to Workers, and to find the type
+                                                                using a Qualification type search. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Constraints: must be unique across all of your Qualification
+                                                                types.&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Description&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; A long description for the Qualification type. On the Amazon
+                                                                Mechanical Turk web site, the long description is displayed when a
+                                                                user examines a Qualification type. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Constraints: Must be less than or equal to 2000
+                                                                characters.&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Keywords&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; One or more words or phrases that describe the Qualification
+                                                                type, separated by commas. The Keywords of a type make the type
+                                                                easier to find during a search. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Constraints: Must be less than or equal to 1000 characters,
+                                                                including commas and spaces.&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;RetryDelayInSeconds&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The number of seconds after requesting a Qualification of the
+                                                                Qualification type that a user must wait before that user can
+                                                                request it again. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: non-negative integer&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Default: None. If not specified, retrys are disabled and users
+                                                                can request a Qualficiation of this type only once, even if the user
+                                                                has not been granted the Qualification. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QualificationTypeStatus&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The initial status of the Qualification type. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: Active | Inactive&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Test&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The questions for the Qualification test a user must answer
+                                                                correctly to obtain a Qualification of this type. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; If this parameter is specified, &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TestDurationInSeconds&lt;/code&gt;&lt;/em&gt; must also be specified. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Type: String. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Default: None. If not specified, the user may request the
+                                                                Qualification without answering any questions. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Constraints: must be a &lt;a class=&quot;link&quot; href=&quot;ApiReference_QuestionFormDataStructureArticle.html&quot; title=&quot;QuestionForm&quot;&gt;QuestionForm&lt;/a&gt; data structure. This parameter cannot be
+                                                                specified if &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AutoGranted&lt;/code&gt;&lt;/em&gt; is
+                                                                &lt;code class=&quot;code&quot;&gt;true&lt;/code&gt;. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AnswerKey&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The answers to the Qualification test specified in the
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Test&lt;/code&gt;&lt;/em&gt; parameter, in the form of an &lt;a class=&quot;link&quot; href=&quot;ApiReference_AnswerKeyDataStructureArticle.html&quot; title=&quot;AnswerKey&quot;&gt;AnswerKey&lt;/a&gt; data structure. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Type: String &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None. If not specified, you must process Qualification
+                                                                requests manually.&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TestDurationInSeconds&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The number of seconds the user has to complete the
+                                                                Qualification test, starting at the time the user requests the
+                                                                Qualification. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Integer&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: Positive integer&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Conditions: Required if the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Test&lt;/code&gt;&lt;/em&gt;
+                                                                parameter is specified. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Conditional&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AutoGranted&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Specifies whether requests for the Qualification type are
+                                                                granted immediately, without prompting the Worker with a
+                                                                Qualification test.&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Boolean&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: &lt;code class=&quot;code&quot;&gt;true&lt;/code&gt; | &lt;code class=&quot;code&quot;&gt;false&lt;/code&gt;&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Constraints: If the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Test&lt;/code&gt;&lt;/em&gt; parameter is
+                                                                specified, this parameter cannot be &lt;code class=&quot;code&quot;&gt;true&lt;/code&gt;. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AutoGrantedValue&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The Qualification value to use for automatically granted
+                                                                Qualifications. This parameter is used only if the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AutoGranted&lt;/code&gt;&lt;/em&gt; parameter is &lt;code class=&quot;code&quot;&gt;true&lt;/code&gt;. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Integer&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: 1&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e3366&quot;&gt;Response Elements&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A successful request for the &lt;code class=&quot;function&quot;&gt;CreateQualificaionType&lt;/code&gt; operation
+                        includes the elements found in the following table: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QualificationType&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The created Qualification type. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Type: a &lt;a class=&quot;link&quot; href=&quot;ApiReference_QualificationTypeDataStructureArticle.html&quot; title=&quot;QualificationType&quot;&gt;QualificationType&lt;/a&gt; data structure. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e3405&quot;&gt;Examples&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following example shows how to use the &lt;code class=&quot;function&quot;&gt;CreateQualificaionType&lt;/code&gt;
+                        operation.&lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e3413&quot;&gt;Sample Request&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following example creates a Qualification type.&lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
+</pre>
+<p>
+&amp;amp;AWSAccessKeyId=<em class=&#8220;replaceable&#8221;><tt>[the
+Requester's Access Key ID]</tt></em> &amp;amp;Version=2008-08-02
+&amp;amp;Operation=CreateQualificationType &amp;amp;Signature=<em
+class=&#8220;replaceable&#8221;><tt>[signature for this request]</tt></em>
+&amp;amp;Timestamp=<em class=&#8220;replaceable&#8221;><tt>[your system's
+local time]</tt></em> &amp;amp;Name=EnglishWritingAbility
+&amp;amp;Description=The%20ability%20to%20write%20and%20edit%20text...
+&amp;amp;QualificationTypeStatus=Active
+</p>
+<pre>
+            &lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e3429&quot;&gt;Sample Response&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following is an example response.&lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;CreateQualificationTypeResponse&amp;gt;
+  &amp;lt;OperationRequest&amp;gt;
+    &amp;lt;RequestId&amp;gt;5218189c-1d7e-49a3-abbf-672fb5e77c66&amp;lt;/RequestId&amp;gt;
+  &amp;lt;/OperationRequest&amp;gt;
+  &amp;lt;QualificationType&amp;gt;
+    &amp;lt;Request&amp;gt;
+      &amp;lt;IsValid&amp;gt;True&amp;lt;/IsValid&amp;gt;
+    &amp;lt;/Request&amp;gt;
+    &amp;lt;QualificationTypeId&amp;gt;ZSPJXD4F1SFZP7YNJWR0&amp;lt;/QualificationTypeId&amp;gt;
+    &amp;lt;CreationTime&amp;gt;2009-07-13T17:26:33Z&amp;lt;/CreationTime&amp;gt;
+    &amp;lt;Name&amp;gt;SampleQualificationTest&amp;lt;/Name&amp;gt;
+    &amp;lt;Description&amp;gt;Description of my qualification test.&amp;lt;/Description&amp;gt;
+    &amp;lt;QualificationTypeStatus&amp;gt;Active&amp;lt;/QualificationTypeStatus&amp;gt;
+    &amp;lt;AutoGranted&amp;gt;0&amp;lt;/AutoGranted&amp;gt;
+  &amp;lt;/QualificationType&amp;gt;
+</pre>
+<p>
+&amp;lt;/CreateQualificationTypeResponse&amp;gt;</pre></div></div></div><div
+class=&#8220;navfooter&#8221;><table width=&#8220;100%&#8221;
+summary=&#8220;Navigation footer&#8221; cellspacing=&#8220;0&#8221;
+cellpadding=&#8220;2&#8221;><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221;><a accesskey=&#8220;p&#8221;
+href=&#8220;ApiReference_CreateHITOperation.html&#8220;><img
+src=&#8220;images/prev.gif&#8220; alt=&#8220;Prev&#8221;></a> </td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a href=&#8220;<a
+href="http://survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_CreateQualificationTypeOperation">Documentation">survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_CreateQualificationTypeOperation">Documentation</a>
+Feedback</a><br><a href=&#8220;copyrightinfo.html&#8220;>Copyright
+Information</a></td><td width=&#8220;30%&#8221; align=&#8220;right&#8221;>
+<a accesskey=&#8220;n&#8221;
+href=&#8220;ApiReference_DisableHITOperation.html&#8220;><img
+src=&#8220;images/next.gif&#8220;
+alt=&#8220;Next&#8221;></a></td></tr><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221; valign=&#8220;top&#8221;>&amp;nbsp;</td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a
+accesskey=&#8220;h&#8221; href=&#8220;top&#8220;><img
+src=&#8220;images/home.gif&#8220; alt=&#8220;Home&#8221;></a></td><td
+width=&#8220;30%&#8221; align=&#8220;right&#8221;
+valign=&#8220;top&#8221;>&amp;nbsp;</td></tr></table></div></body></html>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_QuestionFormDataStructureArticle.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_QuestionFormDataStructureArticle.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_QuestionFormDataStructureArticle.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;QuestionForm&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_QuestionAnswerDataArticle.html&quot; title=&quot;Chapter&amp;nbsp;7.&amp;nbsp;Question and Answer Data&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_XMLParameterValuesArticle.html&quot; title=&quot;Using XML Parameter Values&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_FormattedContentXHTMLArticle.html&quot; title=&quot;Formatted Content: XHTML&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_XMLParameterValuesArticle.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_QuestionFormDataStructureArticle&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_FormattedContentXHTMLArticle.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_QuestionAnswerDataArticle.html&quot;&gt;Question and Answer Data&lt;/a&gt; &amp;raquo; &lt;strong&gt;QuestionForm&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;QuestionForm&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e17003&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e17006&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e17011&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e17016&quot;&gt;&lt;/a&gt;&lt;div class=&quot;highlights&quot;&gt;&lt;p&gt;&lt;strong&gt;Topics&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_QuestionFormDataStructureArticle.html#d0e17024&quot;&gt;Description&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_QuestionFormDataStructureArticle.html#d0e17095&quot;&gt;QuestionForm Structure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_QuestionFormDataStructureArticle.html#d0e17327&quot;&gt;Content Structure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_QuestionFormDataStructureArticle.html#d0e18171&quot;&gt;Answer Specification&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_QuestionFormDataStructureArticle.html#d0e18973&quot;&gt;Example&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e17024&quot;&gt;Description&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; data format describes one or more
+                        &lt;span class=&quot;emphasis&quot;&gt;&lt;em&gt;questions&lt;/em&gt;&lt;/span&gt; for a HIT, or for a Qualification test. It contains instructions
+                        and data Workers use to answer the questions, and a set of one or more form fields, which are
+                        rendered as a web form for a Worker to fill out and submit. &lt;/p&gt;&lt;p&gt; A &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; is a string value that consists of XML data. The XML data
+                        must conform to the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; schema. All elements in a
+                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; belong to a namespace whose name is identical to the URL
+                        of the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; schema document. See &lt;a class=&quot;link&quot; href=&quot;ApiReference_WsdlLocationArticle.html&quot; title=&quot;Chapter&amp;nbsp;3.&amp;nbsp;WSDL and Schema Locations&quot;&gt;WSDL and Schema Locations&lt;/a&gt; for the location
+                        of this schema. &lt;/p&gt;&lt;div class=&quot;tip&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Tip&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Tip]&quot; src=&quot;images/tip.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Tip&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p class=&quot;simpara&quot;&gt; For information about creating HITs that use your own web site in a frame instead of
+                                questions, see &lt;a class=&quot;link&quot; href=&quot;ApiReference_ExternalQuestionArticle.html&quot; title=&quot;ExternalQuestion&quot;&gt;the ExternalQuestion data
+                                        structure&lt;/a&gt;. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; data structure is a value in a &lt;a class=&quot;link&quot; href=&quot;ApiReference_HITDataStructureArticle.html&quot; title=&quot;HIT&quot;&gt;HIT data structure&lt;/a&gt; and a value in a
+                                &lt;a class=&quot;link&quot; href=&quot;ApiReference_QualificationTypeDataStructureArticle.html&quot; title=&quot;QualificationType&quot;&gt; QualificationType data
+                                structure&lt;/a&gt;. The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; data structure is used as a
+                        parameter value for the following operations: &lt;/p&gt;&lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;p&gt;
+                                        &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt;
+                                &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;
+                                        &lt;code class=&quot;function&quot;&gt;CreateQualificationType&lt;/code&gt;
+                                &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;
+                                        &lt;code class=&quot;function&quot;&gt;UpdateQualificationType&lt;/code&gt;
+                                &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p&gt; For more information about using XML data as a parameter or return value, see &lt;a class=&quot;link&quot; href=&quot;ApiReference_XMLParameterValuesArticle.html&quot; title=&quot;Using XML Parameter Values&quot;&gt;Using XML Parameter Values&lt;/a&gt;. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e17095&quot;&gt;QuestionForm Structure&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The top-most element of the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; data structure is a
+                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; element. This element contains optional
+                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Overview&lt;/code&gt;&lt;/em&gt; elements and one or more &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt;
+                        elements. There can be any number of these two element types listed in any order. The following
+                        example structure has an &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Overview&lt;/code&gt;&lt;/em&gt; element and a
+                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt; element followed by a second &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Overview&lt;/code&gt;&lt;/em&gt;
+                        element and &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt; element&amp;#8212;all within the same
+                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt;. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;QuestionForm xmlns=&quot;&lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[the QuestionForm schema URL]&lt;/code&gt;&lt;/em&gt;&quot;&amp;gt;
+  &amp;lt;Overview&amp;gt;
+    &lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[...]&lt;/code&gt;&lt;/em&gt;
+  &amp;lt;/Overview&amp;gt;
+  &amp;lt;Question&amp;gt;
+    &lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[...]&lt;/code&gt;&lt;/em&gt;
+  &amp;lt;/Question&amp;gt;
+  &amp;lt;Overview&amp;gt;
+    &lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[...]&lt;/code&gt;&lt;/em&gt;
+  &amp;lt;/Overview&amp;gt;
+  &amp;lt;Question&amp;gt;
+    &lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[...]&lt;/code&gt;&lt;/em&gt;
+  &amp;lt;/Question&amp;gt;
+  &lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[...]&lt;/code&gt;&lt;/em&gt;
+</pre>
+<p>
+&amp;lt;/QuestionForm&amp;gt;</pre><p> The <em
+class=&#8220;parameter&#8221;><tt>Overview</tt></em> element describes
+instructions and information, and
+</p>
+<pre>
+                        presents them separately from the set of questions. It can contain any kind of informational
+                        content, as described below. If omitted, no overview text is displayed above the questions. &lt;/p&gt;&lt;p&gt; Each &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt; element can contain the elements described in the
+                        following table. See also the example below the table. &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionIdentifier&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; An identifier for the question. This identifier is used to associate the
+                                                                Worker's answers with the question in the answer data. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DisplayName&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; A name for the question, displayed as a prominent heading. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;IsRequired&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Specifies whether the Worker must provide an answer for this question to
+                                                                successfully submit the form. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Boolean&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: false&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: true | false&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionContent&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The instructions and data specific to this question, such as the text of
+                                                                the question. It can contain any kind of informational content, as described
+                                                                in the &lt;em class=&quot;citetitle&quot;&gt;Content Structure&lt;/em&gt; section below. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Content structure&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AnswerSpecification&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; A structure that describes the field type and possible values for the
+                                                                answer to this question, as described in the &lt;em class=&quot;citetitle&quot;&gt;Answer
+                                                                Specification&lt;/em&gt; section below. This element controls how the form
+                                                                field is rendered and specifies which values are valid answers for this
+                                                                question. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: An answer specification structure&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Valid Values: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FreeTextAnswer&lt;/code&gt;&lt;/em&gt; |
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;SelectionAnswer&lt;/code&gt;&lt;/em&gt; |
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FileUploadAnswer&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; For example: &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;  &amp;lt;Question&amp;gt;
+    &amp;lt;QuestionIdentifier&amp;gt;my_question_id&amp;lt;/QuestionIdentifier&amp;gt;
+    &amp;lt;DisplayName&amp;gt;My Question&amp;lt;/DisplayName&amp;gt;
+    &amp;lt;IsRequired&amp;gt;true&amp;lt;/IsRequired&amp;gt;
+    &amp;lt;QuestionContent&amp;gt;
+      &lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[...]&lt;/code&gt;&lt;/em&gt;
+    &amp;lt;/QuestionContent&amp;gt;
+    &amp;lt;AnswerSpecification&amp;gt;
+      &lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[...]&lt;/code&gt;&lt;/em&gt;
+    &amp;lt;/AnswerSpecification&amp;gt;
+  &amp;lt;/Question&amp;gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e17327&quot;&gt;Content Structure&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Overview&lt;/code&gt;&lt;/em&gt; elements and the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionContent&lt;/code&gt;&lt;/em&gt;
+                        elements of a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; can contain different types of information. For
+                        example, you might include a paragraph of text and an image in your HIT's overview. &lt;/p&gt;&lt;p&gt; Each kind of information is definded by a corresponding element. These elements can appear in
+                        any number, in any order. The content elements are rendered in the order in which they occur in
+                        the containing element. &lt;/p&gt;&lt;p&gt; Following are the allowed information types: &lt;/p&gt;&lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Title&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Text&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;List&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Binary&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Application&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;EmbeddedBinary&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FormattedContent&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p&gt; Each of these types are described in detail in the following subsections. A full example
+                        showing the use of the elements and information types is at the end of the section. &lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e17369&quot;&gt;Title&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Title&lt;/code&gt;&lt;/em&gt; element specifies a string to be rendered as a title or
+                                heading. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;Title&amp;gt;The Next Move&amp;lt;/Title&amp;gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e17379&quot;&gt;Text&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Text&lt;/code&gt;&lt;/em&gt; element specifies a block of text to be rendered as a
+                                paragraph. Only plain text is allowed. HTML is not allowed. If HTML characters (such as angle
+                                brackets) are included in the data, they appear verbatim in the web output. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;Text&amp;gt;What is the best next move for &quot;X&quot; in this game of Tic-Tac-Toe?&amp;lt;/Text&amp;gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e17389&quot;&gt;List&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;List&lt;/code&gt;&lt;/em&gt; element displays a bulleted list of items. Items are
+                                specified using one or more &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ListItem&lt;/code&gt;&lt;/em&gt; elements inside the
+                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;List&lt;/code&gt;&lt;/em&gt;. The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ListItem&lt;/code&gt;&lt;/em&gt; element is a string. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;List&amp;gt;
+  &amp;lt;ListItem&amp;gt;It must be a valid move.&amp;lt;/ListItem&amp;gt;
+  &amp;lt;ListItem&amp;gt;&quot;X&quot; cannot resign.&amp;lt;/ListItem&amp;gt;
+</pre>
+<p>
+&amp;lt;/List&amp;gt;</pre></div><div class=&#8220;section&#8221;
+lang=&#8220;en&#8221;><div class=&#8220;titlepage&#8221;><div><div><h3
+class=&#8220;title&#8221;
+id=&#8220;d0e17408&#8221;>Binary</h3></div></div></div><p> A <em
+class=&#8220;parameter&#8221;><tt>Binary</tt></em> element specifies
+non-textual data of some kind, such as an
+</p>
+<pre>
+                                image, audio, or video. The elements listed in the following table are required and must be
+                                entered in the order shown here. &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MimeType&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Specifies the type of the data.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MimeType&lt;/code&gt;&lt;/em&gt; element&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Child Elements:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Type &amp;#8212;&lt;/span&gt;&lt;/strong&gt; A required string that specifies the type of the data.
+                                                                                                        The possible values are &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;image&lt;/code&gt;&lt;/strong&gt;,
+                                                                                                        &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;audio&lt;/code&gt;&lt;/strong&gt;, or
+                                                                                                        &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;video&lt;/code&gt;&lt;/strong&gt;. &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;SubType &amp;#8212;&lt;/span&gt;&lt;/strong&gt;An optional string that specifies the format of the item,
+                                                                                                        such as &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;gif&lt;/code&gt;&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DataURL&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The data itself specified with a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DataURL&lt;/code&gt;&lt;/em&gt;
+                                                                        element that contains a valid HTTP URL. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DataURL&lt;/code&gt;&lt;/em&gt; element&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AltText&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The text that should appear if the data cannot be rendered in the
+                                                                        browser. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;pre class=&quot;programlisting&quot;&gt;
+</pre>
+<p>
+&amp;lt;Binary&amp;gt;
+</p>
+<pre>
+  &amp;lt;MimeType&amp;gt;
+    &amp;lt;Type&amp;gt;image&amp;lt;/Type&amp;gt;
+    &amp;lt;SubType&amp;gt;gif&amp;lt;/SubType&amp;gt;
+  &amp;lt;/MimeType&amp;gt;
+  &amp;lt;DataURL&amp;gt;http://tictactoe.amazon.com/game/01523/board.gif&amp;lt;/DataURL&amp;gt;
+  &amp;lt;AltText&amp;gt;The game board, with &quot;X&quot; to move.&amp;lt;/AltText&amp;gt;
+</pre>
+<p>
+&amp;lt;/Binary&amp;gt;
+</p>
+<pre>
+    &lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e17549&quot;&gt;Application&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; An &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Application&lt;/code&gt;&lt;/em&gt; element specifies an embedded application. It
+                                contains either a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;JavaApplet&lt;/code&gt;&lt;/em&gt; element or a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Flash&lt;/code&gt;&lt;/em&gt;
+                                element. &lt;/p&gt;&lt;p&gt; You can specify zero or more parameters to pass to your Java applet or Flash application
+                                when it is opened in the web page. For a HIT, in addition to the parameters you specify,
+                                Amazon Mechanical Turk includes two parameters specific to the HIT: &lt;code class=&quot;code&quot;&gt;hitId&lt;/code&gt; and
+                                        &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt;. The &lt;code class=&quot;code&quot;&gt;hitId&lt;/code&gt; parameter is equal to the ID of the HIT.
+                                The &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt; parameter is equal to the ID of the assignment if the Worker has
+                                accepted the HIT, or equal to &lt;code class=&quot;code&quot;&gt;ASSIGNMENT_ID_NOT_AVAILABLE&lt;/code&gt; if the Worker is only
+                                previewing the HIT. &lt;/p&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;JavaApplet&lt;/code&gt;&lt;/em&gt; element includes the elements described in the
+                                following table: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AppletPath&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The URL path to the directory that contains Java classes for the
+                                                                        applet.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: URL&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AppletFilename&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The name of the class file that contains the applet code, which is
+                                                                        located in the path specified by &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AppletPath&lt;/code&gt;&lt;/em&gt;.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Width&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The width of the bounding box for the applet.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Height&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The height of the bounding box for the applet.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ApplicationParameter&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The parameters for the applet.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ApplicationParameter&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Child Elements:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Name&amp;#8212;&lt;/span&gt;&lt;/strong&gt; A required string that specifies the name of the
+                                                                                                        parameter &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Value&amp;#8212;&lt;/span&gt;&lt;/strong&gt; A required string that specifies the value of the
+                                                                                                        parameter &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Flash&lt;/code&gt;&lt;/em&gt; element includes the elements described in the following
+                                table: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FlashMovieURL&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The URL of the Flash movie file.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: URL&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Width&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The width of the bounding box for the Flash movie.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Height&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The height of the bounding box for the Flash movie.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ApplicationParameter&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The parameters for the Flash movie. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ApplicationParameter&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Child Elements:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Name &amp;#8212;&lt;/span&gt;&lt;/strong&gt; A required string that specifies the name of the
+                                                                                                        parameter &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Value&amp;#8212;&lt;/span&gt;&lt;/strong&gt; A required string that specifies the value of the
+                                                                                                        parameter &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;Application&amp;gt;
+  &amp;lt;JavaApplet&amp;gt;
+    &amp;lt;AppletPath&amp;gt;http://tictactoe.amazon.com/applets/&amp;lt;/AppletPath&amp;gt;
+    &amp;lt;AppletFilename&amp;gt;GameViewer.class&amp;lt;/AppletFilename&amp;gt;
+    &amp;lt;Width&amp;gt;400&amp;lt;/Width&amp;gt;
+    &amp;lt;Height&amp;gt;300&amp;lt;/Height&amp;gt;
+    &amp;lt;ApplicationParameter&amp;gt;
+      &amp;lt;Name&amp;gt;game_id&amp;lt;Name&amp;gt;
+      &amp;lt;Value&amp;gt;01523&amp;lt;/Value&amp;gt;
+    &amp;lt;/ApplicationParameter&amp;gt;
+  &amp;lt;/JavaApplet&amp;gt;
+</pre>
+<p>
+&amp;lt;/Application&amp;gt;</pre></div><div class=&#8220;section&#8221;
+lang=&#8220;en&#8221;><div class=&#8220;titlepage&#8221;><div><div><h3
+class=&#8220;title&#8221;
+id=&#8220;d0e17905&#8221;>EmbeddedBinary</h3></div></div></div><p> An <em
+class=&#8220;parameter&#8221;><tt>EmbeddedBinary</tt></em> element
+specifies an external object of
+</p>
+<pre>
+                                non-textual data of some kind, such as an image, audio or video, that displays in your
+                                browser. The elements listed in the following table are required and must be entered in the
+                                order shown here. &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;EmbeddedMimeType&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Specifies the type of the data.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;EmbeddedMimeType&lt;/code&gt;&lt;/em&gt; element&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Child Elements:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Type &amp;#8212;&lt;/span&gt;&lt;/strong&gt; A required string that specifies the type of the data.
+                                                                                                        The possible values are &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;image&lt;/code&gt;&lt;/strong&gt;,
+                                                                                                        &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;audio&lt;/code&gt;&lt;/strong&gt;, or
+                                                                                                        &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;video&lt;/code&gt;&lt;/strong&gt;.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;SubType &amp;#8212;&lt;/span&gt;&lt;/strong&gt;An optional string that specifies the format of the item,
+                                                                                                        such as &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;gif&lt;/code&gt;&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DataURL&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The data itself specified by a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DataURL&lt;/code&gt;&lt;/em&gt;
+                                                                        element that contains a valid HTTP URL &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DataURL&lt;/code&gt;&lt;/em&gt; element&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AltText&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The text that should appear if the data cannot be rendered in the
+                                                                        browser. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Width&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The width of the bounding box for the object. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Height&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The height of the bounding box for the object. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ApplicationParameter&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The parameters for the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;EmbeddedBinary&lt;/code&gt;&lt;/em&gt; object. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ApplicationParameter&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Child elements:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Name &amp;#8212;&lt;/span&gt;&lt;/strong&gt; A required string that specifies the name of the
+                                                                                                        parameter&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Value&amp;#8212;&lt;/span&gt;&lt;/strong&gt; A required string that specifies the value of the
+                                                                                                        parameter&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;EmbeddedBinary&amp;gt;
+  &amp;lt;EmbeddedMimeType&amp;gt;
+    &amp;lt;Type&amp;gt;image&amp;lt;/Type&amp;gt;
+    &amp;lt;SubType&amp;gt;gif&amp;lt;/SubType&amp;gt;
+  &amp;lt;/EmbeddedMimeType&amp;gt;
+  &amp;lt;DataURL&amp;gt;http://tictactoe.amazon.com/game/01523/board.gif&amp;lt;/DataURL&amp;gt;
+  &amp;lt;AltText&amp;gt;The game board, with &quot;X&quot; to move.&amp;lt;/AltText&amp;gt;
+  &amp;lt;Width&amp;gt;400&amp;lt;/Width&amp;gt;
+  &amp;lt;Height&amp;gt;300&amp;lt;/Height&amp;gt;
+  &amp;lt;ApplicationParameter&amp;gt;
+    &amp;lt;Name&amp;gt;game_id&amp;lt;Name&amp;gt;
+    &amp;lt;Value&amp;gt;01523&amp;lt;/Value&amp;gt;
+  &amp;lt;/ApplicationParameter&amp;gt;
+</pre>
+<p>
+&amp;lt;/EmbeddedBinary&amp;gt;</pre></div><div class=&#8220;section&#8221;
+lang=&#8220;en&#8221;><div class=&#8220;titlepage&#8221;><div><div><h3
+class=&#8220;title&#8221;
+id=&#8220;d0e18149&#8221;>FormattedContent</h3></div></div></div><p> For
+finer control over the display of your HIT information, you can specify a
+</p>
+<pre>
+                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FormattedContent&lt;/code&gt;&lt;/em&gt; element. Formatted content is a block of text with
+                                formatting information specified using XHTML tags. For example, you can use XHTML tags to
+                                specify that certain words appear in a boldface font or to include a table in your HIT
+                                information. &lt;/p&gt;&lt;p&gt; Only a limited subset of XHTML is supported. For more information on the creating and
+                                validating XHTML formatted content, see &lt;a class=&quot;link&quot; href=&quot;ApiReference_FormattedContentXHTMLArticle.html&quot; title=&quot;Formatted Content: XHTML&quot;&gt;Formatted Content: XHTML&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; The value of the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FormattedContent&lt;/code&gt;&lt;/em&gt; element must be specified as an
+                                XML CDATA block. CDATA tells the web service that the XHTML elements are not part of the
+                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; data schema. For example, the following describes a
+                                paragraph of formatted text: &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;FormattedContent&amp;gt;&amp;lt;![CDATA[
+  &amp;lt;p&amp;gt;This is a paragraph with &amp;lt;b&amp;gt;bold text&amp;lt;/b&amp;gt;,
+  &amp;lt;i&amp;gt;italic text&amp;lt;/i&amp;gt;, and &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;bold italic text&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;.&amp;lt;/p&amp;gt;
+</pre>
+<p>
+]]&amp;gt;&amp;lt;/FormattedContent&amp;gt;</pre></div></div><div
+class=&#8220;section&#8221; lang=&#8220;en&#8221;><div
+class=&#8220;titlepage&#8221;><div><div><h2 class=&#8220;title&#8221;
+style=&#8220;clear: both&#8221; id=&#8220;d0e18171&#8221;>Answer
+Specification</h2></div></div></div><a class=&#8220;indexterm&#8221;
+name=&#8220;d0e18174&#8221;></a><a class=&#8220;indexterm&#8221;
+name=&#8220;d0e18179&#8221;></a><a class=&#8220;indexterm&#8221;
+name=&#8220;d0e18184&#8221;></a><p> The <em
+class=&#8220;parameter&#8221;><tt>AnswerSpecification</tt></em> element
+describes the format and possible values
+</p>
+<pre>
+                        for answers to a question. It contains a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FreeTextAnswer&lt;/code&gt;&lt;/em&gt; element, which
+                        describes a text field; a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;SelectionAnswer&lt;/code&gt;&lt;/em&gt; element, which describes a
+                        multiple choice field; or a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FileUploadAnswer&lt;/code&gt;&lt;/em&gt;, which prompts the Worker to
+                        upload a file as the answer to the question. &lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e18203&quot;&gt;FreeTextAnswer&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FreeTextAnswer&lt;/code&gt;&lt;/em&gt; element describes a text field and constraints on
+                                its possible values. It includes the elements described in the following table: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Constraints&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Describes the constraints on the allowed values for the text field.
+                                                                        This element is described in the next table. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Constraints&lt;/code&gt;&lt;/em&gt; element&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DefaultText&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Specifies default text. This value appears in the form when it is
+                                                                        rendered, and is accepted as the answer if the Worker does not change it. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: An empty value&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;NumberOfLinesSuggestion&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Specifies how tall the form field should be, if possible. The field
+                                                                        might be rendered as a text box with this many lines, depending on the
+                                                                        device the Worker is using to see the form. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: Integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: 1&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p class=&quot;simpara&quot;&gt; A Qualification test that is to be graded automatically using an answer key cannot
+                                        have any free-text questions. An answer key can only match multiple-choice questions and
+                                        cannot match free-text fields. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The optional &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Constraints&lt;/code&gt;&lt;/em&gt; element describes constraints on the
+                                allowed values for the text field. If no constraints are specified, any value is accepted for
+                                the field. &lt;/p&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Constraints&lt;/code&gt;&lt;/em&gt; element includes the elements described in the
+                                following table: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;IsNumeric&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Specifies that the value entered must be numeric.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: empty element&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Attributes:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;minValue &amp;#8212;&lt;/span&gt;&lt;/strong&gt;An optional integer that specifies the minimum value
+                                                                                                        allowed&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;maxValue &amp;#8212;&lt;/span&gt;&lt;/strong&gt;An optional integer that specifies the maximum value
+                                                                                                        allowed&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Length&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Specifies the length range of the answer.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: empty element&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Attributes:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;minLength&amp;#8212;&lt;/span&gt;&lt;/strong&gt; An optional non-negative integer that specifies the
+                                                                                                        minimum number of characters &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;maxLength &amp;#8212;&lt;/span&gt;&lt;/strong&gt; An optional positive integer that specifies the maximum
+                                                                                                        number of characters &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AnswerFormatRegex&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Specifies that JavaScript validates the answer string against a
+                                                                        given pattern. &lt;/p&gt;
+                                                                &lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p class=&quot;simpara&quot;&gt; A limitation of this approach is that Workers who have disabled
+                                                                                JavaScript on their browsers cannot validate their answers. Although
+                                                                                this is uncommon, you might want to caution your Workers. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: empty element&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Attributes:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;regex&amp;#8212;&lt;/span&gt;&lt;/strong&gt;A required string that specifies the regular expression
+                                                                                                        that JavaScript uses to validate against the Workers'
+                                                                                                        entered values&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;errorText&amp;#8212;&lt;/span&gt;&lt;/strong&gt;An optional string that allows you to edit the content of
+                                                                                                        errors displayed to the Worker on the Worker web site if
+                                                                                                        the regex validation fails. If this attribute is not
+                                                                                                        specified, the error displayed is &quot;Invalid input
+                                                                                                        supplied.&quot; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;flags&amp;#8212;&lt;/span&gt;&lt;/strong&gt;An optional string with the value &lt;code class=&quot;code&quot;&gt;i&lt;/code&gt; which
+                                                                                                        specifies that case is ignored when matching characters
+                                                                                                &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Constraints&lt;/code&gt;&lt;/em&gt; element can contain multiple
+                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AnswerFormatRegex&lt;/code&gt;&lt;/em&gt; elements. All
+                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AnswerFormatRegex&lt;/code&gt;&lt;/em&gt; constraints must be satisfied before the Worker can
+                                submit the HIT. For more information about JavaScript RegExp and how to use it, go to the
+                                        &lt;a class=&quot;ulink&quot; href=&quot;http://devedge-temp.mozilla.org/library/manuals/2000/javascript/1.5/reference/contents.html&quot; target=&quot;_blank&quot;&gt; Core JavaScript Reference&lt;/a&gt; at Mozilla.org. &lt;/p&gt;&lt;p&gt; The following examples demonstrate how to use the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FreeTextAnswer&lt;/code&gt;&lt;/em&gt;
+                                element. &lt;/p&gt;&lt;p&gt; If you want a 3-digit positive integer between 100 and 999, use the following:
+                                &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;
+</pre>
+<p>
+&amp;lt;FreeTextAnswer&amp;gt;
+</p>
+<pre>
+  &amp;lt;Constraints&amp;gt;
+    &amp;lt;IsNumeric minValue=&quot;100&quot; maxValue=&quot;999&quot;/&amp;gt;
+    &amp;lt;Length minLength=&quot;3&quot; maxLength=&quot;3&quot;/&amp;gt;
+  &amp;lt;/Constraints&amp;gt;
+</pre>
+<p>
+&amp;lt;/FreeTextAnswer&amp;gt;
+</p>
+<pre>
+       &lt;/pre&gt;&lt;p&gt;
+                        &lt;/p&gt;&lt;p&gt; If you want a 3-digit number that includes decimals, use the following:
+                                &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;
+</pre>
+<p>
+&amp;lt;FreeTextAnswer&amp;gt;
+</p>
+<pre>
+  &amp;lt;Constraints&amp;gt;
+     &amp;lt;IsNumeric/&amp;gt;
+     &amp;lt;Length minLength=&quot;3&quot; maxLength=&quot;3&quot;/&amp;gt;
+  &amp;lt;/Constraints&amp;gt;
+</pre>
+<p>
+&amp;lt;/FreeTextAnswer&amp;gt;
+</p>
+<pre>
+       &lt;/pre&gt;&lt;p&gt;
+                        &lt;/p&gt;&lt;p&gt; If you want to ensure that there is some text, use the following example. The
+                                        &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;minLength&lt;/code&gt;&lt;/strong&gt; attribute includes whitespaces in the character count.
+                                &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;
+</pre>
+<p>
+&amp;lt;FreeTextAnswer&amp;gt;
+</p>
+<pre>
+  &amp;lt;Constraints&amp;gt;
+    &amp;lt;Length minLength=&quot;2&quot; /&amp;gt;
+    &amp;lt;AnswerFormatRegex regex=&quot;\S&quot; errorText=&quot;The content cannot be blank.&quot;/&amp;gt;
+  &amp;lt;/Constraints&amp;gt;
+</pre>
+<p>
+&amp;lt;/FreeTextAnswer&amp;gt;
+</p>
+<pre>
+       &lt;/pre&gt;&lt;p&gt;
+                        &lt;/p&gt;&lt;p&gt; If you specify the &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;minLength&lt;/code&gt;&lt;/strong&gt; attribute, it is the same as if the
+                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt; IsRequired &lt;/code&gt;&lt;/em&gt; element is &lt;code class=&quot;code&quot;&gt;true&lt;/code&gt;. If you want tp allow an
+                                        &lt;span class=&quot;emphasis&quot;&gt;&lt;em&gt;optional&lt;/em&gt;&lt;/span&gt; string that must be at least two characters, use the
+                                following:
+                                &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;
+</pre>
+<p>
+&amp;lt;FreeTextAnswer&amp;gt;
+</p>
+<pre>
+  &amp;lt;Constraints&amp;gt;
+    &amp;lt;AnswerFormatRegex regex=&quot;(^$|\S{2,})&quot;
+     errorText=&quot;You must enter at least two characters.&quot;/&amp;gt;
+  &amp;lt;/Constraints&amp;gt;
+</pre>
+<p>
+&amp;lt;/FreeTextAnswer&amp;gt;
+</p>
+<pre>
+    &lt;/pre&gt;&lt;p&gt;
+                        &lt;/p&gt;&lt;p&gt; To request a US phone number in the format 1-nnn-nnn-nnnn, where &quot;1-&quot; is
+                                optional, use the following:
+                                &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;
+</pre>
+<p>
+&amp;lt;FreeTextAnswer&amp;gt;
+</p>
+<pre>
+  &amp;lt;Constraints&amp;gt;
+    &amp;lt;AnswerFormatRegex
+     regex=&quot;^(1[- ]?)?(\([2-9]\d{2}\)\s*|[2-9]\d{2}-?)[2-9]\d{2}-?\d{4}$)&quot;
+     errorText=&quot;You must enter a US phone number in the format
+     1-555-555-1234 or 555-555-1234.&quot;/&amp;gt;
+  &amp;lt;/Constraints&amp;gt;
+</pre>
+<p>
+&amp;lt;/FreeTextAnswer&amp;gt;
+</p>
+<pre>
+    &lt;/pre&gt;&lt;p&gt;
+                        &lt;/p&gt;&lt;p&gt; If you want an answer that contains a date formatted as yyyy-mm-dd, use the following:
+                                &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;
+</pre>
+<p>
+&amp;lt;FreeTextAnswer&amp;gt;
+</p>
+<pre>
+  &amp;lt;Constraints&amp;gt;
+    &amp;lt;AnswerFormatRegex regex=&quot;^[12][0-9]{3}-[01]?\d-[0-3]?\d$&quot;
+     errorText=&quot;You must enter a date with the format yyyy-mm-dd.&quot;/&amp;gt;
+  &amp;lt;/Constraints&amp;gt;
+</pre>
+<p>
+&amp;lt;/FreeTextAnswer&amp;gt;
+</p>
+<pre>
+    &lt;/pre&gt;&lt;p&gt;
+                        &lt;/p&gt;&lt;p&gt; If you want an answer that contains &quot;regex&quot; and variations including
+                                RegEx, REGex, and RegExes, use the following:
+                                &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;
+</pre>
+<p>
+&amp;lt;FreeTextAnswer&amp;gt;
+</p>
+<pre>
+  &amp;lt;Constraints&amp;gt;
+    &amp;lt;AnswerFormatRegex regex=&quot;regex&quot; flags=&quot;i&quot;
+     errorText=&quot;You must enter 'regex'.&quot;/&amp;gt;
+  &amp;lt;/Constraints&amp;gt;
+</pre>
+<p>
+&amp;lt;/FreeTextAnswer&amp;gt;
+</p>
+<pre>
+    &lt;/pre&gt;&lt;p&gt;
+                        &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e18558&quot;&gt;SelectionAnswer&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;SelectionAnswer&lt;/code&gt;&lt;/em&gt; describes a multiple-choice question. Depending on
+                                the element defined, the Worker might be able to select zero, one, or multiple items from a
+                                set list as the answer to the question. &lt;/p&gt;&lt;p&gt; A &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;SelectionAnswer&lt;/code&gt;&lt;/em&gt; element includes the elements described in the
+                                following table: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MinSelectionCount&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Specifies the minimum number of selections allowed for a valid
+                                                                        answer. This value can range from 0 to the number of selections. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: non-negative Integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: 1&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxSelectionCount&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Specifies the maximum number of selections allowed for a valid
+                                                                        answer. This value can range from 1 to the number of selections. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: positive Integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: 1&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;StyleSuggestions&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Specifies what style of multiple-choice form field to use when
+                                                                        displaying the question to the Worker. The field might not use the
+                                                                        suggested style, depending on the device the Worker is using to see the
+                                                                        form. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Valid Values:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;radiobutton&amp;#8212;&lt;/span&gt;&lt;/strong&gt; Can be used if &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxSelectionCount&lt;/code&gt;&lt;/em&gt;
+                                                                                                        is &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;1&lt;/code&gt;&lt;/strong&gt;, because it restricts the user
+                                                                                                        to selecting either zero or one item from the list &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;checkbox&amp;#8212;&lt;/span&gt;&lt;/strong&gt; Allows multiple selections, but can be restricted by
+                                                                                                        using the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxSelectionCount&lt;/code&gt;&lt;/em&gt; element
+                                                                                                &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;list&amp;#8212;&lt;/span&gt;&lt;/strong&gt; Allows multiple selections, but can be restricted by
+                                                                                                        using the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxSelectionCount&lt;/code&gt;&lt;/em&gt; element
+                                                                                                &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;dropdown&amp;#8212;&lt;/span&gt;&lt;/strong&gt; Can be used if &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxSelectionCount&lt;/code&gt;&lt;/em&gt;
+                                                                                                        is &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;1&lt;/code&gt;&lt;/strong&gt;, because it restricts the user
+                                                                                                        to selecting either zero or one item from the list &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;combobox&amp;#8212;&lt;/span&gt;&lt;/strong&gt; Allows multiple selections, but can be restricted by
+                                                                                                        using the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxSelectionCount&lt;/code&gt;&lt;/em&gt; element
+                                                                                                &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;multichooser&amp;#8212;&lt;/span&gt;&lt;/strong&gt; Allows multiple selections, but can be restricted by
+                                                                                                        using the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxSelectionCount&lt;/code&gt;&lt;/em&gt; element
+                                                                                                &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Selections&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Specifies the answer selections.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Selections&lt;/code&gt;&lt;/em&gt; structure&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Child elements:&lt;/p&gt;
+                                                                &lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;Selection&amp;#8212;&lt;/span&gt;&lt;/strong&gt; Specifies an answer selection. This element is described
+                                                                                                        fully in the next table. &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div class=&quot;segmentedlist&quot;&gt;&lt;div class=&quot;seglistitem&quot;&gt;&lt;div class=&quot;seg&quot;&gt;&lt;strong&gt;&lt;span class=&quot;segtitle&quot;&gt;OtherSelection&amp;#8212;&lt;/span&gt;&lt;/strong&gt; An optional text field to display below the selection
+                                                                                                        list that allows the Worker to enter an alternate answer
+                                                                                                        that does not appear in the list of selections. The
+                                                                                                        contents of this element are similar to
+                                                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FreeTextAnswer&lt;/code&gt;&lt;/em&gt;. &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; A Qualification test that you want to grade automatically
+                                                                                                using an answer key cannot have an
+                                                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;OtherSelection&lt;/code&gt;&lt;/em&gt; field for a multiple
+                                                                                                choice question. An answer key can only match multiple-choice
+                                                                                                questions and cannot match free-text fields. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Selections&lt;/code&gt;&lt;/em&gt; element lists the selection options available. It
+                                contains one or more &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Selection&lt;/code&gt;&lt;/em&gt; elements, one for each possible answer
+                                in the set. The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Selection&lt;/code&gt;&lt;/em&gt; element includes the elements described in
+                                the following table: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;SelectionIdentifier&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; A unique alphanumeric string that is in the answer data if this
+                                                                        selection is chosen. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; One of the following elements: &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Text&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Contains the content of the selected item.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td class=&quot;auto-generated&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FormattedContent&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; A block of text formatted using XHTML tags that contains the content
+                                                                        of the selected item. For more information about this format, see &lt;a class=&quot;link&quot; href=&quot;ApiReference_FormattedContentXHTMLArticle.html&quot; title=&quot;Formatted Content: XHTML&quot;&gt;Formatted Content: XHTML&lt;/a&gt;. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td class=&quot;auto-generated&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Binary&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Contains the content of the selected item.&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Binary&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td class=&quot;auto-generated&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The following example shows a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;SelectionAnswer&lt;/code&gt;&lt;/em&gt; element that specifies
+                                a question with four radiobuttons. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;SelectionAnswer&amp;gt;
+  &amp;lt;StyleSuggestion&amp;gt;radiobutton&amp;lt;/StyleSuggestion&amp;gt;
+  &amp;lt;Selections&amp;gt;
+    &amp;lt;Selection&amp;gt;
+      &amp;lt;SelectionIdentifier&amp;gt;C1&amp;lt;/SelectionIdentifier&amp;gt;
+      &amp;lt;Text&amp;gt;C1 (northeast)&amp;lt;/Text&amp;gt;
+    &amp;lt;/Selection&amp;gt;
+    &amp;lt;Selection&amp;gt;
+      &amp;lt;SelectionIdentifier&amp;gt;C2&amp;lt;/SelectionIdentifier&amp;gt;
+      &amp;lt;Text&amp;gt;C2 (east)&amp;lt;/Text&amp;gt;
+    &amp;lt;/Selection&amp;gt;
+    &amp;lt;Selection&amp;gt;
+      &amp;lt;SelectionIdentifier&amp;gt;A3&amp;lt;/SelectionIdentifier&amp;gt;
+      &amp;lt;Text&amp;gt;A3 (southwest)&amp;lt;/Text&amp;gt;
+    &amp;lt;/Selection&amp;gt;
+    &amp;lt;Selection&amp;gt;
+      &amp;lt;SelectionIdentifier&amp;gt;C3&amp;lt;/SelectionIdentifier&amp;gt;
+      &amp;lt;Text&amp;gt;C3 (southeast)&amp;lt;/Text&amp;gt;
+    &amp;lt;/Selection&amp;gt;
+  &amp;lt;/Selections&amp;gt;
+</pre>
+<p>
+&amp;lt;/SelectionAnswer&amp;gt;</pre></div><div
+class=&#8220;section&#8221; lang=&#8220;en&#8221;><div
+class=&#8220;titlepage&#8221;><div><div><h3 class=&#8220;title&#8221;
+id=&#8220;d0e18932&#8221;>FileUploadAnswer</h3></div></div></div><a
+class=&#8220;indexterm&#8221; name=&#8220;d0e18935&#8221;></a><a
+class=&#8220;indexterm&#8221; name=&#8220;d0e18938&#8221;></a><p> A <em
+class=&#8220;parameter&#8221;><tt>FileUploadAnswer</tt></em> prompts the
+Worker to upload a file as the answer
+</p>
+<pre>
+                                to the question. When the Worker uploads the file, Amazon Mechanical Turk stores the file
+                                separately from the answer data. Once the HIT is submitted, your application can call the
+                                        &lt;code class=&quot;function&quot;&gt;GetFileUploadURL&lt;/code&gt; operation to get a temporary URL it can use to
+                                download the file. &lt;/p&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FileUploadAnswer&lt;/code&gt;&lt;/em&gt; specification contains two required elements, a
+                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MinFileSizeInBytes&lt;/code&gt;&lt;/em&gt; and a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxFileSizeInBytes&lt;/code&gt;&lt;/em&gt;,
+                                that specify the minimum and maximum allowed file sizes respectively. If the Worker uploads a
+                                file whose size in bytes is outside of this range, the answer is rejected, and the Worker must
+                                upload a different file to complete the HIT. You can specify a maximum size up to 2000000000
+                                (2 billion) bytes. &lt;/p&gt;&lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p class=&quot;simpara&quot;&gt; A &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FileUploadAnswer&lt;/code&gt;&lt;/em&gt; element can only be used with HITs. It
+                                        cannot be used with Qualification tests. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The following example demonstrates a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FileUploadAnswer&lt;/code&gt;&lt;/em&gt; element that
+                                specifies a file with a minimum of 1000 bytes and a maximum of 3000000 bytes. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;FileUploadAnswer&amp;gt;
+  &amp;lt;MaxFileSizeInBytes&amp;gt;3000000&amp;lt;/MaxFileSizeInBytes&amp;gt;
+  &amp;lt;MinFileSizeInBytes&amp;gt;1000&amp;lt;/MinFileSizeInBytes&amp;gt;
+</pre>
+<p>
+&amp;lt;/FileUploadAnswer&amp;gt;</pre></div></div><div
+class=&#8220;section&#8221; lang=&#8220;en&#8221;><div
+class=&#8220;titlepage&#8221;><div><div><h2 class=&#8220;title&#8221;
+style=&#8220;clear: both&#8221;
+id=&#8220;d0e18973&#8221;>Example</h2></div></div></div><p> The following
+is an example of a complete <em
+class=&#8220;parameter&#8221;><tt>QuestionForm</tt></em> data structure.
+</p>
+<pre>
+                        Remember that to pass this structure in as a value of a parameter to an operation, XML characters
+                        must be escaped as character entities. (See &lt;a class=&quot;link&quot; href=&quot;ApiReference_XMLParameterValuesArticle.html&quot; title=&quot;Using XML Parameter Values&quot;&gt;Using XML Parameter Values&lt;/a&gt; for more information.) &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;QuestionForm xmlns=&quot;&lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[the QuestionForm schema URL]&lt;/code&gt;&lt;/em&gt;&quot;&amp;gt;
+  &amp;lt;Overview&amp;gt;
+    &amp;lt;Title&amp;gt;Game 01523, &quot;X&quot; to play&amp;lt;/Title&amp;gt;
+    &amp;lt;Text&amp;gt;
+      You are helping to decide the next move in a game of Tic-Tac-Toe.  The board looks like this:
+    &amp;lt;/Text&amp;gt;
+    &amp;lt;Binary&amp;gt;
+      &amp;lt;MimeType&amp;gt;
+        &amp;lt;Type&amp;gt;image&amp;lt;/Type&amp;gt;
+        &amp;lt;SubType&amp;gt;gif&amp;lt;/SubType&amp;gt;
+      &amp;lt;/MimeType&amp;gt;
+      &amp;lt;DataURL&amp;gt;http://tictactoe.amazon.com/game/01523/board.gif&amp;lt;/DataURL&amp;gt;
+      &amp;lt;AltText&amp;gt;The game board, with &quot;X&quot; to move.&amp;lt;/AltText&amp;gt;
+    &amp;lt;/Binary&amp;gt;
+    &amp;lt;Text&amp;gt;
+      Player &quot;X&quot; has the next move.
+    &amp;lt;/Text&amp;gt;
+  &amp;lt;/Overview&amp;gt;
+  &amp;lt;Question&amp;gt;
+    &amp;lt;QuestionIdentifier&amp;gt;nextmove&amp;lt;/QuestionIdentifier&amp;gt;
+    &amp;lt;DisplayName&amp;gt;The Next Move&amp;lt;/DisplayName&amp;gt;
+    &amp;lt;IsRequired&amp;gt;true&amp;lt;/IsRequired&amp;gt;
+    &amp;lt;QuestionContent&amp;gt;
+      &amp;lt;Text&amp;gt;
+        What are the coordinates of the best move for player &quot;X&quot; in this game?
+      &amp;lt;/Text&amp;gt;
+    &amp;lt;/QuestionContent&amp;gt;
+    &amp;lt;AnswerSpecification&amp;gt;
+      &amp;lt;FreeTextAnswer&amp;gt;
+        &amp;lt;Constraints&amp;gt;
+          &amp;lt;Length minLength=&quot;2&quot; maxLength=&quot;2&quot; /&amp;gt;
+        &amp;lt;/Constraints&amp;gt;
+        &amp;lt;DefaultText&amp;gt;C1&amp;lt;/DefaultText&amp;gt;
+      &amp;lt;/FreeTextAnswer&amp;gt;
+    &amp;lt;/AnswerSpecification&amp;gt;
+  &amp;lt;/Question&amp;gt;
+  &amp;lt;Question&amp;gt;
+    &amp;lt;QuestionIdentifier&amp;gt;likelytowin&amp;lt;/QuestionIdentifier&amp;gt;
+    &amp;lt;DisplayName&amp;gt;The Next Move&amp;lt;/DisplayName&amp;gt;
+    &amp;lt;IsRequired&amp;gt;true&amp;lt;/IsRequired&amp;gt;
+    &amp;lt;QuestionContent&amp;gt;
+      &amp;lt;Text&amp;gt;
+        How likely is it that player &quot;X&quot; will win this game?
+      &amp;lt;/Text&amp;gt;
+    &amp;lt;/QuestionContent&amp;gt;
+    &amp;lt;AnswerSpecification&amp;gt;
+      &amp;lt;SelectionAnswer&amp;gt;
+        &amp;lt;StyleSuggestion&amp;gt;radiobutton&amp;lt;/StyleSuggestion&amp;gt;
+        &amp;lt;Selections&amp;gt;
+          &amp;lt;Selection&amp;gt;
+            &amp;lt;SelectionIdentifier&amp;gt;notlikely&amp;lt;/SelectionIdentifier&amp;gt;
+            &amp;lt;Text&amp;gt;Not likely&amp;lt;/Text&amp;gt;
+          &amp;lt;/Selection&amp;gt;
+          &amp;lt;Selection&amp;gt;
+            &amp;lt;SelectionIdentifier&amp;gt;unsure&amp;lt;/SelectionIdentifier&amp;gt;
+            &amp;lt;Text&amp;gt;It could go either way&amp;lt;/Text&amp;gt;
+          &amp;lt;/Selection&amp;gt;
+          &amp;lt;Selection&amp;gt;
+            &amp;lt;SelectionIdentifier&amp;gt;likely&amp;lt;/SelectionIdentifier&amp;gt;
+            &amp;lt;Text&amp;gt;Likely&amp;lt;/Text&amp;gt;
+          &amp;lt;/Selection&amp;gt;
+        &amp;lt;/Selections&amp;gt;
+      &amp;lt;/SelectionAnswer&amp;gt;
+    &amp;lt;/AnswerSpecification&amp;gt;
+  &amp;lt;/Question&amp;gt;
+</pre>
+<p>
+&amp;lt;/QuestionForm&amp;gt;</pre></div></div><div
+class=&#8220;navfooter&#8221;><table width=&#8220;100%&#8221;
+summary=&#8220;Navigation footer&#8221; cellspacing=&#8220;0&#8221;
+cellpadding=&#8220;2&#8221;><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221;><a accesskey=&#8220;p&#8221;
+href=&#8220;ApiReference_XMLParameterValuesArticle.html&#8220;><img
+src=&#8220;images/prev.gif&#8220; alt=&#8220;Prev&#8221;></a> </td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a href=&#8220;<a
+href="http://survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_QuestionFormDataStructureArticle">Documentation">survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_QuestionFormDataStructureArticle">Documentation</a>
+Feedback</a><br><a href=&#8220;copyrightinfo.html&#8220;>Copyright
+Information</a></td><td width=&#8220;30%&#8221; align=&#8220;right&#8221;>
+<a accesskey=&#8220;n&#8221;
+href=&#8220;ApiReference_FormattedContentXHTMLArticle.html&#8220;><img
+src=&#8220;images/next.gif&#8220;
+alt=&#8220;Next&#8221;></a></td></tr><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221; valign=&#8220;top&#8221;>&amp;nbsp;</td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a
+accesskey=&#8220;h&#8221; href=&#8220;top&#8220;><img
+src=&#8220;images/home.gif&#8220; alt=&#8220;Home&#8221;></a></td><td
+width=&#8220;30%&#8221; align=&#8220;right&#8221;
+valign=&#8220;top&#8221;>&amp;nbsp;</td></tr></table></div></body></html>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

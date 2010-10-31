@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RTurk::Qualification</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Class</span> 
+            RTurk::Qualification 
+            
+                <span class="parent">&lt; 
+                    
+                    <a href="../Object.html">Object</a>
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/rturk/builders/qualification_builder_rb.html">lib/rturk/builders/qualification_builder.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>N</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000026">new</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>T</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000027">to_params</a>,</li>
+                
+                <li><a href="#M000031">types</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="sectiontitle">Constants</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class="attr-name">COMPARATORS</td>
+            <td>=</td>
+            <td class="attr-value">{:gt =&gt; 'GreaterThan', :lt =&gt; 'LessThan', :gte =&gt; 'GreaterThanOrEqualTo',                    :lte =&gt; 'LessThanOrEqualTo', :eql =&gt; 'EqualTo', :not =&gt; 'NotEqualTo', :exists =&gt; 'Exists'}</td>
+        </tr>
+        
+        <tr valign='top'>
+            <td>&nbsp;</td>
+            <td colspan="2" class="attr-desc"><p>
+For more information about qualification requirements see: <a
+href="http://docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/index.html?ApiReference_QualificationRequirementDataStructureArticle.html">docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/index.html?ApiReference_QualificationRequirementDataStructureArticle.html</a>
+</p>
+</td>
+        </tr>
+        
+        
+        <tr valign='top'>
+            <td class="attr-name">TYPES</td>
+            <td>=</td>
+            <td class="attr-value">{:approval_rate =&gt; '000000000000000000L0', :submission_rate =&gt; '00000000000000000000',              :abandoned_rate =&gt; '0000000000000000007', :return_rate =&gt; '000000000000000000E0',              :rejection_rate =&gt; '000000000000000000S0', :hits_approved =&gt; '00000000000000000040',              :adult =&gt; '00000000000000000060', :country =&gt; '00000000000000000071'}</td>
+        </tr>
+        
+        
+    </table>
+    
+
+    
+    <div class="sectiontitle">Attributes</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>qualifier</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+    </table>
+    
+
+    
+            <div class="sectiontitle">Class Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000026">
+                    
+                    <a name="M000026"></a><b>new</b>(type, opts)
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Builds the basic requirements for a qualification needs at the minimum
+</p>
+<pre>
+ type_id, :comparator =&gt; :value
+ or
+ type_id, true
+ or
+ type_id, :exists
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000026_source')" id="l_M000026_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/48e7de14b637cfb2fc8dd4c4d121a345df546141/lib/rturk/builders/qualification_builder.rb#L27" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000026_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/qualification_builder.rb, line 27</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">type</span>, <span class="ruby-identifier">opts</span>)
+      <span class="ruby-comment cmt"># If the value is a string, we can assume it's the country since,</span>
+      <span class="ruby-comment cmt"># Amazon states that there can be only integer values and countries</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">qualifier</span> = {}
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">type</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+        <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:QualificationTypeId</span>] = <span class="ruby-identifier">type</span>
+      <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">type</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Symbol</span>)
+        <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:QualificationTypeId</span>] = <span class="ruby-identifier">types</span>[<span class="ruby-identifier">type</span>]
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+        <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:Comparator</span>] = <span class="ruby-constant">COMPARATORS</span>[<span class="ruby-identifier">opts</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">first</span>]
+        <span class="ruby-identifier">value</span> = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">first</span>
+        <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/[A-Z]./</span>)
+          <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:Country</span>] = <span class="ruby-identifier">value</span>
+        <span class="ruby-keyword kw">else</span>
+          <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:IntegerValue</span>] = <span class="ruby-identifier">value</span>
+        <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">opts</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">opts</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">false</span>
+         <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:IntegerValue</span>] = <span class="ruby-identifier">opts</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+         <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:Comparator</span>] = <span class="ruby-constant">COMPARATORS</span>[<span class="ruby-identifier">:eql</span>]
+       <span class="ruby-keyword kw">end</span>
+      <span class="ruby-identifier">qualifier</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="sectiontitle">Instance Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000027">
+                    
+                    <a name="M000027"></a><b>to_params</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000027_source')" id="l_M000027_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/48e7de14b637cfb2fc8dd4c4d121a345df546141/lib/rturk/builders/qualification_builder.rb#L51" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000027_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/qualification_builder.rb, line 51</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_params</span>
+      <span class="ruby-identifier">params</span> = {}
+      <span class="ruby-identifier">params</span>[<span class="ruby-value str">&quot;QualificationTypeId&quot;</span>] = <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:QualificationTypeId</span>]
+      <span class="ruby-identifier">params</span>[<span class="ruby-value str">&quot;Comparator&quot;</span>] = <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:Comparator</span>]
+      <span class="ruby-identifier">params</span>[<span class="ruby-value str">&quot;IntegerValue&quot;</span>] = <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:IntegerValue</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:IntegerValue</span>]
+      <span class="ruby-identifier">params</span>[<span class="ruby-value str">&quot;LocaleValue.Country&quot;</span>] = <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:Country</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:Country</span>]
+      <span class="ruby-identifier">params</span>[<span class="ruby-value str">&quot;RequiredToPreview&quot;</span>] = <span class="ruby-identifier">qualifier</span>[<span class="ruby-identifier">:RequiredToPreview</span>] <span class="ruby-operator">||</span> <span class="ruby-value str">'true'</span>
+      <span class="ruby-identifier">params</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000031">
+                    
+                    <a name="M000031"></a><b>types</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000031_source')" id="l_M000031_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/48e7de14b637cfb2fc8dd4c4d121a345df546141/lib/rturk/builders/qualification_builder.rb#L61" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000031_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/builders/qualification_builder.rb, line 61</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">types</span>
+      <span class="ruby-comment cmt"># Could use this later to add other TYPES programatically</span>
+      <span class="ruby-constant">TYPES</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    

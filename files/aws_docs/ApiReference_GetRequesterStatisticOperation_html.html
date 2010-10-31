@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_GetRequesterStatisticOperation.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_GetRequesterStatisticOperation.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_GetRequesterStatisticOperation.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;GetRequesterStatistic&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_OperationsArticle.html&quot; title=&quot;Chapter&amp;nbsp;5.&amp;nbsp;Operations&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_GetQualificationTypeOperation.html&quot; title=&quot;GetQualificationType&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_GetReviewableHITsOperation.html&quot; title=&quot;GetReviewableHITs&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_GetQualificationTypeOperation.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_GetRequesterStatisticOperation&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_GetReviewableHITsOperation.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_OperationsArticle.html&quot;&gt;Operations&lt;/a&gt; &amp;raquo; &lt;strong&gt;GetRequesterStatistic&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;GetRequesterStatistic&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e7580&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e7583&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e7588&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e7593&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e7598&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e7603&quot;&gt;&lt;/a&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e7608&quot;&gt;Description&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;GetRequesterStatistic&lt;/code&gt; operation retrieves statistics about
+                        you (the Requester calling the operation). The following table describes the available
+                        statistics: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberAssignmentsAvailable
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of times Workers can accept an available HIT,
+                                                                totalled over all available HITs. In other words, a HIT with 3
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxAssignments&lt;/code&gt;&lt;/em&gt; can be described as having
+                                                                3 available assignments, each of become &lt;span class=&quot;guilabel&quot;&gt;Accepted&lt;/span&gt; when a Worker accepts the HIT.
+                                                                (Technically, Amazon Mechanical Turk does not create an assignment
+                                                                with an assignment ID until a Worker accepts a HIT.) &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberAssignmentsAccepted
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of times Workers have accepted your HITs. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberAssignmentsPending
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total number of assignments for your HITs that have been
+                                                                submitted by Workers and are awaiting approval. The total increases
+                                                                and decreases as assignments are submitted by Workers and approved
+                                                                or rejected by you. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberAssignmentsApproved
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of assignments you have approved.&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberAssignmentsRejected
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of assignments you have rejected.&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberAssignmentsReturned
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of times Workers have returned assignments for your
+                                                                HITs.&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        NumberAssignmentsAbandoned
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of times Workers have abandoned assignments (allowed
+                                                                the deadline to elapse without submitting results) for your HITs. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                PercentAssignmentsApproved
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The percentage of assignments that you have approved, computed
+                                                                over all assignments that you have approved or rejected. The
+                                                                percentage is represented as a decimal fraction between 0 and 1. The
+                                                                statistic value for a given day represents a change in the overall
+                                                                percentage due to activity for that day. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                PercentAssignmentsRejected
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The percentage of assignments that you have rejected, computed
+                                                                over all assignments that you have approved or rejected. The
+                                                                percentage is represented as a decimal fraction between 0 and 1. The
+                                                                statistic value for a given day represents a change in the overall
+                                                                percentage due to activity for that day. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                TotalRewardPayout
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of the rewards paid for approved assignments.
+                                                                The amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                AverageRewardAmount
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The change in the average amount of the rewards paid for
+                                                                approved assignments. The amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                TotalRewardFeePayout
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of the HIT listing fees paid for approved
+                                                                assignments. The amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                TotalFeePayout
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of the HIT listing fees paid for approved
+                                                                assignments and bonus payments. The amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;span class=&quot;emphasis&quot;&gt;&lt;em&gt;This statistic is deprecated. &lt;/em&gt;&lt;/span&gt; To get the total
+                                                                amount of fees paid for rewards and bonuses, get the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TotalRewardFeePayout&lt;/code&gt;&lt;/em&gt; statistic and the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TotalBonusFeePayout&lt;/code&gt;&lt;/em&gt; statistic and add them
+                                                                together. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                TotalRewardAndFeePayout
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of money paid for approved assignments,
+                                                                including rewards and fees. The amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; This total does &lt;span class=&quot;emphasis&quot;&gt;&lt;em&gt;not&lt;/em&gt;&lt;/span&gt; include fees for
+                                                                bonus payments made with the &lt;a class=&quot;link&quot; href=&quot;ApiReference_GrantBonusOperation.html&quot; title=&quot;GrantBonus&quot;&gt;GrantBonus&lt;/a&gt;
+                                                                operation. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;span class=&quot;emphasis&quot;&gt;&lt;em&gt;This statistic is deprecated.&lt;/em&gt;&lt;/span&gt; To get the total
+                                                                amount of money paid for rewards and reward fees, get the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TotalRewardPayout&lt;/code&gt;&lt;/em&gt; and &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TotalRewardFeePayout&lt;/code&gt;&lt;/em&gt; statistics and add them
+                                                                together. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                TotalBonusPayout
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of the bonuses paid to Workers. The amount is
+                                                                given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                TotalBonusFeePayout
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of the fees paid for bonus payments. The
+                                                                amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberHITsCreated
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of HITs you created. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberHITsCompleted
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total number of your HITs that have been completed to their
+                                                                final state of either &lt;span class=&quot;guilabel&quot;&gt;Disposed&lt;/span&gt; or &lt;span class=&quot;guilabel&quot;&gt;Disabled&lt;/span&gt;. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberHITsAssignable
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of your HITs with status &lt;span class=&quot;guilabel&quot;&gt;Assignable&lt;/span&gt;. &lt;/p&gt;
+                                                        &lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;NumberHITsAssignable&lt;/code&gt;&lt;/em&gt; can only be queried
+                                                                        as a &lt;span class=&quot;guilabel&quot;&gt;LifeToDate&lt;/span&gt; value. While most
+                                                                        statistics change in real time, a day's value for this statistic
+                                                                        is added to the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;LifeToDate&lt;/code&gt;&lt;/em&gt; total at the
+                                                                        end of the day. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                NumberHITsReviewable
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of your HITs with status &lt;span class=&quot;guilabel&quot;&gt;Reviewable&lt;/span&gt;. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Long&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                EstimatedRewardLiability
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of all of the rewards for HITs and assignments
+                                                                that have not yet been completed. This includes the reward for each
+                                                                unclaimed assignment for HITs that have not yet expired, each
+                                                                assignment in progress, and each submitted assignment that has not
+                                                                yet been approved or rejected. This is an estimate, because it is
+                                                                possible that not all of a HIT's assignments will be completed
+                                                                before the HIT expires. The amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                EstimatedFeeLiability
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of all of the HIT listing fees for HITs and
+                                                                assignments that have not yet been completed at a given point in
+                                                                time. The amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                EstimatedTotalLiability
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The total amount of all of the rewards and fees for HITs and
+                                                                assignments that have not yet been completed at a given point in
+                                                                time. The amount is given in U.S. dollars. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Double&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e8010&quot;&gt;Request Parameters&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;GetRequesterStatistic&lt;/code&gt; operation accepts parameters common to
+                        all operations. Some common parameters are required. See &lt;a class=&quot;link&quot; href=&quot;ApiReference_CommonParametersArticle.html&quot; title=&quot;Chapter&amp;nbsp;4.&amp;nbsp;Common Parameters&quot;&gt;Common Parameters&lt;/a&gt; for more
+                        information. &lt;/p&gt;&lt;p&gt; The following parameters are specific to the &lt;code class=&quot;function&quot;&gt;GetRequesterStatistic&lt;/code&gt; operation: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Operation&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The name of the operation&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: GetRequesterStatistic&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Statistic&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The statistic to return&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: See the preceding table.&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TimePeriod&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The time period of the statistic to return.&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: OneDay | SevenDays | ThirtyDays |
+                                                                LifeToDate&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Count&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The number of data points to return&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: positive integer&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: 1&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Conditions: only used if &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TimePeriod&lt;/code&gt;&lt;/em&gt; is
+                                                                        &lt;code class=&quot;code&quot;&gt;OneDay&lt;/code&gt;
+                                                        &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; For example, if &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;TimePeriod&lt;/code&gt;&lt;/em&gt; is
+                                                                        &lt;code class=&quot;code&quot;&gt;OneDay&lt;/code&gt; and &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Count&lt;/code&gt;&lt;/em&gt; is
+                                                                        &lt;code class=&quot;code&quot;&gt;12&lt;/code&gt;, the operation returns 12 data points for the
+                                                                statistic, one for each of 12 calendar days leading up to the
+                                                                current date, including the current day. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Conditional&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e8173&quot;&gt;Response Elements&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A successful request for the &lt;code class=&quot;function&quot;&gt;GetRequesterStatistic&lt;/code&gt; operation has
+                        a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;GetStatisticResult&lt;/code&gt;&lt;/em&gt; element in the response. &lt;/p&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;GetStatisticResult&lt;/code&gt;&lt;/em&gt; element contains a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DataPoint&lt;/code&gt;&lt;/em&gt; element for each value requested. &lt;/p&gt;&lt;p&gt; Each &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DataPoint&lt;/code&gt;&lt;/em&gt; element contains the following elements: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Date&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The date represented by the data point. For aggregate values,
+                                                                this is the current date. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Type: A &lt;a class=&quot;ulink&quot; href=&quot;http://www.w3.org/TR/xmlschema-2/#dateTime&quot; target=&quot;_blank&quot;&gt;dateTime&lt;/a&gt; structure in the Coordinated Universal Time
+                                                                (Greenwich Mean Time) time zone, such as
+                                                                        &lt;code class=&quot;code&quot;&gt;2005-01-31T23:59:59Z&lt;/code&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;LongValue&lt;/code&gt;&lt;/em&gt; | &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DoubleValue&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The value of the statistic over the specified time period. The
+                                                                element name and data type depend on which statistic was requested. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: a long or a double, depending on the requested
+                                                                statistic.&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e8251&quot;&gt;Examples&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following example shows how to use the &lt;code class=&quot;function&quot;&gt;GetRequesterStatistic&lt;/code&gt;
+                        operation.&lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e8259&quot;&gt;Sample Request&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The following example of a call to the &lt;code class=&quot;function&quot;&gt;GetRequesterStatistic&lt;/code&gt;
+                                operation retrieves the total reward payout for the thirty days leading up to the
+                                current date. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
+</pre>
+<p>
+&amp;amp;AWSAccessKeyId=<em class=&#8220;replaceable&#8221;><tt>[the
+Requester's Access Key ID]</tt></em> &amp;amp;Version=2008-08-02
+&amp;amp;Operation=GetRequesterStatistic &amp;amp;Signature=<em
+class=&#8220;replaceable&#8221;><tt>[signature for this request]</tt></em>
+&amp;amp;Timestamp=<em class=&#8220;replaceable&#8221;><tt>[your system's
+local time]</tt></em> &amp;amp;Statistic=TotalRewardPayout
+&amp;amp;TimePeriod=ThirtyDays &amp;amp;Count=1
+</p>
+<pre>
+         &lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e8278&quot;&gt;Sample Response&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following is an example response.&lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;GetStatisticResult&amp;gt;
+  &amp;lt;Request&amp;gt;
+    &amp;lt;IsValid&amp;gt;True&amp;lt;/IsValid&amp;gt;
+  &amp;lt;/Request&amp;gt;
+  &amp;lt;DataPoint&amp;gt;
+    &amp;lt;Date&amp;gt;2009-07-13T07:00:00Z&amp;lt;/Date&amp;gt;
+    &amp;lt;DoubleValue&amp;gt;20&amp;lt;/DoubleValue&amp;gt;
+  &amp;lt;/DataPoint&amp;gt;
+</pre>
+<p>
+&amp;lt;/GetStatisticResult&amp;gt;</pre></div></div></div><div
+class=&#8220;navfooter&#8221;><table width=&#8220;100%&#8221;
+summary=&#8220;Navigation footer&#8221; cellspacing=&#8220;0&#8221;
+cellpadding=&#8220;2&#8221;><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221;><a accesskey=&#8220;p&#8221;
+href=&#8220;ApiReference_GetQualificationTypeOperation.html&#8220;><img
+src=&#8220;images/prev.gif&#8220; alt=&#8220;Prev&#8221;></a> </td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a href=&#8220;<a
+href="http://survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_GetRequesterStatisticOperation">Documentation">survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_GetRequesterStatisticOperation">Documentation</a>
+Feedback</a><br><a href=&#8220;copyrightinfo.html&#8220;>Copyright
+Information</a></td><td width=&#8220;30%&#8221; align=&#8220;right&#8221;>
+<a accesskey=&#8220;n&#8221;
+href=&#8220;ApiReference_GetReviewableHITsOperation.html&#8220;><img
+src=&#8220;images/next.gif&#8220;
+alt=&#8220;Next&#8221;></a></td></tr><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221; valign=&#8220;top&#8221;>&amp;nbsp;</td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a
+accesskey=&#8220;h&#8221; href=&#8220;top&#8220;><img
+src=&#8220;images/home.gif&#8220; alt=&#8220;Home&#8221;></a></td><td
+width=&#8220;30%&#8221; align=&#8220;right&#8221;
+valign=&#8220;top&#8221;>&amp;nbsp;</td></tr></table></div></body></html>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

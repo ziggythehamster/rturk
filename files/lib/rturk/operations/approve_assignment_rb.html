@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>approve_assignment.rb</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../../../css/main.css" type="text/css" media="screen" />
+    <script src="../../../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            approve_assignment.rb
+        </h1>
+        <ul class="files">
+            <li>lib/rturk/operations/approve_assignment.rb</li>
+            <li>Last modified: 2010-10-31 11:39:44 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+Operation to approve an assignment
+</p>
+<p>
+<a
+href="http://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester">mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester</a>
+&amp;AWSAccessKeyId=[the Requester&#8217;s Access Key ID]
+&amp;Version=2008-08-02 &amp;Operation=ApproveAssignment
+&amp;Signature=[signature for this request] &amp;Timestamp=[your
+system&#8217;s local time]
+&amp;AssignmentId=123RVWYBAZW00EXAMPLE456RVWYBAZW00EXAMPLE
+</p>
+<hr size="1"></hr><p>
+Operation to assign a qualification to a worker
+</p>
+<hr size="1"></hr><p>
+Operation to block a worker
+</p>
+<p>
+The worker does not see the reason you gave. It&#8217;s for your records
+only.
+</p>
+<hr size="1"></hr><p>
+<a
+href="http://docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/ApiReference_DisposeHITOperation.html">docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/ApiReference_DisposeHITOperation.html</a>
+</p>
+<hr size="1"></hr><p>
+Operation to create a qualification type
+</p>
+<hr size="1"></hr><p>
+<a
+href="http://docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/ApiReference_DisposeHITOperation.html">docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/ApiReference_DisposeHITOperation.html</a>
+</p>
+<hr size="1"></hr><p>
+Operation to despose a qualification type
+</p>
+<hr size="1"></hr><p>
+Operation to get info about qualification type
+</p>
+<hr size="1"></hr><p>
+Operation to get qualifications for a qualification type
+</p>
+<hr size="1"></hr><p>
+Operation to send email to a group of workers. #
+</p>
+<pre>
+                                                                      #
+</pre>
+<p>
+Caveats: #
+</p>
+<pre>
+  - A message can only be send to a maximum of 100 workers at a time. #
+  - The message length must be 4096 characters or less.               #
+  - The subject length must be 200 characters or less.                #
+</pre>
+<hr size="1"></hr><p>
+Operation to revoke a qualification from a worker
+</p>
+<hr size="1"></hr><p>
+Operation to block a worker
+</p>
+<p>
+The worker does not see the reason you gave. It&#8217;s for your records
+only.
+</p>
+<hr size="1"></hr><p>
+Operation to update a qualification type
+</p>
+<hr size="1"></hr><pre>
+  &lt;HIT&gt;
+    &lt;HITId&gt;ZZRZPTY4ERDZWJ868JCZ&lt;/HITId&gt;
+    &lt;HITTypeId&gt;NYVZTQ1QVKJZXCYZCZVZ&lt;/HITTypeId&gt;
+    &lt;CreationTime&gt;2009-07-07T00:56:40Z&lt;/CreationTime&gt;
+    &lt;Title&gt;Location&lt;/Title&gt;
+    &lt;Description&gt;Select the image that best represents&lt;/Description&gt;
+    &lt;HITStatus&gt;Assignable&lt;/HITStatus&gt;
+    &lt;MaxAssignments&gt;1&lt;/MaxAssignments&gt;
+    &lt;Reward&gt;
+      &lt;Amount&gt;5.00&lt;/Amount&gt;
+      &lt;CurrencyCode&gt;USD&lt;/CurrencyCode&gt;
+      &lt;FormattedPrice&gt;$5.00&lt;/FormattedPrice&gt;
+    &lt;/Reward&gt;
+    &lt;AutoApprovalDelayInSeconds&gt;2592000&lt;/AutoApprovalDelayInSeconds&gt;
+    &lt;Expiration&gt;2009-07-14T00:56:40Z&lt;/Expiration&gt;
+    &lt;AssignmentDurationInSeconds&gt;30&lt;/AssignmentDurationInSeconds&gt;
+    &lt;NumberOfAssignmentsPending&gt;0&lt;/NumberOfAssignmentsPending&gt;
+    &lt;NumberOfAssignmentsAvailable&gt;1&lt;/NumberOfAssignmentsAvailable&gt;
+    &lt;NumberOfAssignmentsCompleted&gt;0&lt;/NumberOfAssignmentsCompleted&gt;
+  &lt;/HIT&gt;
+</pre>
+<hr size="1"></hr><p>
+Parses: <Assignment>
+</p>
+<pre>
+  &lt;AssignmentId&gt;GYFTRHZ5J3DZREY48WNZE38ZR9RR1ZPMXGWE7WE0&lt;/AssignmentId&gt;
+  &lt;WorkerId&gt;AD20WXZZP9XXK&lt;/WorkerId&gt;
+  &lt;HITId&gt;GYFTRHZ5J3DZREY48WNZ&lt;/HITId&gt;
+  &lt;AssignmentStatus&gt;Approved&lt;/AssignmentStatus&gt;
+  &lt;AutoApprovalTime&gt;2009-08-12T19:21:54Z&lt;/AutoApprovalTime&gt;
+  &lt;AcceptTime&gt;2009-07-13T19:21:40Z&lt;/AcceptTime&gt;
+  &lt;SubmitTime&gt;2009-07-13T19:21:54Z&lt;/SubmitTime&gt;
+  &lt;ApprovalTime&gt;2009-07-13T19:27:54Z&lt;/ApprovalTime&gt;
+  &lt;Answer&gt;
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+    &lt;QuestionFormAnswers xmlns=&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionFormAnswers.xsd&quot;&gt;
+      &lt;Answer&gt;
+        &lt;QuestionIdentifier&gt;Question100&lt;/QuestionIdentifier&gt;
+        &lt;FreeText&gt;Move to X.&lt;/FreeText&gt;
+      &lt;/Answer&gt;
+    &lt;/QuestionFormAnswers&gt;
+  &lt;/Answer&gt;
+</pre>
+<p>
+</Assignment>
+</p>
+<hr size="1"></hr><p>
+Parses a Qualification object
+</p>
+<hr size="1"></hr><p>
+Parses out the CreateHIT response
+</p>
+<p>
+Example response: <CreateHITResponse>
+</p>
+<pre>
+  &lt;OperationRequest&gt;
+    &lt;RequestId&gt;ece2785b-6292-4b12-a60e-4c34847a7916&lt;/RequestId&gt;
+  &lt;/OperationRequest&gt;
+  &lt;HIT&gt;
+    &lt;Request&gt;
+      &lt;IsValid&gt;True&lt;/IsValid&gt;
+    &lt;/Request&gt;
+    &lt;HITId&gt;GBHZVQX3EHXZ2AYDY2T0&lt;/HITId&gt;
+    &lt;HITTypeId&gt;NYVZTQ1QVKJZXCYZCZVZ&lt;/HITTypeId&gt;
+  &lt;/HIT&gt;
+</pre>
+<p>
+</CreateHITResponse>
+</p>
+<hr size="1"></hr><p>
+<GetAssignmentsForHITResult>
+</p>
+<pre>
+  &lt;Request&gt;
+    &lt;IsValid&gt;True&lt;/IsValid&gt;
+  &lt;/Request&gt;
+  &lt;NumResults&gt;1&lt;/NumResults&gt;
+  &lt;TotalNumResults&gt;1&lt;/TotalNumResults&gt;
+  &lt;PageNumber&gt;1&lt;/PageNumber&gt;
+  &lt;Assignment&gt;
+    &lt;AssignmentId&gt;GYFTRHZ5J3DZREY48WNZE38ZR9RR1ZPMXGWE7WE0&lt;/AssignmentId&gt;
+    &lt;WorkerId&gt;AD20WXZZP9XXK&lt;/WorkerId&gt;
+    &lt;HITId&gt;GYFTRHZ5J3DZREY48WNZ&lt;/HITId&gt;
+    &lt;AssignmentStatus&gt;Approved&lt;/AssignmentStatus&gt;
+    &lt;AutoApprovalTime&gt;2009-08-12T19:21:54Z&lt;/AutoApprovalTime&gt;
+    &lt;AcceptTime&gt;2009-07-13T19:21:40Z&lt;/AcceptTime&gt;
+    &lt;SubmitTime&gt;2009-07-13T19:21:54Z&lt;/SubmitTime&gt;
+    &lt;ApprovalTime&gt;2009-07-13T19:27:54Z&lt;/ApprovalTime&gt;
+    &lt;Answer&gt;
+      &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+      &lt;QuestionFormAnswers xmlns=&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionFormAnswers.xsd&quot;&gt;
+        &lt;Answer&gt;
+          &lt;QuestionIdentifier&gt;Question100&lt;/QuestionIdentifier&gt;
+          &lt;FreeText&gt;Move to X.&lt;/FreeText&gt;
+        &lt;/Answer&gt;
+      &lt;/QuestionFormAnswers&gt;
+    &lt;/Answer&gt;
+  &lt;/Assignment&gt;
+</pre>
+<p>
+</GetAssignmentsForHITResult>
+</p>
+<hr size="1"></hr><p>
+Parses the GetHIT Response
+</p>
+<p>
+<?xml version=&#8220;1.0&#8220;?> <GetHITResponse>
+</p>
+<pre>
+  &lt;OperationRequest&gt;
+    &lt;RequestId&gt;49341251-fcbd-45c3-ab98-8fbe2e4d8060&lt;/RequestId&gt;
+  &lt;/OperationRequest&gt;
+  &lt;HIT&gt;
+    &lt;Request&gt;
+      &lt;IsValid&gt;True&lt;/IsValid&gt;
+    &lt;/Request&gt;
+    &lt;HITId&gt;GR4R3HY3YGBZXDCAPJWZ&lt;/HITId&gt;
+    &lt;HITTypeId&gt;YGKZ2W5X6YFZ08ZRXXZZ&lt;/HITTypeId&gt;
+    &lt;CreationTime&gt;2009-06-25T04:21:17Z&lt;/CreationTime&gt;
+    &lt;Title&gt;Write a twitter update&lt;/Title&gt;
+    &lt;Description&gt;Simply write a twitter update for me&lt;/Description&gt;
+    &lt;Question&gt;&amp;lt;ExternalQuestion xmlns=&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd&quot;&amp;gt;
+  &amp;lt;ExternalURL&amp;gt;http://s3.amazonaws.com/mpercival.com/newtweet.html?id=foo&amp;lt;/ExternalURL&amp;gt;
+  &amp;lt;FrameHeight&amp;gt;400&amp;lt;/FrameHeight&amp;gt;
+</pre>
+<p>
+&amp;lt;/ExternalQuestion&amp;gt; </Question>
+</p>
+<pre>
+    &lt;Keywords&gt;twitter, blogging, writing, english&lt;/Keywords&gt;
+    &lt;HITStatus&gt;Reviewable&lt;/HITStatus&gt;
+    &lt;MaxAssignments&gt;1&lt;/MaxAssignments&gt;
+    &lt;Reward&gt;
+      &lt;Amount&gt;0.10&lt;/Amount&gt;
+      &lt;CurrencyCode&gt;USD&lt;/CurrencyCode&gt;
+      &lt;FormattedPrice&gt;$0.10&lt;/FormattedPrice&gt;
+    &lt;/Reward&gt;
+    &lt;AutoApprovalDelayInSeconds&gt;3600&lt;/AutoApprovalDelayInSeconds&gt;
+    &lt;Expiration&gt;2009-06-25T05:21:17Z&lt;/Expiration&gt;
+    &lt;AssignmentDurationInSeconds&gt;3600&lt;/AssignmentDurationInSeconds&gt;
+    &lt;NumberOfSimilarHITs&gt;0&lt;/NumberOfSimilarHITs&gt;
+    &lt;RequesterAnnotation&gt;OptionalNote&lt;/RequesterAnnotation&gt;
+    &lt;QualificationRequirement&gt;
+      &lt;QualificationTypeId&gt;000000000000000000L0&lt;/QualificationTypeId&gt;
+      &lt;Comparator&gt;GreaterThan&lt;/Comparator&gt;
+      &lt;IntegerValue&gt;90&lt;/IntegerValue&gt;
+      &lt;RequiredToPreview&gt;0&lt;/RequiredToPreview&gt;
+    &lt;/QualificationRequirement&gt;
+    &lt;HITReviewStatus&gt;NotReviewed&lt;/HITReviewStatus&gt;
+  &lt;/HIT&gt;
+</pre>
+<p>
+</GetHITResponse>
+</p>
+<hr size="1"></hr><p>
+Parses the GetQualificationType Response
+</p>
+<hr size="1"></hr><p>
+Parses the GetQualificationType Response
+</p>
+<hr size="1"></hr><p>
+<GetReviewableHITsResult>
+</p>
+<pre>
+  &lt;Request&gt;
+    &lt;IsValid&gt;True&lt;/IsValid&gt;
+  &lt;/Request&gt;
+  &lt;NumResults&gt;3&lt;/NumResults&gt;
+  &lt;TotalNumResults&gt;3&lt;/TotalNumResults&gt;
+  &lt;PageNumber&gt;1&lt;/PageNumber&gt;
+  &lt;HIT&gt;
+    &lt;HITId&gt;GBHZVQX3EHXZ2AYDY2T0&lt;/HITId&gt;
+  &lt;/HIT&gt;
+  &lt;HIT&gt;
+    &lt;HITId&gt;GBHZVQX3EHXZ2AYDY2T1&lt;/HITId&gt;
+  &lt;/HIT&gt;
+  &lt;HIT&gt;
+    &lt;HITId&gt;GBHZVQX3EHXZ2AYDY2T2&lt;/HITId&gt;
+  &lt;/HIT&gt;
+</pre>
+<p>
+</GetReviewableHITsResult>
+</p>
+<hr size="1"></hr><p>
+Parses out the RegisterHITType response
+</p>
+<p>
+Example response: <RegisterHITTypeResult>
+</p>
+<pre>
+  &lt;Request&gt;
+    &lt;IsValid&gt;True&lt;/IsValid&gt;
+  &lt;/Request&gt;
+  &lt;HITTypeId&gt;KZ3GKTRXBWGYX8WXBW60&lt;/HITTypeId&gt;
+</pre>
+<p>
+</RegisterHITTypeResult>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+    <div class="sectiontitle">Classes and Modules</div>
+    <ul>
+        
+        <li><span class="type">MODULE</span> <a href="../../../../classes/RTurk.html">RTurk</a></li>
+        
+    </ul>
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Rakefile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" />
+    <script src="../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            Rakefile
+        </h1>
+        <ul class="files">
+            <li>Rakefile</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+require &#8216;rubygems&#8217; require &#8216;rake&#8217;
+</p>
+<p>
+begin
+</p>
+<pre>
+  require 'yard'
+  YARD::Rake::YardocTask.new do |t|
+    t.files   = ['lib/**/*.rb', 'lib/**/*.rb']
+  end
+</pre>
+<p>
+rescue LoadError
+</p>
+<pre>
+  puts &quot;YARD is not available. For generating docs, you'll need to sudo gem install yard&quot;
+</pre>
+<p>
+end
+</p>
+<p>
+begin
+</p>
+<pre>
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = &quot;rturk&quot;
+    gem.summary = %Q{Mechanical Turk API Wrapper}
+    gem.email = &quot;mark@mpercival.com&quot;
+    gem.homepage = &quot;http://github.com/markpercival/rturk&quot;
+    gem.authors = [&quot;Mark Percival&quot;]
+    gem.add_dependency('rest-client', '&gt;= 1.4.0')
+    gem.add_dependency('nokogiri', '&gt;= 1.4.1')
+    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+  end
+</pre>
+<p>
+rescue LoadError
+</p>
+<pre>
+  puts &quot;Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler&quot;
+</pre>
+<p>
+end
+</p>
+<p>
+require &#8216;spec/rake/spectask&#8217; Spec::Rake::SpecTask.new(:spec) do
+|spec|
+</p>
+<pre>
+  spec.libs &lt;&lt; 'lib' &lt;&lt; 'spec'
+  spec.spec_files = FileList['spec/**/*_spec.rb']
+</pre>
+<p>
+end
+</p>
+<p>
+Spec::Rake::SpecTask.new(:rcov) do |spec|
+</p>
+<pre>
+  spec.libs &lt;&lt; 'lib' &lt;&lt; 'spec'
+  spec.pattern = 'spec/**/*_spec.rb'
+  spec.rcov = true
+</pre>
+<p>
+end
+</p>
+<p>
+task :default => :spec
+</p>
+<p>
+require &#8216;rake/rdoctask&#8217; Rake::RDocTask.new do |rdoc|
+</p>
+<pre>
+  if File.exist?('VERSION.yml')
+    config = YAML.load(File.read('VERSION.yml'))
+    version = &quot;#{config[:major]}.#{config[:minor]}.#{config[:patch]}&quot;
+  else
+    version = &quot;&quot;
+  end
+
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title = &quot;rturk-gem #{version}&quot;
+  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+</pre>
+<p>
+end
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

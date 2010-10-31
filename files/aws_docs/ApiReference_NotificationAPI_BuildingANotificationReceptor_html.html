@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_NotificationAPI_BuildingANotificationReceptor.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_NotificationAPI_BuildingANotificationReceptor.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_NotificationAPI_BuildingANotificationReceptor.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;Building A Notification Receptor&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot; title=&quot;Chapter&amp;nbsp;8.&amp;nbsp;The Notification Receptor API&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot; title=&quot;Chapter&amp;nbsp;8.&amp;nbsp;The Notification Receptor API&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_NotificationAPI_ElementsOfANotification.html&quot; title=&quot;Elements of a Notification Message&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_NotificationAPI_BuildingANotificationReceptor&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_NotificationAPI_ElementsOfANotification.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot;&gt;The Notification Receptor API&lt;/a&gt; &amp;raquo; &lt;strong&gt;Building A
+                Notification Receptor&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;Building A
+                Notification Receptor&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; You can tell Amazon Mechanical Turk to notify you whenever certain events occur that regard your HITs.
+                Amazon Mechanical Turk can notify you when a Worker accepts, abandons, returns, or submits an assignment,
+                when a HIT becomes &quot;reviewable&quot;, or when a HIT expires, for any HIT of a given HIT type. To set up
+                notifications for a HIT type, you call the &lt;code class=&quot;function&quot;&gt;SetHITTypeNotification&lt;/code&gt; operation with
+                a HIT type ID and a &lt;a class=&quot;link&quot; href=&quot;ApiReference_NotificationDataStructureArticle.html&quot; title=&quot;Notification&quot;&gt;notification
+                        specification&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Amazon Mechanical Turk can send a notification using one of several &quot;transports&quot;. The simplest transport
+                is a human-readable e-mail message sent to an e-mail address that you specify in the notification
+                specification. &lt;/p&gt;&lt;p&gt; The other notification transports let Amazon Mechanical Turk contact your Requester application directly:
+                The REST transport sends an HTTP request to a URL you specify containing the notification data as
+                key-value pairs. The SOAP transport sends a SOAP web services request, an HTTP request with XML data
+                in SOAP-standard envelope, to an &quot;end-point&quot; (URL) that you specify. &lt;/p&gt;&lt;p&gt; To use the REST or SOAP transports, you will need to build an application that can accept HTTP
+                connections, and collect and process notification messages. This notification receptor application
+                will need to be operational any time a notification message might be sent in order to receive the
+                message. &lt;/p&gt;&lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; Notification messages are only sent once. Notifications are not sent again, even if the HTTP
+                        request returns with an error code or fails for any reason. Your application will need to tolerate
+                        missing some notification messages. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; Only ports 80 and 443 are supported for receiving notification messages. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; This section describes the notification receptor API that your receptor will need to implement to
+                receive and understand notification messages. For code samples that illustrate how to build a
+                notification receptor, see &lt;a class=&quot;ulink&quot; href=&quot;http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=24&quot; target=&quot;_blank&quot;&gt;the Amazon Web
+                        Services Resource Center&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; For more information about notifications, see
+                &lt;a class=&quot;ulink&quot; href=&quot;http://docs.amazonwebservices.com/AWSMechanicalTurkRequester/2008-08-02/index.html?Concepts_NotificationsArticle.html&quot; target=&quot;_blank&quot;&gt;Notifications&lt;/a&gt;. For more information about creating, modifying or
+                disabling notification specifications on HIT types, see the
+                &lt;code class=&quot;function&quot;&gt;SetHITTypeNotification&lt;/code&gt; operation. &lt;/p&gt;&lt;p&gt; See also the &lt;code class=&quot;function&quot;&gt;SendTestEventNotification&lt;/code&gt; operation, and &lt;a class=&quot;link&quot; href=&quot;ApiReference_NotificationDataStructureArticle.html&quot; title=&quot;Notification&quot;&gt;Notification&lt;/a&gt;. &lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20621&quot;&gt;What a Notification Receptor Should Expect&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; Your notification receptor will receive a notification message when a HIT event occurs that
+                        matches an active notification specification for the HIT type of the HIT, and the specification
+                        includes the receptor as the message destination. &lt;/p&gt;&lt;p&gt; A notification message may describe one or more events. If multiple events happen in a short
+                        period of time, they may be batched into a single message. Your receptor should expect messages to
+                        describe multiple events. &lt;/p&gt;&lt;p&gt; Your receptor should also expect to receive a &quot;Ping&quot; event at any time. &quot;Ping&quot; events are used
+                        for diagnostic purposes, and do not correspond to any HIT activity. Amazon Mechanical Turk will send a
+                        &quot;Ping&quot; notification when you call the &lt;code class=&quot;function&quot;&gt;SendTestEventNotification&lt;/code&gt; operation,
+                        and may also send &quot;Ping&quot; events to check the availability of your receptor at other times. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;navfooter&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation footer&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_NotificationAPI_BuildingANotificationReceptor&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;copyrightinfo.html&quot;&gt;Copyright Information&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_NotificationAPI_ElementsOfANotification.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a accesskey=&quot;h&quot; href=&quot;#top&quot;&gt;&lt;img src=&quot;images/home.gif&quot; alt=&quot;Home&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot; valign=&quot;top&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+</pre>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

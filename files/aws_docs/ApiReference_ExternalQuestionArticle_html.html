@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_ExternalQuestionArticle.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_ExternalQuestionArticle.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_ExternalQuestionArticle.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;ExternalQuestion&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_QuestionAnswerDataArticle.html&quot; title=&quot;Chapter&amp;nbsp;7.&amp;nbsp;Question and Answer Data&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_AnswerKeyDataStructureArticle.html&quot; title=&quot;AnswerKey&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot; title=&quot;Chapter&amp;nbsp;8.&amp;nbsp;The Notification Receptor API&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_AnswerKeyDataStructureArticle.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_ExternalQuestionArticle&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_QuestionAnswerDataArticle.html&quot;&gt;Question and Answer Data&lt;/a&gt; &amp;raquo; &lt;strong&gt;ExternalQuestion&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;ExternalQuestion&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e20183&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e20186&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e20191&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e20196&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e20199&quot;&gt;&lt;/a&gt;&lt;div class=&quot;highlights&quot;&gt;&lt;p&gt;&lt;strong&gt;Topics&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_ExternalQuestionArticle.html#d0e20203&quot;&gt;Description&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_ExternalQuestionArticle.html#d0e20266&quot;&gt;The ExternalQuestion Data Structure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_ExternalQuestionArticle.html#d0e20355&quot;&gt;Example&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_ExternalQuestionArticle.html#d0e20370&quot;&gt;The External Form&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_ExternalQuestionArticle.html#d0e20498&quot;&gt;The Answer Data&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ApiReference_ExternalQuestionArticle.html#d0e20531&quot;&gt;Guidelines For Using External Questions&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20203&quot;&gt;Description&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; Instead of providing a &lt;a class=&quot;link&quot; href=&quot;ApiReference_QuestionFormDataStructureArticle.html&quot; title=&quot;QuestionForm&quot;&gt;QuestionForm data structure&lt;/a&gt; that tells Amazon Mechanical Turk how to display your questions
+                        and collect answers, you can host the questions on your own web site using an &quot;external&quot; question. &lt;/p&gt;&lt;p&gt; A HIT with an external question displays a web page from your web site in a frame in the
+                        Worker's web browser. Your web page displays a form for the Worker to fill out and submit. The
+                        Worker submits results using your form, and your form submits the results back to Amazon Mechanical Turk.
+                        Using your web site to display the form gives your web site control over how the question appears
+                        and how answers are collected. &lt;/p&gt;&lt;p&gt; To use an external question with a HIT, you provide a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt;
+                        data structure as the value of the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt; parameter. As with the
+                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionForm&lt;/code&gt;&lt;/em&gt; data structure, an &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt;
+                        is a string value that consists of XML data. This data must conform to the
+                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt; schema. See &lt;a class=&quot;link&quot; href=&quot;ApiReference_WsdlLocationArticle.html&quot; title=&quot;Chapter&amp;nbsp;3.&amp;nbsp;WSDL and Schema Locations&quot;&gt;WSDL and Schema Locations&lt;/a&gt;
+                        for the location of this schema. For more information about using XML data as a parameter or
+                        return value, see &lt;a class=&quot;link&quot; href=&quot;ApiReference_XMLParameterValuesArticle.html&quot; title=&quot;Using XML Parameter Values&quot;&gt;Using XML Parameter
+                                Values&lt;/a&gt;. &lt;/p&gt;&lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; You can only use an external question as the question of a HIT. You cannot use an external
+                                question with a Qualification test. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt; data structure is used as a parameter value for the
+                        following operations: &lt;/p&gt;&lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;p&gt;
+                                        &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt;
+                                &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt; data structure is a value in a &lt;a class=&quot;link&quot; href=&quot;ApiReference_HITDataStructureArticle.html&quot; title=&quot;HIT&quot;&gt;HIT data structure&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; All elements in a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt; belong to a namespace whose name is
+                        identical to the URL of the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt; schema document for the
+                        version of the API you are using. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20266&quot;&gt;The ExternalQuestion Data Structure&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt; data structure has a root element of
+                                &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/strong&gt;. &lt;/p&gt;&lt;p&gt; The &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/strong&gt; element contains the following elements: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalURL&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The URL of your web form, to be displayed in a frame in the Worker's web
+                                                                browser. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: URL&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Amazon Mechanical Turk appends two parameters to this URL:
+                                                                &lt;code class=&quot;code&quot;&gt;hitId&lt;/code&gt; and &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt;. See below for more
+                                                                information. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FrameHeight&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The height of the frame, in pixels&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: Integer&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20355&quot;&gt;Example&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The following is an example of a complete &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalQuestion&lt;/code&gt;&lt;/em&gt; data
+                        structure. Remember that to pass this structure in as the value of a parameter to an operation,
+                        XML characters must be escaped as character entities. (See &lt;a class=&quot;link&quot; href=&quot;ApiReference_XMLParameterValuesArticle.html&quot; title=&quot;Using XML Parameter Values&quot;&gt;Using XML Parameter Values&lt;/a&gt; for more information.) &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;ExternalQuestion xmlns=&quot;&lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[the ExternalQuestion schema URL]&lt;/code&gt;&lt;/em&gt;&quot;&amp;gt;
+  &amp;lt;ExternalURL&amp;gt;http://tictactoe.amazon.com/gamesurvey.cgi?gameid=01523&amp;lt;/ExternalURL&amp;gt;
+  &amp;lt;FrameHeight&amp;gt;400&amp;lt;/FrameHeight&amp;gt;
+</pre>
+<p>
+&amp;lt;/ExternalQuestion&amp;gt;</pre></div><div
+class=&#8220;section&#8221; lang=&#8220;en&#8221;><div
+class=&#8220;titlepage&#8221;><div><div><h2 class=&#8220;title&#8221;
+style=&#8220;clear: both&#8221; id=&#8220;d0e20370&#8221;>The External
+Form</h2></div></div></div><p> When a Worker attempts to complete a HIT
+with an external question, the external web site is
+</p>
+<pre>
+                        loaded into a frame in the middle of the screen. The web page at that URL should display a form
+                        for the Worker to fill out, and all the information the Worker will need to complete the HIT. &lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e20375&quot;&gt;The Frame's URL and Parameters&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The URL used for the frame is the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalURL&lt;/code&gt;&lt;/em&gt; of the question with
+                                two parameters appended: the &lt;code class=&quot;code&quot;&gt;hitId&lt;/code&gt; and the &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt;. These
+                                parameters are appended CGI-style: The full URL has a question mark (&lt;code class=&quot;code&quot;&gt;?&lt;/code&gt;) before
+                                the first parameter, and an ampersand (&lt;code class=&quot;code&quot;&gt;&amp;amp;&lt;/code&gt;) between each parameter, with
+                                each parameter consisting of a name, an equal sign (&lt;code class=&quot;code&quot;&gt;=&lt;/code&gt;), and a value. Other
+                                parameters already present in this style in &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalURL&lt;/code&gt;&lt;/em&gt; are preserved,
+                                so the final URL will only have one question mark, and all parameters will be separated by
+                                ampersands. &lt;/p&gt;&lt;p&gt; For example, consider an &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalURL&lt;/code&gt;&lt;/em&gt; of: &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://tictactoe.amazon.com/gamesurvey.cgi?gameid=01523&lt;/pre&gt;&lt;p&gt; With this &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ExternalURL&lt;/code&gt;&lt;/em&gt;, the full URL used for the page in the frame
+                                could be as follows: &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://tictactoe.amazon.com/gamesurvey.cgi?gameid=01523
+</pre>
+<p>
+&amp;amp;hitId=123RVWYBAZW00EXAMPLE
+&amp;amp;assignmentId=123RVWYBAZW00EXAMPLE456RVWYBAZW00EXAMPLE</pre></div><div
+class=&#8220;section&#8221; lang=&#8220;en&#8221;><div
+class=&#8220;titlepage&#8221;><div><div><h3 class=&#8220;title&#8221;
+id=&#8220;d0e20415&#8221;>Preview Mode</h3></div></div></div><p> Your
+external question will be displayed when a Worker previews the HIT on the
+Amazon
+</p>
+<pre>
+                                Amazon Mechanical Turk web site, before the Worker has clicked the &quot;Accept HIT&quot; button. When the HIT
+                                is being previewed, the URL will have a special value for the &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt;:
+                                        &lt;code class=&quot;code&quot;&gt;ASSIGNMENT_ID_NOT_AVAILABLE&lt;/code&gt;
+                        &lt;/p&gt;&lt;p&gt; When a Worker previews a HIT, your web page should show her everything she will need to do
+                                to complete the HIT, so she can decide whether or not to accept it. The easiest way to do this
+                                is to simply display the form as it would appear when the HIT is accepted. However, you may
+                                want to take precautions to prevent a Worker from accidentally filling out or submitting your
+                                form prior to accepting the HIT. &lt;/p&gt;&lt;p&gt; You can use JavaScript or server-side logic to check the &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt;
+                                parameter, and change the display the form if the HIT is being previewed
+                                        (&lt;code class=&quot;code&quot;&gt;assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&lt;/code&gt;). &lt;/p&gt;&lt;p&gt; If a Worker submits your form before accepting the HIT, and your form attempts to post the
+                                data back to Amazon Mechanical Turk, Amazon Mechanical Turk will display an error message to the Worker, and
+                                the results will not be accepted. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e20438&quot;&gt;The Form Action&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The form on the external web site must post the result data back to Amazon Mechanical Turk
+                                using the following URL: &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://www.mturk.com/mturk/externalSubmit&lt;/pre&gt;&lt;p&gt; The form must include the &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt; field that was appended to the URL used
+                                to access your form. It should be submitted along with the other form fields submitted by your
+                                form, with a name of &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt; and the same value as was passed to the form.
+                                Be sure to spell the field name as it appears here, with the same letters uppercase and
+                                lowercase. &lt;/p&gt;&lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; The field names &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt; and &lt;code class=&quot;code&quot;&gt;hitId&lt;/code&gt; are reserved for
+                                        special purposes. Your form only needs to submit the &lt;code class=&quot;code&quot;&gt;assignmentId&lt;/code&gt; field. Any
+                                        data submitted with a field name of &quot;&lt;code class=&quot;code&quot;&gt;hitId&lt;/code&gt;&quot; will be ignored, and will not
+                                        appear in the results data for the HIT. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The form can submit data to that URL using either the &quot;GET&quot; or &quot;POST&quot; methods. The data the
+                                form submits should be name-value pairs in the CGI-style: &lt;/p&gt;&lt;div class=&quot;itemizedlist&quot;&gt;&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;&lt;p&gt; Each field appears as the name, an equal sign, and the value. For example:
+                                                        &lt;code class=&quot;code&quot;&gt;favoriteColor=blue&lt;/code&gt;
+                                        &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Data that appears in the posted URL (using the &quot;GET&quot; method or the form's action
+                                                URL) is preceded by a question mark (&lt;code class=&quot;code&quot;&gt;?&lt;/code&gt;), and is delimited by ampersands
+                                                        (&lt;code class=&quot;code&quot;&gt;&amp;amp;&lt;/code&gt;). For example: &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://www.mturk.com/mturk/externalSubmit?favoriteColor=blue&amp;amp;favoriteNumber=7&amp;amp;...&lt;/pre&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Data that appears in the HTTP message body (using the &quot;POST&quot; method) has one data
+                                                pair per line. For example: &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;favoriteColor=blue
+</pre>
+<p>
+favoriteNumber=7 &#8230;</pre></li></ul></div><p> The easiest way to post
+the data in the CGI-style is to use an HTML form on the web page,
+</p>
+<pre>
+                                with the &lt;code class=&quot;code&quot;&gt;externalSubmit&lt;/code&gt; URL as the &quot;action,&quot; and either &quot;GET&quot; or &quot;POST&quot; as the
+                                &quot;method.&quot; &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20498&quot;&gt;The Answer Data&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; When the Worker submits your form, the form sends the field data to Amazon Mechanical Turk using the
+                                &lt;code class=&quot;code&quot;&gt;externalSubmit&lt;/code&gt; URL, and Amazon Mechanical Turk records the field data as the results of
+                        the HIT. &lt;/p&gt;&lt;p&gt; When you retrieve the results using &lt;a class=&quot;link&quot; href=&quot;ApiReference_GetAssignmentsForHITOperation.html&quot; title=&quot;GetAssignmentsForHIT&quot;&gt;the &lt;code class=&quot;function&quot;&gt;GetAssignmentsForHIT&lt;/code&gt; operation&lt;/a&gt;, the field data submitted by
+                        your form will appear in the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Answer&lt;/code&gt;&lt;/em&gt; of the &lt;a class=&quot;link&quot; href=&quot;ApiReference_AssignmentDataStructureArticle.html&quot; title=&quot;Assignment&quot;&gt;Assignment&lt;/a&gt; as if each field were
+                        a free-text answer. The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QuestionIdentifier&lt;/code&gt;&lt;/em&gt; element of the answer will be
+                        the name of the field, and the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;FreeText&lt;/code&gt;&lt;/em&gt; element will contain the value. &lt;/p&gt;&lt;p&gt; See the &lt;a class=&quot;link&quot; href=&quot;ApiReference_QuestionFormAnswersDataStructureArticle.html&quot; title=&quot;QuestionFormAnswers&quot;&gt;QuestionFormAnswers data format&lt;/a&gt; for more information about the format of answer data.
+                &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20531&quot;&gt;Guidelines For Using External Questions&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; External questions give your application a great deal of power over how Workers submit results
+                        for your HITs. To ensure you get good results for your HITs, you should make sure your web server
+                        and web pages can provide your Workers with a quality experience. &lt;/p&gt;&lt;p&gt; Because external questions depend on your web server for rendering the question form, both
+                        while Workers are previewing HITs and while Workers are completing HITs, your server will need to
+                        be engineered for high availability. The Amazon Mechanical Turk web site gets heavy traffic, so
+                        your web server will need to be able to respond quickly and correctly when receiving many requests
+                        in a short period of time. &lt;/p&gt;&lt;div class=&quot;tip&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Tip&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Tip]&quot; src=&quot;images/tip.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Tip&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt;
+                                &lt;a class=&quot;ulink&quot; href=&quot;http://aws.amazon.com/s3&quot; target=&quot;_blank&quot;&gt;Amazon S3&lt;/a&gt; offers high availability hosting of
+                                data, accessible via public URLs. You can host your external questions as web pages in Amazon
+                                S3, and not have to run your own high availability web server. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; Your web site can do many things inside the frame, but eventually it must cause the Worker's
+                        browser to load the &quot;externalSubmit&quot; URL in the frame with the results in POST data. The easiest
+                        way to do this is with an HTML form whose fields contain the HIT results, with a submit button
+                        that the Worker will click. If an external HIT prevents the Worker from submitting results back to
+                        Amazon Mechanical Turk using the &quot;externalSubmit&quot; mechanism, the Worker may not be able to claim rewards
+                        or continue doing work without restarting their session. Amazon Mechanical Turk reserves the right
+                        to remove any external HITs that are not functioning properly. &lt;/p&gt;&lt;div class=&quot;tip&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Tip&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Tip]&quot; src=&quot;images/tip.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Tip&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; Remember that a &lt;a class=&quot;link&quot; href=&quot;ApiReference_QuestionFormAnswersDataStructureArticle.html&quot; title=&quot;QuestionFormAnswers&quot;&gt;QuestionForm&lt;/a&gt; can contain Java applets, Flash applications, and blocks of XHTML
+                                formatted content. If the capabilities of a QuestionForm meet the needs of your HIT, using a
+                                QuestionForm instead of an ExternalQuestion is the best way to ensure that your HIT will work
+                                correctly. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; Finally, please remember that external questions must meet the Amazon Mechanical Turk
+                        Participation Agreement, and otherwise meet Amazon Mechanical Turk's standards for appropriate content.
+                        Specifically, the Participation Agreement expressly prohibits the use of Amazon Mechanical Turk
+                        for advertising or solicitation. If your web site typically displays advertising to visitors,
+                        please make sure those advertisements do not appear in your external questions. Amazon Mechanical
+                        Turk reserves the right to remove HITs with inappropriate content. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;navfooter&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation footer&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_AnswerKeyDataStructureArticle.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_ExternalQuestionArticle&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;copyrightinfo.html&quot;&gt;Copyright Information&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a accesskey=&quot;h&quot; href=&quot;#top&quot;&gt;&lt;img src=&quot;images/home.gif&quot; alt=&quot;Home&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot; valign=&quot;top&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+</pre>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

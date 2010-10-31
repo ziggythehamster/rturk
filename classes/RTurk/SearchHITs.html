@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RTurk::SearchHITs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Class</span> 
+            RTurk::SearchHITs 
+            
+                <span class="parent">&lt; 
+                    
+                    Operation
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/rturk/operations/search_hits_rb.html">lib/rturk/operations/search_hits.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>P</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000114">parse</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>S</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000116">set_sort_by</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>T</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000115">to_params</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="sectiontitle">Constants</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class="attr-name">SORT_BY</td>
+            <td>=</td>
+            <td class="attr-value">{ :title =&gt; 'Title', :reward =&gt; 'Reward', :expiration =&gt; 'Expiration', :created_at =&gt; 'CreationTime', :enumeration =&gt; 'Enumeration'}</td>
+        </tr>
+        
+        
+        <tr valign='top'>
+            <td class="attr-name">SORT_ORDER</td>
+            <td>=</td>
+            <td class="attr-value">{:ascending =&gt; 'Ascending', :descending =&gt; 'Descending', :asc =&gt; 'Ascending', :desc =&gt; 'Descending'}</td>
+        </tr>
+        
+        
+    </table>
+    
+
+    
+    <div class="sectiontitle">Attributes</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>sort_property</td>
+            <td class='attr-desc'><p>
+You can call this operation without any parameters and get an unsorted list
+or you can pass in a :<a href="SearchHITs.html#sort_by">sort_by</a> =>
+{:title => :ascending}
+</p>
+<p>
+You can sort by
+</p>
+<pre>
+  :title
+  :reward
+  :expiration
+  :created_at
+  :enumeration
+</pre></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>sort_order</td>
+            <td class='attr-desc'><p>
+You can call this operation without any parameters and get an unsorted list
+or you can pass in a :<a href="SearchHITs.html#sort_by">sort_by</a> =>
+{:title => :ascending}
+</p>
+<p>
+You can sort by
+</p>
+<pre>
+  :title
+  :reward
+  :expiration
+  :created_at
+  :enumeration
+</pre></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>page_size</td>
+            <td class='attr-desc'><p>
+You can call this operation without any parameters and get an unsorted list
+or you can pass in a :<a href="SearchHITs.html#sort_by">sort_by</a> =>
+{:title => :ascending}
+</p>
+<p>
+You can sort by
+</p>
+<pre>
+  :title
+  :reward
+  :expiration
+  :created_at
+  :enumeration
+</pre></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>page_number</td>
+            <td class='attr-desc'><p>
+You can call this operation without any parameters and get an unsorted list
+or you can pass in a :<a href="SearchHITs.html#sort_by">sort_by</a> =>
+{:title => :ascending}
+</p>
+<p>
+You can sort by
+</p>
+<pre>
+  :title
+  :reward
+  :expiration
+  :created_at
+  :enumeration
+</pre></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>sort_by</td>
+            <td class='attr-desc'><p>
+You can call this operation without any parameters and get an unsorted list
+or you can pass in a :<a href="SearchHITs.html#sort_by">sort_by</a> =>
+{:title => :ascending}
+</p>
+<p>
+You can sort by
+</p>
+<pre>
+  :title
+  :reward
+  :expiration
+  :created_at
+  :enumeration
+</pre></td>
+        </tr>
+        
+    </table>
+    
+
+    
+            <div class="sectiontitle">Instance Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000114">
+                    
+                    <a name="M000114"></a><b>parse</b>(xml)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000114_source')" id="l_M000114_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8dfd2dc89a54a81e4e70053d914ac69ca4674d55/lib/rturk/operations/search_hits.rb#L18" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000114_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/search_hits.rb, line 18</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">xml</span>)
+      <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">SearchHITsResponse</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">xml</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000116">
+                    
+                    <a name="M000116"></a><b>set_sort_by</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000116_source')" id="l_M000116_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8dfd2dc89a54a81e4e70053d914ac69ca4674d55/lib/rturk/operations/search_hits.rb#L32" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000116_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/search_hits.rb, line 32</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_sort_by</span>
+      <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@sort_by</span>
+        <span class="ruby-ivar">@sort_property</span> = <span class="ruby-constant">SORT_BY</span>[<span class="ruby-ivar">@sort_by</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">first</span>]
+        <span class="ruby-ivar">@sort_order</span> = <span class="ruby-constant">SORT_ORDER</span>[<span class="ruby-ivar">@sort_by</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">first</span>]
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000115">
+                    
+                    <a name="M000115"></a><b>to_params</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000115_source')" id="l_M000115_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/8dfd2dc89a54a81e4e70053d914ac69ca4674d55/lib/rturk/operations/search_hits.rb#L22" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000115_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/search_hits.rb, line 22</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_params</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">set_sort_by</span>
+      {
+        <span class="ruby-value str">'SortProperty'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">sort_property</span>,
+        <span class="ruby-value str">'SortDirection'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">sort_order</span>,
+        <span class="ruby-value str">'PageSize'</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">page_size</span> <span class="ruby-operator">||</span> <span class="ruby-value">100</span>),
+        <span class="ruby-value str">'PageNumber'</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">page_number</span> <span class="ruby-operator">||</span> <span class="ruby-value">1</span>)
+      }
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    

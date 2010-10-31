@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>newtweet.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            newtweet.html
+        </h1>
+        <ul class="files">
+            <li>examples/newtweet.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<!&#8212; This file needs to be hosted on an external server. &#8212;>
+<!DOCTYPE html PUBLIC &#8220;-//W3C//DTD XHTML 1.0 Transitional//EN&#8220;
+&#8220;<a
+href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&#8220;>
+<html xmlns=&#8220;<a
+href="http://www.w3.org/1999/xhtml">www.w3.org/1999/xhtml</a>&#8220;
+xml:lang=&#8220;en&#8221; lang=&#8220;en&#8221;> <head>
+</p>
+<pre>
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+  &lt;title&gt;Title, an XHTML requirement. This message brought to you by the W3C&lt;/title&gt;
+  &lt;script type='text/javascript'&gt;
+  /*&lt;![CDATA[*/
+
+  //
+  // This method Gets URL Parameters (GUP)
+  //
+  function gup( name )
+  {
+    var regexS = &quot;[\\?&amp;]&quot;+name+&quot;=([^&amp;#]*)&quot;;
+    var regex = new RegExp( regexS );
+    var tmpURL = window.location.href;
+    var results = regex.exec( tmpURL );
+    if( results == null )
+      return &quot;&quot;;
+    else
+      return results[1];
+  }
+
+  //
+  // This method decodes the query parameters that were URL-encoded
+  //
+  function decode(strToDecode)
+  {
+    var encoded = strToDecode;
+    return unescape(encoded.replace(/\+/g,  &quot; &quot;));
+  }
+
+  function lengthCheck()
+  {
+    if (document.getElementById('tweet').value.length &gt; 120) {
+      alert(&quot;Must be less than 140 characters! Currently &quot; + document.getElementById('tweet').value.length);
+      return false;
+    }
+  }
+
+  /*]]&gt;*/
+  &lt;/script&gt;
+</pre>
+<p>
+</head> <body> <form id=&#8220;mturk_form&#8220; method=&#8220;post&#8221;
+action=&#8220;<a
+href="http://www.mturk.com/mturk/externalSubmit">www.mturk.com/mturk/externalSubmit</a>&#8220;
+onSubmit=&#8220;return lengthCheck()&#8221;> <input
+type=&#8220;hidden&#8221; id=&#8220;assignmentId&#8221;
+name=&#8220;assignmentId&#8221; value=&#8221;&#8220; /> <h1>Help me write a
+clever twitter update</h1>
+</p>
+<p>
+<p /> <h2>Criteria</h2> <ul>
+</p>
+<pre>
+  &lt;li&gt;You should be familiar with Twitter and microblogging&lt;/li&gt;
+  &lt;li&gt;MUST BE LESS THAN 120 CHARACTERS&lt;/li&gt;
+  &lt;li&gt;Could be about an interesting topic or current event&lt;/li&gt;
+  &lt;li&gt;Could also make up something about what I'm currently doing&lt;/li&gt;
+
+  &lt;li&gt;Should fool people into thinking I am clever and witty&lt;/li&gt;
+</pre>
+<p>
+</ul> <textarea rows=&#8220;4&#8221; cols=&#8220;40&#8221;
+tabindex=&#8220;1&#8221; autocomplete=&#8220;off&#8221;
+name=&#8220;tweet&#8221; id=&#8220;tweet&#8221;></textarea>
+</p>
+<p>
+<p/> <input id=&#8220;submitButton&#8221; type=&#8220;submit&#8221;
+name=&#8220;Submit&#8221; value=&#8220;Submit&#8221; /> <p/>
+</p>
+<p>
+</form> <script type=&#8217;text/javascript&#8217;>
+</p>
+<pre>
+    /*&lt;![CDATA[*/
+    document.getElementById('assignmentId').value = gup('assignmentId');
+
+    //
+    // Check if the worker is PREVIEWING the HIT or if they've ACCEPTED the HIT
+    //
+    if (gup('assignmentId') == &quot;ASSIGNMENT_ID_NOT_AVAILABLE&quot;)
+    {
+      // If we're previewing, disable the button and give it a helpful message
+      document.getElementById('submitButton').disabled = true;
+      document.getElementById('submitButton').value = &quot;You must ACCEPT the HIT before you can submit the results.&quot;;
+    } else {
+        var form = document.getElementById('mturk_form');
+        if (document.referrer &amp;&amp; ( document.referrer.indexOf('workersandbox') != -1) ) {
+            form.action = &quot;http://workersandbox.mturk.com/mturk/externalSubmit&quot;;
+        }
+    }
+    /*]]&gt;*/
+</pre>
+<p>
+</script> </body> </html>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

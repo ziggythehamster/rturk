@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_DisableHITOperation.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_DisableHITOperation.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_DisableHITOperation.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;DisableHIT&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_OperationsArticle.html&quot; title=&quot;Chapter&amp;nbsp;5.&amp;nbsp;Operations&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_CreateQualificationTypeOperation.html&quot; title=&quot;CreateQualificationType&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_DisposeHITOperation.html&quot; title=&quot;DisposeHIT&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_CreateQualificationTypeOperation.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_DisableHITOperation&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_DisposeHITOperation.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_OperationsArticle.html&quot;&gt;Operations&lt;/a&gt; &amp;raquo; &lt;strong&gt;DisableHIT&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;DisableHIT&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3440&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3443&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3448&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3453&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3458&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3461&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3464&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3467&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e3472&quot;&gt;&lt;/a&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e3477&quot;&gt;Description&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;DisableHIT&lt;/code&gt; operation removes a HIT from the Amazon
+                        Mechanical Turk marketplace, approves all submitted assignments that have not already
+                        been approved or rejected, and disposes of the HIT and all assignment data. &lt;/p&gt;&lt;p&gt; Assignments for the HIT that have already been submitted, but not yet approved or
+                        rejected, are automatically approved. Assignments in progress at the time of the call to
+                        the &lt;code class=&quot;function&quot;&gt;DisableHIT&lt;/code&gt; operation are approved once the assignments are
+                        submitted. You will be charged for approval of these assignments. &lt;/p&gt;&lt;div class=&quot;caution&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Caution&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Caution]&quot; src=&quot;images/caution.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Caution&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;DisableHIT&lt;/code&gt; operation does not work on HITs in the
+                                        &lt;span class=&quot;guilabel&quot;&gt;Reviewable&lt;/span&gt; state. For reviewable HITs, call the &lt;a class=&quot;link&quot; href=&quot;ApiReference_ApproveAssignmentOperation.html&quot; title=&quot;ApproveAssignment&quot;&gt;ApproveAssignment&lt;/a&gt;
+                                operation or the &lt;a class=&quot;link&quot; href=&quot;ApiReference_RejectAssignmentOperation.html&quot; title=&quot;RejectAssignment&quot;&gt;RejectAssignment&lt;/a&gt; operation for each submitted assignment, if any. Then
+                                call the &lt;a class=&quot;link&quot; href=&quot;ApiReference_DisposeHITOperation.html&quot; title=&quot;DisposeHIT&quot;&gt;DisposeHIT&lt;/a&gt;
+                                operation to dispose of the HIT. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;DisableHIT&lt;/code&gt; operation completely disposes of the HIT and all
+                        submitted assignment data. Assignment results data cannot be retrieved for a HIT that
+                        has been disposed. &lt;/p&gt;&lt;p&gt; Only the Requester who created a HIT can disable it. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e3515&quot;&gt;Request Parameters&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;DisableHIT&lt;/code&gt; operation accepts parameters common to all
+                        operations. Some common parameters are required. See &lt;a class=&quot;link&quot; href=&quot;ApiReference_CommonParametersArticle.html&quot; title=&quot;Chapter&amp;nbsp;4.&amp;nbsp;Common Parameters&quot;&gt;Common Parameters&lt;/a&gt; for more information. &lt;/p&gt;&lt;p&gt; The following parameters are specific to the &lt;code class=&quot;function&quot;&gt;DisableHIT&lt;/code&gt;
+                        operation: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Operation&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The name of the operation&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: DisableHIT&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HITId&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; The ID of the HIT, as returned by the &lt;a class=&quot;link&quot; href=&quot;ApiReference_CreateHITOperation.html&quot; title=&quot;CreateHIT&quot;&gt;CreateHIT&lt;/a&gt;
+                                                                operation. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e3600&quot;&gt;Response Elements&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A successful request for the &lt;code class=&quot;function&quot;&gt;DisableHIT&lt;/code&gt; operation returns with
+                        no errors. The response includes the elements in the following table. The operation
+                        returns no other data. &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;DisableHITResult&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Contains a &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Request&lt;/code&gt;&lt;/em&gt; element if the
+                                                                        &lt;strong class=&quot;userinput&quot;&gt;&lt;code&gt;Request&lt;/code&gt;&lt;/strong&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;ResposeGroup&lt;/code&gt;&lt;/em&gt; is specified. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e3642&quot;&gt;Examples&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following example shows how to use the &lt;code class=&quot;function&quot;&gt;DisableHIT&lt;/code&gt;
+                        operation.&lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e3650&quot;&gt;Sample Request&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The following example disables a HIT with a specified HIT ID. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
+</pre>
+<p>
+&amp;amp;AWSAccessKeyId=<em class=&#8220;replaceable&#8221;><tt>[the
+Requester's Access Key ID]</tt></em> &amp;amp;Version=2008-08-02
+&amp;amp;Operation=DisableHIT &amp;amp;Signature=<em
+class=&#8220;replaceable&#8221;><tt>[signature for this request]</tt></em>
+&amp;amp;Timestamp=<em class=&#8220;replaceable&#8221;><tt>[your system's
+local time]</tt></em> &amp;amp;HITId=123RVWYBAZW00EXAMPLE
+</p>
+<pre>
+         &lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e3666&quot;&gt;Sample Response&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following is an example response.&lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;DisableHITResult&amp;gt;
+  &amp;lt;Request&amp;gt;
+  &amp;lt;IsValid&amp;gt;True&amp;lt;/IsValid&amp;gt;
+  &amp;lt;/Request&amp;gt;
+</pre>
+<p>
+&amp;lt;/DisableHITResult&amp;gt;</pre></div></div></div><div
+class=&#8220;navfooter&#8221;><table width=&#8220;100%&#8221;
+summary=&#8220;Navigation footer&#8221; cellspacing=&#8220;0&#8221;
+cellpadding=&#8220;2&#8221;><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221;><a accesskey=&#8220;p&#8221;
+href=&#8220;ApiReference_CreateQualificationTypeOperation.html&#8220;><img
+src=&#8220;images/prev.gif&#8220; alt=&#8220;Prev&#8221;></a> </td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a href=&#8220;<a
+href="http://survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_DisableHITOperation">Documentation">survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_DisableHITOperation">Documentation</a>
+Feedback</a><br><a href=&#8220;copyrightinfo.html&#8220;>Copyright
+Information</a></td><td width=&#8220;30%&#8221; align=&#8220;right&#8221;>
+<a accesskey=&#8220;n&#8221;
+href=&#8220;ApiReference_DisposeHITOperation.html&#8220;><img
+src=&#8220;images/next.gif&#8220;
+alt=&#8220;Next&#8221;></a></td></tr><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221; valign=&#8220;top&#8221;>&amp;nbsp;</td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a
+accesskey=&#8220;h&#8221; href=&#8220;top&#8220;><img
+src=&#8220;images/home.gif&#8220; alt=&#8220;Home&#8221;></a></td><td
+width=&#8220;30%&#8221; align=&#8220;right&#8221;
+valign=&#8220;top&#8221;>&amp;nbsp;</td></tr></table></div></body></html>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

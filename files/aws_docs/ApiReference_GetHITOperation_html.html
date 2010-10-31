@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_GetHITOperation.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_GetHITOperation.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_GetHITOperation.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;GetHIT&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_OperationsArticle.html&quot; title=&quot;Chapter&amp;nbsp;5.&amp;nbsp;Operations&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_GetFileUploadURLOperation.html&quot; title=&quot;GetFileUploadURL&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_GetHITsForQualificationTypeOperation.html&quot; title=&quot;GetHITsForQualificationType&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_GetFileUploadURLOperation.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_GetHITOperation&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_GetHITsForQualificationTypeOperation.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_OperationsArticle.html&quot;&gt;Operations&lt;/a&gt; &amp;raquo; &lt;strong&gt;GetHIT&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;GetHIT&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e5920&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e5923&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e5928&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e5933&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e5938&quot;&gt;&lt;/a&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e5943&quot;&gt;Description&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;GetHIT&lt;/code&gt; operation retrieves the details of the specified HIT.
+                &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e5951&quot;&gt;Request Parameters&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;GetHIT&lt;/code&gt; accepts parameters common to all operations. Some
+                        common parameters are required. See &lt;a class=&quot;link&quot; href=&quot;ApiReference_CommonParametersArticle.html&quot; title=&quot;Chapter&amp;nbsp;4.&amp;nbsp;Common Parameters&quot;&gt;Common Parameters&lt;/a&gt; for more information. &lt;/p&gt;&lt;p&gt; The following parameters are specific to the &lt;code class=&quot;function&quot;&gt;GetHIT&lt;/code&gt; operation: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Operation&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The name of the operation.&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Valid Values: GetHIT&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HITId&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;The ID of the HIT to retrieve.&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e6034&quot;&gt;Response Elements&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A successful request for the &lt;code class=&quot;function&quot;&gt;GetHIT&lt;/code&gt; operation returns the
+                        elements described in the following table in the response. &lt;/p&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HIT&lt;/code&gt;&lt;/em&gt; element contains the requested HIT data. For a
+                        description of the HIT data structure as it appears in responses, see the &lt;a class=&quot;link&quot; href=&quot;ApiReference_HITDataStructureArticle.html&quot; title=&quot;HIT&quot;&gt; HIT&lt;/a&gt; data structure. &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HIT&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Contains the requested HIT data. &lt;/p&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Type: &lt;a class=&quot;link&quot; href=&quot;ApiReference_HITDataStructureArticle.html&quot; title=&quot;HIT&quot;&gt;
+                                                                        HIT Data Structure&lt;/a&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e6081&quot;&gt;Examples&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following example shows how to use the &lt;code class=&quot;function&quot;&gt;GetHIT&lt;/code&gt;
+                        operation.&lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e6089&quot;&gt;Sample Request&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The following example gets a HIT specified by a HIT ID. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
+</pre>
+<p>
+&amp;amp;AWSAccessKeyId=<em class=&#8220;replaceable&#8221;><tt>[the
+Requester's Access Key ID]</tt></em> &amp;amp;Version=2008-08-02
+&amp;amp;Operation=GetHIT &amp;amp;Signature=<em
+class=&#8220;replaceable&#8221;><tt>[signature for this request]</tt></em>
+&amp;amp;Timestamp=<em class=&#8220;replaceable&#8221;><tt>[your system's
+local time]</tt></em> &amp;amp;HITId=123RVWYBAZW00EXAMPLE
+</p>
+<pre>
+          &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e6105&quot;&gt;Sample Response&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following is an example response.&lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;HIT&amp;gt;
+  &amp;lt;Request&amp;gt;
+    &amp;lt;IsValid&amp;gt;True&amp;lt;/IsValid&amp;gt;
+  &amp;lt;/Request&amp;gt;
+  &amp;lt;HITId&amp;gt;ZZRZPTY4ERDZWJ868JCZ&amp;lt;/HITId&amp;gt;
+  &amp;lt;HITTypeId&amp;gt;NYVZTQ1QVKJZXCYZCZVZ&amp;lt;/HITTypeId&amp;gt;
+  &amp;lt;CreationTime&amp;gt;2009-07-07T00:56:40Z&amp;lt;/CreationTime&amp;gt;
+  &amp;lt;Title&amp;gt;Location&amp;lt;/Title&amp;gt;
+  &amp;lt;Description&amp;gt;Select the image that best represents&amp;lt;/Description&amp;gt;
+  &amp;lt;Question&amp;gt;
+    &amp;lt;QuestionForm xmlns=&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd&quot;&amp;gt;
+      &amp;lt;Question&amp;gt;
+        &amp;lt;QuestionIdentifier&amp;gt;Question100&amp;lt;/QuestionIdentifier&amp;gt;
+        &amp;lt;DisplayName&amp;gt;My Question&amp;lt;/DisplayName&amp;gt;
+        &amp;lt;IsRequired&amp;gt;true&amp;lt;/IsRequired&amp;gt;
+        &amp;lt;QuestionContent&amp;gt;
+          &amp;lt;Binary&amp;gt;
+            &amp;lt;MimeType&amp;gt;
+              &amp;lt;Type&amp;gt;image&amp;lt;/Type&amp;gt;
+              &amp;lt;SubType&amp;gt;gif&amp;lt;/SubType&amp;gt;
+            &amp;lt;/MimeType&amp;gt;
+            &amp;lt;DataURL&amp;gt;http://tictactoe.amazon.com/game/01523/board.gif&amp;lt;/DataURL&amp;gt;
+            &amp;lt;AltText&amp;gt;The game board, with &quot;X&quot; to move.&amp;lt;/AltText&amp;gt;
+          &amp;lt;/Binary&amp;gt;
+        &amp;lt;/QuestionContent&amp;gt;
+        &amp;lt;AnswerSpecification&amp;gt;&amp;lt;FreeTextAnswer/&amp;gt;&amp;lt;/AnswerSpecification&amp;gt;
+      &amp;lt;/Question&amp;gt;
+    &amp;lt;/QuestionForm&amp;gt;
+  &amp;lt;/Question&amp;gt;
+  &amp;lt;HITStatus&amp;gt;Assignable&amp;lt;/HITStatus&amp;gt;
+  &amp;lt;MaxAssignments&amp;gt;1&amp;lt;/MaxAssignments&amp;gt;
+  &amp;lt;Reward&amp;gt;
+    &amp;lt;Amount&amp;gt;5.00&amp;lt;/Amount&amp;gt;
+    &amp;lt;CurrencyCode&amp;gt;USD&amp;lt;/CurrencyCode&amp;gt;
+    &amp;lt;FormattedPrice&amp;gt;$5.00&amp;lt;/FormattedPrice&amp;gt;
+  &amp;lt;/Reward&amp;gt;
+  &amp;lt;AutoApprovalDelayInSeconds&amp;gt;2592000&amp;lt;/AutoApprovalDelayInSeconds&amp;gt;
+  &amp;lt;Expiration&amp;gt;2009-07-14T00:56:40Z&amp;lt;/Expiration&amp;gt;
+  &amp;lt;AssignmentDurationInSeconds&amp;gt;30&amp;lt;/AssignmentDurationInSeconds&amp;gt;
+  &amp;lt;NumberOfSimilarHITs&amp;gt;1&amp;lt;/NumberOfSimilarHITs&amp;gt;
+  &amp;lt;HITReviewStatus&amp;gt;NotReviewed&amp;lt;/HITReviewStatus&amp;gt;
+</pre>
+<p>
+&amp;lt;/HIT&amp;gt;</pre></div></div><div
+class=&#8220;navfooter&#8221;><table width=&#8220;100%&#8221;
+summary=&#8220;Navigation footer&#8221; cellspacing=&#8220;0&#8221;
+cellpadding=&#8220;2&#8221;><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221;><a accesskey=&#8220;p&#8221;
+href=&#8220;ApiReference_GetFileUploadURLOperation.html&#8220;><img
+src=&#8220;images/prev.gif&#8220; alt=&#8220;Prev&#8221;></a> </td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a href=&#8220;<a
+href="http://survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_GetHITOperation">Documentation">survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_GetHITOperation">Documentation</a>
+Feedback</a><br><a href=&#8220;copyrightinfo.html&#8220;>Copyright
+Information</a></td><td width=&#8220;30%&#8221; align=&#8220;right&#8221;>
+<a accesskey=&#8220;n&#8221;
+href=&#8220;ApiReference_GetHITsForQualificationTypeOperation.html&#8220;><img
+src=&#8220;images/next.gif&#8220;
+alt=&#8220;Next&#8221;></a></td></tr><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221; valign=&#8220;top&#8221;>&amp;nbsp;</td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a
+accesskey=&#8220;h&#8221; href=&#8220;top&#8220;><img
+src=&#8220;images/home.gif&#8220; alt=&#8220;Home&#8221;></a></td><td
+width=&#8220;30%&#8221; align=&#8220;right&#8221;
+valign=&#8220;top&#8221;>&amp;nbsp;</td></tr></table></div></body></html>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

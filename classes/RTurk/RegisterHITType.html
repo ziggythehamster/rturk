@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RTurk::RegisterHITType</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Class</span> 
+            RTurk::RegisterHITType 
+            
+                <span class="parent">&lt; 
+                    
+                    Operation
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/rturk/operations/register_hit_type_rb.html">lib/rturk/operations/register_hit_type.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>M</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000110">map_params</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>P</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000107">parse</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>Q</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000103">qualifications</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>R</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000109">required_fields</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>T</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000106">to_params</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>V</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000108">validate</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="sectiontitle">Attributes</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>title</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>description</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>reward</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>currency</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>duration</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>keywords</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+        <tr valign='top'>
+            <td class='attr-rw'>
+                [RW]
+            </td>
+            <td class='attr-name'>auto_approval</td>
+            <td class='attr-desc'></td>
+        </tr>
+        
+    </table>
+    
+
+    
+            <div class="sectiontitle">Instance Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000107">
+                    
+                    <a name="M000107"></a><b>parse</b>(response)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000107_source')" id="l_M000107_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/a75aa90fbbf10439005b1e6f08c1130a7eb10cd9/lib/rturk/operations/register_hit_type.rb#L25" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000107_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/register_hit_type.rb, line 25</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">response</span>)
+      <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">RegisterHITTypeResponse</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">response</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000103">
+                    
+                    <a name="M000103"></a><b>qualifications</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+@param [Symbol, Hash] qualification_key opts The unique qualification key
+@option opts [Hash] :comparator A comparator and value e.g. :gt => 80
+@option opts [Boolean] :boolean true or false @option opts [Symbol] :exists
+A comparator without a value @return [RTurk::Qualifications]
+</p>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000103_source')" id="l_M000103_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/a75aa90fbbf10439005b1e6f08c1130a7eb10cd9/lib/rturk/operations/register_hit_type.rb#L12" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000103_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/register_hit_type.rb, line 12</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">qualifications</span>
+      <span class="ruby-ivar">@qualifications</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">Qualifications</span>.<span class="ruby-identifier">new</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000109">
+                    
+                    <a name="M000109"></a><b>required_fields</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000109_source')" id="l_M000109_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/a75aa90fbbf10439005b1e6f08c1130a7eb10cd9/lib/rturk/operations/register_hit_type.rb#L39" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000109_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/register_hit_type.rb, line 39</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">required_fields</span>
+      [<span class="ruby-identifier">:title</span>, <span class="ruby-identifier">:description</span>, <span class="ruby-identifier">:reward</span>]
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000106">
+                    
+                    <a name="M000106"></a><b>to_params</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Returns parameters specific to this instance
+</p>
+<p>
+@return [Hash]
+</p>
+<pre>
+  Any class level default parameters get loaded in at
+  the time of request
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000106_source')" id="l_M000106_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/a75aa90fbbf10439005b1e6f08c1130a7eb10cd9/lib/rturk/operations/register_hit_type.rb#L21" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000106_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/register_hit_type.rb, line 21</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_params</span>
+      <span class="ruby-identifier">map_params</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">qualifications</span>.<span class="ruby-identifier">to_params</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000108">
+                    
+                    <a name="M000108"></a><b>validate</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+More complicated validation run before request
+</p>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000108_source')" id="l_M000108_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/a75aa90fbbf10439005b1e6f08c1130a7eb10cd9/lib/rturk/operations/register_hit_type.rb#L31" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000108_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/register_hit_type.rb, line 31</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">validate</span>
+      <span class="ruby-identifier">missing_parameters</span> = []
+      <span class="ruby-identifier">required_fields</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">param</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">missing_parameters</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">param</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">param</span>)
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">RTurk</span><span class="ruby-operator">::</span><span class="ruby-constant">MissingParameters</span>, <span class="ruby-node">&quot;Parameters: '#{missing_parameters.join(', ')}'&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">missing_parameters</span>.<span class="ruby-identifier">empty?</span>
+    <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="sectiontitle">Instance Protected methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000110">
+                    
+                    <a name="M000110"></a><b>map_params</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000110_source')" id="l_M000110_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/a75aa90fbbf10439005b1e6f08c1130a7eb10cd9/lib/rturk/operations/register_hit_type.rb#L44" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000110_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/operations/register_hit_type.rb, line 44</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">map_params</span>
+        <span class="ruby-keyword kw">begin</span>
+          <span class="ruby-identifier">keyword_string</span> = <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">', '</span>)
+        <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">NoMethodError</span>
+          <span class="ruby-identifier">keyword_string</span> = <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">to_s</span>
+        <span class="ruby-keyword kw">end</span>
+
+        { <span class="ruby-value str">'Title'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-identifier">title</span>,
+          <span class="ruby-value str">'Description'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">description</span>,
+          <span class="ruby-value str">'AssignmentDurationInSeconds'</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-identifier">duration</span> <span class="ruby-operator">||</span> <span class="ruby-value">86400</span>),
+          <span class="ruby-value str">'Reward.Amount'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">reward</span>,
+          <span class="ruby-value str">'Reward.CurrencyCode'</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-identifier">currency</span> <span class="ruby-operator">||</span> <span class="ruby-value str">'USD'</span>),
+          <span class="ruby-value str">'Keywords'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">keyword_string</span>,
+          <span class="ruby-value str">'AutoApprovalDelayInSeconds'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">auto_approval</span> }
+      <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    

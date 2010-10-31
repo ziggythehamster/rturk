@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_NotificationReceptorAPI_SOAPTransportArticle.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_NotificationReceptorAPI_SOAPTransportArticle.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_NotificationReceptorAPI_SOAPTransportArticle.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;The SOAP Transport&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot; title=&quot;Chapter&amp;nbsp;8.&amp;nbsp;The Notification Receptor API&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_NotificationReceptorAPI_RESTTransportArticle.html&quot; title=&quot;The REST Transport&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_NotificationReceptorAPI_RESTTransportArticle.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_NotificationReceptorAPI_SOAPTransportArticle&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_NotificationReceptorAPIArticle.html&quot;&gt;The Notification Receptor API&lt;/a&gt; &amp;raquo; &lt;strong&gt;The SOAP Transport&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;The SOAP Transport&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e20840&quot;&gt;&lt;/a&gt;&lt;p&gt; The SOAP notification transport makes an HTTP connection to your notification receptor, and sends
+                the notification message according to the SOAP web services standard. &lt;/p&gt;&lt;p&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Destination&lt;/code&gt;&lt;/em&gt; that you specify in your &lt;a class=&quot;link&quot; href=&quot;ApiReference_NotificationDataStructureArticle.html&quot; title=&quot;Notification&quot;&gt;notification specification&lt;/a&gt; is the
+                &quot;end point&quot; (URL) Amazon Mechanical Turk will use for the SOAP request. In other words, this is the URL of
+                your web service. &lt;/p&gt;&lt;p&gt; The SOAP API Amazon Mechanical Turk expects to use for notification messages is described by the
+                notification WSDL, which is located at: &lt;/p&gt;&lt;p&gt;
+                &lt;a class=&quot;ulink&quot; href=&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurk/2006-05-05/AWSMechanicalTurkRequesterNotification.wsdl&quot; target=&quot;_blank&quot;&gt;http://mechanicalturk.amazonaws.com/AWSMechanicalTurk/2006-05-05/AWSMechanicalTurkRequesterNotification.wsdl&lt;/a&gt;
+        &lt;/p&gt;&lt;p&gt; Amazon Mechanical Turk calls the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Notify&lt;/code&gt;&lt;/em&gt; operation of this WSDL, using the end point
+                you specified in the notification specification. &lt;/p&gt;&lt;div class=&quot;note&quot; style=&quot;margin-left: 0.5in; margin-right: 0.5in;&quot;&gt;&lt;table border=&quot;0&quot; summary=&quot;Note&quot;&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;top&quot; width=&quot;25&quot;&gt;&lt;img alt=&quot;[Note]&quot; src=&quot;images/note.png&quot;&gt;&lt;/td&gt;&lt;th align=&quot;left&quot;&gt;Note&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;p&gt; Only ports 80 and 443 are supported for receiving SOAP notification messages. &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt; Parameters to the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Notify&lt;/code&gt;&lt;/em&gt; operation call correspond to the parameters
+                described in &lt;a class=&quot;link&quot; href=&quot;#&quot;&gt;???&lt;/a&gt;, such as
+                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Signature&lt;/code&gt;&lt;/em&gt;, &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Timestamp&lt;/code&gt;&lt;/em&gt;, and
+                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/em&gt;. Each event is represented in the SOAP request by a
+                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Event&lt;/code&gt;&lt;/em&gt; element, with sub-elements for each property of an event (such as
+                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;EventTime&lt;/code&gt;&lt;/em&gt;). &lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e20892&quot;&gt;Sample Message&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The following is an example notification message using the SOAP transport, including the SOAP
+                        wrapper. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
+   &amp;lt;soapenv:Envelope
+    xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;
+    xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&amp;gt;
+      &amp;lt;soapenv:Body&amp;gt;
+         &amp;lt;Notify xmlns=&quot;http://requester.mturk.amazonaws.com/doc/2006-05-05&quot;&amp;gt;
+            &amp;lt;Signature&amp;gt;&lt;em class=&quot;replaceable&quot;&gt;&lt;code&gt;[signature generated from your secret key]&lt;/code&gt;&lt;/em&gt;&amp;lt;/Signature&amp;gt;
+            &amp;lt;Timestamp xsi:type=&quot;xsd:dateTime&quot;&amp;gt;2006-05-23T23:22:30Z&amp;lt;/Timestamp&amp;gt;
+            &amp;lt;Version&amp;gt;2006-05-05&amp;lt;/Version&amp;gt;
+            &amp;lt;Event&amp;gt;
+               &amp;lt;EventType&amp;gt;AssignmentAccepted&amp;lt;/EventType&amp;gt;
+               &amp;lt;EventTime&amp;gt;2006-04-21T18:55:23Z&amp;lt;/EventTime&amp;gt;
+               &amp;lt;HITTypeId&amp;gt;KDSFO4455LKDAF3&amp;lt;/HITTypeId&amp;gt;
+               &amp;lt;HITId&amp;gt;KDSFO4455LKDAF3&amp;lt;/HITId&amp;gt;
+               &amp;lt;AssignmentId&amp;gt;KDSFO4455LKDAF3KDSFO4455LKDAF3&amp;lt;/AssignmentId&amp;gt;
+            &amp;lt;/Event&amp;gt;
+            &amp;lt;Event&amp;gt;
+               &amp;lt;EventType&amp;gt;AssignmentReturned&amp;lt;/EventType&amp;gt;
+               &amp;lt;EventTime&amp;gt;2006-04-21T18:55:23Z&amp;lt;/EventTime&amp;gt;
+               &amp;lt;HITTypeId&amp;gt;KDSFO4455LKDAF3&amp;lt;/HITTypeId&amp;gt;
+               &amp;lt;HITId&amp;gt;KDSFO4455LKDAF3KDSFO4455LKDAF3&amp;lt;/HITId&amp;gt;
+               &amp;lt;AssignmentId&amp;gt;KDSFO4455LKDAF3KDSFO4455LKDAF3&amp;lt;/AssignmentId&amp;gt;
+            &amp;lt;/Event&amp;gt;
+         &amp;lt;/Notify&amp;gt;
+      &amp;lt;/soapenv:Body&amp;gt;
+   &amp;lt;/soapenv:Envelope&amp;gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;navfooter&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation footer&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_NotificationReceptorAPI_RESTTransportArticle.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_NotificationReceptorAPI_SOAPTransportArticle&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;copyrightinfo.html&quot;&gt;Copyright Information&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a accesskey=&quot;h&quot; href=&quot;#top&quot;&gt;&lt;img src=&quot;images/home.gif&quot; alt=&quot;Home&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot; valign=&quot;top&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+</pre>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

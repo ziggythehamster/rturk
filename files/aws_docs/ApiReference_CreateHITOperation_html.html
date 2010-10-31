@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>ApiReference_CreateHITOperation.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            ApiReference_CreateHITOperation.html
+        </h1>
+        <ul class="files">
+            <li>aws_docs/ApiReference_CreateHITOperation.html</li>
+            <li>Last modified: 2010-10-31 11:39:43 -0700</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+<html xmlns:fo=&#8220;<a
+href="http://www.w3.org/1999/XSL/Format"><head">www.w3.org/1999/XSL/Format"><head</a>>
+</p>
+<pre>
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+   &lt;title&gt;CreateHIT&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs-IE.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;link rel=&quot;home&quot; href=&quot;#top&quot; title=&quot;Amazon Mechanical Turk&quot;&gt;&lt;link rel=&quot;up&quot; href=&quot;ApiReference_OperationsArticle.html&quot; title=&quot;Chapter&amp;nbsp;5.&amp;nbsp;Operations&quot;&gt;&lt;link rel=&quot;prev&quot; href=&quot;ApiReference_ChangeHITTypeOfHITOperation.html&quot; title=&quot;ChangeHITTypeOfHIT&quot;&gt;&lt;link rel=&quot;next&quot; href=&quot;ApiReference_CreateQualificationTypeOperation.html&quot; title=&quot;CreateQualificationType&quot;&gt;&lt;!--[if !IE]&gt;--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;aws-docs.css&quot; type=&quot;text/css&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocBook XSL Stylesheets V1.74.0&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;meta xmlns=&quot;http://www.w3.org/1999/xhtml&quot; http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;&lt;script src=&quot;/urchin.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+                                urchinTracker();
+                        &lt;/script&gt;&lt;script xmlns=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot; src=&quot;frameset.js&quot;&gt; //
+                &lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot; link=&quot;#0000FF&quot; vlink=&quot;#840084&quot; alink=&quot;#0000FF&quot;&gt;&lt;div class=&quot;navheader&quot;&gt;&lt;table width=&quot;100%&quot; summary=&quot;Navigation header&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tr&gt;&lt;td width=&quot;30%&quot; align=&quot;left&quot;&gt;&lt;a accesskey=&quot;p&quot; href=&quot;ApiReference_ChangeHITTypeOfHITOperation.html&quot;&gt;&lt;img src=&quot;images/prev.gif&quot; alt=&quot;Prev&quot;&gt;&lt;/a&gt; &lt;/td&gt;&lt;td width=&quot;40%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://survey.amazonwebservices.com/survey/s?s=559&amp;amp;opdata_page=Mturk_API_2008-08-02_ApiReference_CreateHITOperation&quot;&gt;Documentation Feedback&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;30%&quot; align=&quot;right&quot;&gt; &lt;a accesskey=&quot;n&quot; href=&quot;ApiReference_CreateQualificationTypeOperation.html&quot;&gt;&lt;img src=&quot;images/next.gif&quot; alt=&quot;Next&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;breadcrumb&quot;&gt;&lt;a href=&quot;Welcome.html&quot;&gt;Welcome&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; &amp;raquo; &lt;a href=&quot;ApiReference_OperationsArticle.html&quot;&gt;Operations&lt;/a&gt; &amp;raquo; &lt;strong&gt;CreateHIT&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h1 class=&quot;topictitle&quot;&gt;CreateHIT&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2172&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2175&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2180&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2185&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2190&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2193&quot;&gt;&lt;/a&gt;&lt;a class=&quot;indexterm&quot; name=&quot;d0e2198&quot;&gt;&lt;/a&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e2203&quot;&gt;Description&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; operation creates a new HIT. The new HIT is made
+                        available for Workers to find and accept on the Amazon Mechanical Turk web site. &lt;/p&gt;&lt;p&gt; There are two ways to call the &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; operation: with the HIT
+                        type ID, or with the common property values. If the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HITTypeId&lt;/code&gt;&lt;/em&gt;
+                        parameter is specified, the &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; operation assumes the syntax
+                        with a HIT type ID is what you intended. If you accidentally provide both a HIT type ID
+                        and values for the common properties, the common property values will be ignored.
+                &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e2222&quot;&gt;Request Parameters&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; operation accepts parameters common to all
+                        operations. Some common parameters are required. See &lt;a class=&quot;link&quot; href=&quot;ApiReference_CommonParametersArticle.html&quot; title=&quot;Chapter&amp;nbsp;4.&amp;nbsp;Common Parameters&quot;&gt;Common Parameters&lt;/a&gt; for more
+                        information. &lt;/p&gt;&lt;p&gt; The following tables describe the additonal parameters required to call the &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; operation with an explicit HIT type ID and without a HIT type
+                        ID. &lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e2238&quot;&gt;Calling &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; with a HIT Type ID&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The following parameters are specific to calling the &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; operation with an explicit HIT type ID: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Operation&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The name of the operation&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Valid Values: CreateHIT&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HITTypeId&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The HIT type ID&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The data the person completing the HIT uses to produce the
+                                                                        results. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Constraints: must be a &lt;a class=&quot;link&quot; href=&quot;ApiReference_QuestionFormDataStructureArticle.html&quot; title=&quot;QuestionForm&quot;&gt;
+                                                                                QuestionForm&lt;/a&gt; data structure or an &lt;a class=&quot;link&quot; href=&quot;ApiReference_ExternalQuestionArticle.html&quot; title=&quot;ExternalQuestion&quot;&gt;
+                                                                                ExternalQuestion&lt;/a&gt; data structure. The XML Question
+                                                                        data must not be larger than 64 kilobytes (65,535 bytes) in
+                                                                        size, including whitespace. &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;LifetimeInSeconds&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The number of seconds after which the HIT is no longer
+                                                                        available for users to accept. After the lifetime of the HIT has
+                                                                        elapsed, the HIT no longer appears in HIT searches, even if not
+                                                                        all of the HIT's assignments have been accepted. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: positive integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Valid Values: any integer between 30 (30 seconds) and
+                                                                        31536000 (365 days). &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxAssignments&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The number of times the HIT can be accepted and completed
+                                                                        before the HIT becomes unavailable. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: positive integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Valid Values: any integer between 1 and 1000000000 (1
+                                                                        billion). &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: 1&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;RequesterAnnotation&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; An arbitrary data field. The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;RequesterAnnotation&lt;/code&gt;&lt;/em&gt; parameter lets your
+                                                                        application attach arbitrary data to the HIT for tracking
+                                                                        purposes. For example, this parameter could be an identifier
+                                                                        internal to the Requester's application that corresponds with
+                                                                        the HIT. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;RequesterAnnotation&lt;/code&gt;&lt;/em&gt; parameter
+                                                                        for a HIT is only visible to the Requester who created the HIT.
+                                                                        It is not shown to the Worker, or any other Requester. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;RequesterAnnotation&lt;/code&gt;&lt;/em&gt; paramter
+                                                                        may be different for each HIT you submit. It does not affect how
+                                                                        your HITs are grouped. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Constraints: must not be longer than 255
+                                                                        characters&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e2449&quot;&gt;Calling &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; Without a HIT Type ID&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; The following parameters are specific to calling the &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; operation without a HIT type ID, letting Amazon Mechanical
+                                Turk determine the HIT type from the property values: &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Required&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Operation&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;The name of the operation&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Valid Values: CreateHIT&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Title&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The title of the HIT. A title should be short and
+                                                                        descriptive about the kind of task the HIT contains. On the
+                                                                        Amazon Mechanical Turk web site, the HIT title appears in search
+                                                                        results, and everywhere the HIT is mentioned. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Constraints: must not be more than 128 characters&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Description&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; A general description of the HIT. A description includes
+                                                                        detailed information about the kind of task the HIT contains. On
+                                                                        the Amazon Mechanical Turk web site, the HIT description appears
+                                                                        in the expanded view of search results, and in the HIT and
+                                                                        assignment screens. A good description gives the user enough
+                                                                        information to evaluate the HIT before accepting it. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Constraints: cannot be more than 2,000 characters in
+                                                                        length&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The data the person completing the HIT uses to produce the
+                                                                        results. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Constraints: Must be a &lt;a class=&quot;link&quot; href=&quot;ApiReference_QuestionFormDataStructureArticle.html&quot; title=&quot;QuestionForm&quot;&gt;
+                                                                                QuestionForm&lt;/a&gt; data structure or an &lt;a class=&quot;link&quot; href=&quot;ApiReference_ExternalQuestionArticle.html&quot; title=&quot;ExternalQuestion&quot;&gt;
+                                                                                ExternalQuestion&lt;/a&gt; data structure. The XML Question
+                                                                        data must not be larger than 64 kilobytes (65,535 bytes) in
+                                                                        size, including whitespace. &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Reward&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The amount of money the Requester will pay a Worker for
+                                                                        successfully completing the HIT. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Type: &lt;a class=&quot;link&quot; href=&quot;ApiReference_PriceDataStructureArticle.html&quot; title=&quot;Price&quot;&gt;Price&lt;/a&gt; data structure. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AssignmentDurationInSeconds&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The amount of time, in seconds, that a Worker has to
+                                                                        complete the HIT after accepting it. If a Worker does not
+                                                                        complete the assignment within the specified duration, the
+                                                                        assignment is considered abandoned. If the HIT is still active
+                                                                        (that is, its lifetime has not elapsed), the assignment becomes
+                                                                        available for other users to find and accept. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: positive integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Valid Values: any integer between 30 (30 seconds) and
+                                                                        31536000 (365 days). &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;LifetimeInSeconds&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; An amount of time, in seconds, after which the HIT is no
+                                                                        longer available for users to accept. After the lifetime of the
+                                                                        HIT elapses, the HIT no longer appears in HIT searches, even if
+                                                                        not all of the assignments for the HIT have been accepted. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: positive integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Valid Values: any integer between 30 (30 seconds) and
+                                                                        31536000 (365 days). &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Yes&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Keywords&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; One or more words or phrases that describe the HIT,
+                                                                        separated by commas. These words are used in searches to find
+                                                                        HITs. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Constraints: The complete string of keywords, including
+                                                                        commas and spaces, canot be more than 1,000 characters.
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;MaxAssignments&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The number of times the HIT can be accepted and completed
+                                                                        before the HIT becomes unavailable. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: positive integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Valid Values: any integer between 1 and 1000000000 (1
+                                                                        billion).&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: 1&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;AutoApprovalDelayInSeconds&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; The number of seconds after an assignment for the HIT has
+                                                                        been submitted, after which the assignment is considered
+                                                                                &lt;span class=&quot;guilabel&quot;&gt;Approved&lt;/span&gt; automatically unless the
+                                                                        Requester explicitly rejects it. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: non-negative integer&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Valid Values: any integer between 0 (auto-approve results
+                                                                        as soon as they are submitted) and 2592000 (30 days). &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: 2592000 (30 days)&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QualificationRequirement&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; A condition that a Worker's Qualifications must meet
+                                                                        before the Worker is allowed to accept and complete the HIT. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Type: a &lt;a class=&quot;link&quot; href=&quot;ApiReference_QualificationRequirementDataStructureArticle.html&quot; title=&quot;QualificationRequirement&quot;&gt;QualificationRequirement&lt;/a&gt; data structure. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; Constraints: there can be no more than 10 &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;QualificationRequirement&lt;/code&gt;&lt;/em&gt; data structures for
+                                                                        each HIT. &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;
+                                                                        &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;RequesterAnnotation&lt;/code&gt;&lt;/em&gt;
+                                                                &lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt; An arbitrary data field. The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;RequesterAnnotation&lt;/code&gt;&lt;/em&gt; parameter lets your
+                                                                        application attach arbitrary data to the HIT for tracking
+                                                                        purposes. For example, the &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;RequesterAnnotation&lt;/code&gt;&lt;/em&gt; parameter could be an
+                                                                        identifier internal to the Requester's application that
+                                                                        corresponds with the HIT. &lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Type: String&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Default: None&lt;/p&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;Constraints: must not be longer than 255
+                                                                        characters&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;td&gt;
+                                                                &lt;p class=&quot;simpara&quot;&gt;No&lt;/p&gt;
+                                                        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e2831&quot;&gt;Response Elements&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt; A successful request for the &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt; operation includes the
+                        elements described in the following table. &lt;/p&gt;&lt;div class=&quot;informaltable&quot;&gt;&lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt;
+                                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;HIT&lt;/code&gt;&lt;/em&gt;
+                                                        &lt;/p&gt;
+                                                &lt;/td&gt;&lt;td&gt;
+                                                        &lt;p class=&quot;simpara&quot;&gt; Contains the newly created HIT data. For a description of the
+                                                                HIT data structure as it appears in responses, see the &lt;a class=&quot;link&quot; href=&quot;ApiReference_HITDataStructureArticle.html&quot; title=&quot;HIT&quot;&gt; HIT Data
+                                                                        Structure&lt;/a&gt;. &lt;/p&gt;
+                                                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h2 class=&quot;title&quot; style=&quot;clear: both&quot; id=&quot;d0e2867&quot;&gt;Examples&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following examples show how to use the &lt;code class=&quot;function&quot;&gt;CreateHIT&lt;/code&gt;
+                        operation.&lt;/p&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e2875&quot;&gt;Sample Request&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;The following are examples of REST requests. &lt;/p&gt;&lt;div class=&quot;example&quot;&gt;&lt;a name=&quot;d0e2880&quot;&gt;&lt;/a&gt;&lt;p class=&quot;title&quot;&gt;&lt;b&gt;Example  Request (Query) Using CreateHIT with a HIT Type ID&lt;/b&gt;&lt;/p&gt;&lt;div class=&quot;example-contents&quot;&gt;&lt;p&gt; The following example creates a simple HIT, using an explicit HIT type ID.
+                                        The &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt; parameter takes a block of XML data as its
+                                        value. See the &lt;a class=&quot;link&quot; href=&quot;ApiReference_QuestionFormDataStructureArticle.html&quot; title=&quot;QuestionForm&quot;&gt;
+                                                QuestionForm&lt;/a&gt; data structure and the&lt;a class=&quot;link&quot; href=&quot;ApiReference_ExternalQuestionArticle.html&quot; title=&quot;ExternalQuestion&quot;&gt; ExternalQuestion&lt;/a&gt; data
+                                        structure for more information. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
+</pre>
+<p>
+&amp;amp;AWSAccessKeyId=<em class=&#8220;replaceable&#8221;><tt>[the
+Requester's Access Key ID]</tt></em> &amp;amp;Version=2008-08-02
+&amp;amp;Operation=CreateHIT &amp;amp;Signature=<em
+class=&#8220;replaceable&#8221;><tt>[signature for this request]</tt></em>
+&amp;amp;Timestamp=<em class=&#8220;replaceable&#8221;><tt>[your system's
+local time]</tt></em> &amp;amp;HITTypeId=T100CN9P324W00EXAMPLE
+&amp;amp;Question=<em class=&#8220;replaceable&#8221;><tt>[URL-encoded
+question data]</tt></em> &amp;amp;LifetimeInSeconds=604800
+</p>
+<pre>
+          &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;br class=&quot;example-break&quot;&gt;&lt;div class=&quot;example&quot;&gt;&lt;a name=&quot;d0e2908&quot;&gt;&lt;/a&gt;&lt;p class=&quot;title&quot;&gt;&lt;b&gt;Example  Request (Query) Using CreateHIT Without a HIT Type ID&lt;/b&gt;&lt;/p&gt;&lt;div class=&quot;example-contents&quot;&gt;&lt;p&gt; The following example creates a simple HIT with some properties, letting
+                                        Amazon Mechanical Turk determine the HIT type ID from the property values. The
+                                                &lt;em class=&quot;parameter&quot;&gt;&lt;code&gt;Question&lt;/code&gt;&lt;/em&gt; parameter takes a block of XML data as its
+                                        value. See the &lt;a class=&quot;link&quot; href=&quot;ApiReference_QuestionFormDataStructureArticle.html&quot; title=&quot;QuestionForm&quot;&gt;
+                                                QuestionForm&lt;/a&gt; data structure and the&lt;a class=&quot;link&quot; href=&quot;ApiReference_ExternalQuestionArticle.html&quot; title=&quot;ExternalQuestion&quot;&gt; ExternalQuestion&lt;/a&gt; data
+                                        structure for more information. &lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;http://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
+</pre>
+<p>
+&amp;amp;AWSAccessKeyId=<em class=&#8220;replaceable&#8221;><tt>[the
+Requester's Access Key ID]</tt></em> &amp;amp;Version=2008-08-02
+&amp;amp;Operation=CreateHIT &amp;amp;Signature=<em
+class=&#8220;replaceable&#8221;><tt>[signature for this request]</tt></em>
+&amp;amp;Timestamp=<em class=&#8220;replaceable&#8221;><tt>[your system's
+local time]</tt></em>
+&amp;amp;Title=Location%20and%20Photograph%20Identification
+&amp;amp;Description=Select%20the%20image%20that%20best%20represents...
+&amp;amp;Reward.1.Amount=5 &amp;amp;Reward.1.CurrencyCode=USD
+&amp;amp;Question=<em class=&#8220;replaceable&#8221;><tt>[URL-encoded
+question data]</tt></em> &amp;amp;AssignmentDurationInSeconds=30
+&amp;amp;LifetimeInSeconds=604800
+&amp;amp;Keywords=location,%20photograph,%20image,%20identification,%20opinion
+</p>
+<pre>
+         &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;br class=&quot;example-break&quot;&gt;&lt;/div&gt;&lt;div class=&quot;section&quot; lang=&quot;en&quot;&gt;&lt;div class=&quot;titlepage&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;h3 class=&quot;title&quot; id=&quot;d0e2936&quot;&gt;Sample Response&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;Amazon Mechanical Turk might return the following response for either of the preceeding requests.&lt;/p&gt;&lt;pre class=&quot;programlisting&quot;&gt;&amp;lt;CreateHITResponse&amp;gt;
+  &amp;lt;OperationRequest&amp;gt;
+    &amp;lt;RequestId&amp;gt;ece2785b-6292-4b12-a60e-4c34847a7916&amp;lt;/RequestId&amp;gt;
+  &amp;lt;/OperationRequest&amp;gt;
+  &amp;lt;HIT&amp;gt;
+    &amp;lt;Request&amp;gt;
+      &amp;lt;IsValid&amp;gt;True&amp;lt;/IsValid&amp;gt;
+    &amp;lt;/Request&amp;gt;
+    &amp;lt;HITId&amp;gt;GBHZVQX3EHXZ2AYDY2T0&amp;lt;/HITId&amp;gt;
+    &amp;lt;HITTypeId&amp;gt;NYVZTQ1QVKJZXCYZCZVZ&amp;lt;/HITTypeId&amp;gt;
+  &amp;lt;/HIT&amp;gt;
+</pre>
+<p>
+&amp;lt;/CreateHITResponse&amp;gt; </pre></div></div></div><div
+class=&#8220;navfooter&#8221;><table width=&#8220;100%&#8221;
+summary=&#8220;Navigation footer&#8221; cellspacing=&#8220;0&#8221;
+cellpadding=&#8220;2&#8221;><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221;><a accesskey=&#8220;p&#8221;
+href=&#8220;ApiReference_ChangeHITTypeOfHITOperation.html&#8220;><img
+src=&#8220;images/prev.gif&#8220; alt=&#8220;Prev&#8221;></a> </td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a href=&#8220;<a
+href="http://survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_CreateHITOperation">Documentation">survey.amazonwebservices.com/survey/s?s=559&amp;opdata_page=Mturk_API_2008-08-02_ApiReference_CreateHITOperation">Documentation</a>
+Feedback</a><br><a href=&#8220;copyrightinfo.html&#8220;>Copyright
+Information</a></td><td width=&#8220;30%&#8221; align=&#8220;right&#8221;>
+<a accesskey=&#8220;n&#8221;
+href=&#8220;ApiReference_CreateQualificationTypeOperation.html&#8220;><img
+src=&#8220;images/next.gif&#8220;
+alt=&#8220;Next&#8221;></a></td></tr><tr><td width=&#8220;30%&#8221;
+align=&#8220;left&#8221; valign=&#8220;top&#8221;>&amp;nbsp;</td><td
+width=&#8220;40%&#8221; align=&#8220;center&#8221;><a
+accesskey=&#8220;h&#8221; href=&#8220;top&#8220;><img
+src=&#8220;images/home.gif&#8220; alt=&#8220;Home&#8221;></a></td><td
+width=&#8220;30%&#8221; align=&#8220;right&#8221;
+valign=&#8220;top&#8221;>&amp;nbsp;</td></tr></table></div></body></html>
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+    </div>
+  </body>
+</html>

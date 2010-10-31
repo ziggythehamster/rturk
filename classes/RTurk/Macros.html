@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RTurk::Macros</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Module</span> 
+            RTurk::Macros 
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/rturk/macros_rb.html">lib/rturk/macros.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>B</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000043">blank_slate</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>K</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000042">kill_hit</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>U</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000044">url_for_hit</a>,</li>
+                
+                <li><a href="#M000045">url_for_hit_type</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+            <div class="sectiontitle">Instance Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000043">
+                    
+                    <a name="M000043"></a><b>blank_slate</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Wipe out all HIT&#8217;s associated with this account
+</p>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000043_source')" id="l_M000043_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/edf056f38bd7135fe32adf63c2cb61fab8830889/lib/rturk/macros.rb#L13" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000043_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/macros.rb, line 13</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">blank_slate</span>
+    <span class="ruby-identifier">search_response</span> = <span class="ruby-identifier">searchHITs</span>(<span class="ruby-identifier">:PageSize</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">100</span>)
+    <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">search_results</span> = <span class="ruby-identifier">search_response</span>[<span class="ruby-value str">'SearchHITsResult'</span>][<span class="ruby-value str">'HIT'</span>]
+      <span class="ruby-identifier">search_results</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hit</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">kill_hit</span>(<span class="ruby-identifier">hit</span>[<span class="ruby-value str">'HITId'</span>])
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000042">
+                    
+                    <a name="M000042"></a><b>kill_hit</b>(hit_id)
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Attempt to expire hit, then approve assignments, and finally dispose of
+</p>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000042_source')" id="l_M000042_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/edf056f38bd7135fe32adf63c2cb61fab8830889/lib/rturk/macros.rb#L4" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000042_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/macros.rb, line 4</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">kill_hit</span>(<span class="ruby-identifier">hit_id</span>)
+    <span class="ruby-identifier">forceExpireHIT</span>(<span class="ruby-identifier">:HITId</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">hit_id</span>)
+    <span class="ruby-identifier">get_assignments_for_hit</span>(<span class="ruby-identifier">hit_id</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">assignment</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">approveAssignment</span>(<span class="ruby-identifier">:AssignmentId</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">assignment</span>[<span class="ruby-identifier">:AssignmentId</span>])
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">disposeHIT</span>(<span class="ruby-identifier">:HITId</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">hit_id</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000044">
+                    
+                    <a name="M000044"></a><b>url_for_hit</b>(hit_id)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000044_source')" id="l_M000044_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/edf056f38bd7135fe32adf63c2cb61fab8830889/lib/rturk/macros.rb#L22" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000044_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/macros.rb, line 22</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">url_for_hit</span>(<span class="ruby-identifier">hit_id</span>)
+    <span class="ruby-identifier">url_for_hit_type</span>(<span class="ruby-identifier">getHIT</span>(<span class="ruby-identifier">:HITId</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">hit_id</span>)[<span class="ruby-identifier">:HITTypeId</span>])
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000045">
+                    
+                    <a name="M000045"></a><b>url_for_hit_type</b>(hit_type_id)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000045_source')" id="l_M000045_source">show</a>
+                        
+                        | <a href="http://github.com/mdp/rturk/blob/edf056f38bd7135fe32adf63c2cb61fab8830889/lib/rturk/macros.rb#L26" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000045_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/rturk/macros.rb, line 26</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">url_for_hit_type</span>(<span class="ruby-identifier">hit_type_id</span>)
+    <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@host</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/sandbox/</span>
+      <span class="ruby-node">&quot;http://workersandbox.mturk.com/mturk/preview?groupId=#{hit_type_id}&quot;</span> <span class="ruby-comment cmt"># Sandbox Url</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-node">&quot;http://mturk.com/mturk/preview?groupId=#{hit_type_id}&quot;</span> <span class="ruby-comment cmt"># Production Url</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    
