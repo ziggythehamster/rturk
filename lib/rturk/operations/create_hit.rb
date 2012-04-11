@@ -20,14 +20,42 @@ module RTurk
       end
     end
 
+    # Gives us access to an assignment review policy attached to this HIT.
+    #
+    # @param [String, Hash] Policy name and parameters (Hash)
+    # @return [RTurk::ReviewPolicy]
+    def assignment_review_policy(*args)
+      unless args.empty?
+        @assignment_review_policy ||= RTurk::ReviewPolicy.new(*args)
+      else
+        @assignment_review_policy
+      end
+    end
+
+    # Gives us access to a HIT review policy attached to this HIT.
+    #
+    # @param [String, Hash] Policy name and parameters (Hash)
+    # @return [RTurk::ReviewPolicy]
+    def hit_review_policy(*args)
+      unless args.empty?
+        @hit_review_policy ||= RTurk::ReviewPolicy.new(*args)
+      else
+        @hit_review_policy
+      end
+    end
+
     def to_params
-      super.merge(
+      params = super
+      params.merge(
         'HITTypeId'           => hit_type_id,
         'MaxAssignments'      => (assignments || 1),
         'Question'            => question.to_params,
         'LifetimeInSeconds'   => (lifetime || 3600),
         'RequesterAnnotation' => note
       )
+      params.merge("HITReviewPolicy" => @hit_review_policy) if @hit_review_policy
+      params.merge("AssignmentReviewPolicy" => @assignment_review_policy) if @assignment_review_policy
+      return params
     end
 
     # More complicated validation run before request
