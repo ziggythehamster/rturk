@@ -37,6 +37,7 @@ module RTurk
           }
         end
       end
+      @assignment_review_report.compact!
 
       @hit_review_report = @xml.xpath("//GetReviewResultsForHITResult/HITReviewReport/*").collect do |report|
         if report.name == "ReviewResult"
@@ -63,6 +64,7 @@ module RTurk
           }
         end
       end
+      @hit_review_report.compact!
     end
   end
 end
