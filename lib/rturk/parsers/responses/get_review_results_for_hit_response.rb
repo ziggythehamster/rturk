@@ -9,8 +9,8 @@ module RTurk
       raise_errors
       map_content(@xml.xpath('//GetReviewResultsForHITResult'),
         :hit_id => 'HITId',
-	:assignment_review_policy => "AssignmentReviewPolicy",
-	:hit_review_policy => "HITReviewPolicy"
+        :assignment_review_policy => "AssignmentReviewPolicy",
+        :hit_review_policy => "HITReviewPolicy"
       )
       @assignment_review_report = @xml.xpath("//GetReviewResultsForHITResult/AssignmentReviewReport/*").collect do |report|
         if report.name == "ReviewResult"
@@ -23,7 +23,7 @@ module RTurk
             :key => report.at("Key").nil? ? nil : report.at("Key").content,
             :value => report.at("Value").nil? ? nil : report.at("Value").content
           }
-	elsif report.name == "ReviewAction"
+        elsif report.name == "ReviewAction"
           {
             :type => "action",
             :action_id => report.at("ActionId").nil? ? nil : report.at("ActionId").content,
@@ -35,7 +35,7 @@ module RTurk
             :result => report.at("Result").nil? ? nil : report.at("Result").content,
             :error_code => report.at("ErrorCode").nil? ? nil : report.at("ErrorCode").content
           }
-	end
+        end
       end
 
       @hit_review_report = @xml.xpath("//GetReviewResultsForHITResult/HITReviewReport/*").collect do |report|
@@ -49,7 +49,7 @@ module RTurk
             :key => report.at("Key").nil? ? nil : report.at("Key").content,
             :value => report.at("Value").nil? ? nil : report.at("Value").content
           }
-	elsif report.name == "ReviewAction"
+        elsif report.name == "ReviewAction"
           {
             :type => "action",
             :action_id => report.at("ActionId").nil? ? nil : report.at("ActionId").content,
@@ -61,7 +61,7 @@ module RTurk
             :result => report.at("Result").nil? ? nil : report.at("Result").content,
             :error_code => report.at("ErrorCode").nil? ? nil : report.at("ErrorCode").content
           }
-	end
+        end
       end
     end
   end
