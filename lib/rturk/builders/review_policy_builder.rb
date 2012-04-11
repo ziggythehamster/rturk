@@ -37,26 +37,27 @@ module RTurk
       raise RTurk::MissingParameters, "needs a policy name to build a review policy" unless @policy_name
       raise RTurk::MissingParameters, "needs parameters to build a review policy" unless @policy_name
 
-      xml = "<PolicyName>#{CGI.escapeHTML(@policy_name)}</PolicyName>\n"
+      params = { "PolicyName" => @policy_name }
 
+      parameter_index = 0
       @parameters.each_pair do |key, value|
-        xml << "<Parameter>\n"
-        xml << "<Key>#{CGI.escapeHTML(key.to_s)}</Key>\n"
+        params["Parameter.#{parameter_index}.Key"] = key
 
         if value.is_a?(Hash)
+          raise NotImplementedError
           xml << hash_to_map_entry(value)
         elsif value.is_a?(Array)
-          value.each do |arr_val|
-            xml << "<Value>#{CGI.escapeHTML(arr_val.to_s)}</Value>\n"
+          value.each_index do |idx|
+            params["Parameter.#{parameter_index}.Value.#{idx}"] = value[idx].to_s
           end
         else
-          xml << "<Value>#{CGI.escapeHTML(value.to_s)}</Value>\n"
+          params["Parameter.#{parameter_index}.Value"] = value.to_s
         end
 
-        xml << "</Parameter>"
+        parameter_index = parameter_index + 1
       end
 
-      xml
+      return params
     end
   end
 end
