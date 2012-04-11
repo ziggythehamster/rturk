@@ -6,6 +6,7 @@ module RTurk
     def initialize(response)
       @raw_xml = response.body
       @xml = Nokogiri::XML(@raw_xml)
+      raise_errors
       map_content(@xml.xpath('//GetReviewResultsForHITResult'),
         :hit_id => 'HITId',
 	:assignment_review_policy => "AssignmentReviewPolicy",
@@ -65,3 +66,5 @@ module RTurk
     end
   end
 end
+
+# vim: ts=2 sw=2 sts=2 et
