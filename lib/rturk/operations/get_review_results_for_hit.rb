@@ -8,6 +8,15 @@ module RTurk
       RTurk::GetReviewResultsForHITResponse.new(xml)
     end
 
+    def to_params
+      {
+        "HITId" => self.hit_id,
+        "PolicyLevel" => self.policy_level,
+        "AssignmentId" => self.assignment_id,
+        "RetrieveActions" => self.retrieve_actions,
+        "RetrieveResults" => self.retrieve_results
+      }
+    end
   end
 
   def self.GetReviewResultsForHIT(*args, &blk)
@@ -15,3 +24,5 @@ module RTurk
   end
 
 end
+
+# vim: ts=2 sw=2 sts=2 et
