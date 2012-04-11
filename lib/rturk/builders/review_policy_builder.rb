@@ -35,7 +35,7 @@ module RTurk
 
     def to_params
       raise RTurk::MissingParameters, "needs a policy name to build a review policy" unless @policy_name
-      raise RTurk::MissingParameters, "needs parameters to build a review policy" unless @policy_name
+      raise RTurk::MissingParameters, "needs parameters to build a review policy" unless @parameters
 
       params = { "PolicyName" => @policy_name }
 
