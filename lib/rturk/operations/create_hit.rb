@@ -46,7 +46,6 @@ module RTurk
 
     def to_params
       params = super
-      puts params.inspect
       params.merge!(
         'HITTypeId'           => hit_type_id,
         'MaxAssignments'      => (assignments || 1),
