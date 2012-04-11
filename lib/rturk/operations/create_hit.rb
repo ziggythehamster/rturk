@@ -46,15 +46,16 @@ module RTurk
 
     def to_params
       params = super
-      params.merge(
+      puts params.inspect
+      params.merge!(
         'HITTypeId'           => hit_type_id,
         'MaxAssignments'      => (assignments || 1),
         'Question'            => question.to_params,
         'LifetimeInSeconds'   => (lifetime || 3600),
         'RequesterAnnotation' => note
       )
-      params.merge("HITReviewPolicy" => @hit_review_policy) if @hit_review_policy
-      params.merge("AssignmentReviewPolicy" => @assignment_review_policy) if @assignment_review_policy
+      params.merge!("HITReviewPolicy" => @hit_review_policy.to_params) if @hit_review_policy
+      params.merge!("AssignmentReviewPolicy" => @assignment_review_policy.to_params) if @assignment_review_policy
       return params
     end
 
