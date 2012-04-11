@@ -1,5 +1,3 @@
-require 'cgi'
-
 module RTurk
   class ReviewPolicy
 
@@ -11,26 +9,27 @@ module RTurk
     end
 
     # Converts the given hash into MapEntry tags.
-    def hash_to_map_entry(hash)
-      xml = ""
+    def hash_to_map_entry(hash, parameter_index)
+      params = {}
+
+      map_index = 0
       hash.each_pair do |key, value|
-        xml << "<MapEntry>\n"
-        xml << "<Key>#{CGI.escapeHTML(key.to_s)}</Key>\n"
+        params["Parameter.#{parameter_index}.MapEntry.#{map_index}.Key"] = key.to_s
 
         if value.is_a?(Hash)
-          xml << hash_to_map_entry(value)
+          raise NotImplementedError, "MTurk does not allow a MapEntry within a MapEntry."
         elsif value.is_a?(Array)
-          value.each do |arr_val|
-            xml << "<Value>#{CGI.escapeHTML(arr_val.to_s)}</Value>\n"
+          value.each_index do |idx|
+            params["Parameter.#{parameter_index}.MapEntry.#{map_index}.Value.#{idx}"] = value[idx].to_s
           end
         else
-          xml << "<Value>#{CGI.escapeHTML(value.to_s)}</Value>\n"
+          params["Parameter.#{parameter_index}.MapEntry.#{map_index}.Value"] = value.to_s
         end
 
-        xml << "</MapEntry>\n"
+        map_index = map_index + 1
       end
 
-      xml
+      return params
     end
 
     def to_params
@@ -41,11 +40,10 @@ module RTurk
 
       parameter_index = 0
       @parameters.each_pair do |key, value|
-        params["Parameter.#{parameter_index}.Key"] = key
+        params["Parameter.#{parameter_index}.Key"] = key.to_s
 
         if value.is_a?(Hash)
-          raise NotImplementedError
-          xml << hash_to_map_entry(value)
+          params.merge!(hash_to_map_entry(value, parameter_index))
         elsif value.is_a?(Array)
           value.each_index do |idx|
             params["Parameter.#{parameter_index}.Value.#{idx}"] = value[idx].to_s
