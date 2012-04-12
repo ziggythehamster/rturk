@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <GetReviewResultsForHITResponse>
   <OperationRequest>
-    <RequestId>1bb44239-1690-4c92-957c-18f2648d106b</RequestId>
+    <RequestId>3078f7bc-7e8a-4f09-ad62-d6ff3abca5d5</RequestId>
   </OperationRequest>
   <GetReviewResultsForHITResult>
     <Request>
       <IsValid>True</IsValid>
     </Request>
-    <HITId>2N970G5R98D8DSS841JSWNYCLKUSCJ</HITId>
+    <HITId>2G4AZHHRRLFQUDKHSW81NHO9JX4ENR</HITId>
     <AssignmentReviewPolicy>
       <PolicyName>ScoreMyKnownAnswers/2011-09-01</PolicyName>
     </AssignmentReviewPolicy>
@@ -15,14 +15,53 @@
       <PolicyName>SimplePlurality/2011-09-01</PolicyName>
     </HITReviewPolicy>
     <AssignmentReviewReport>
-      <NumResults>0</NumResults>
-      <TotalNumResults>0</TotalNumResults>
+      <NumResults>3</NumResults>
+      <TotalNumResults>3</TotalNumResults>
       <PageNumber>1</PageNumber>
+      <ReviewAction>
+        <ActionId>28CRCJK63ZVEX6OUHZ9AT9JL5R88X9</ActionId>
+        <ActionName>review</ActionName>
+        <ObjectId>2BC274J79KQW0Q5H1BLXICD45F1GIZ</ObjectId>
+        <ObjectType>Assignment</ObjectType>
+        <Status>Succeeded</Status>
+        <Result>Assignment 2BC274J79KQW0Q5H1BLXICD45F1GIZ KnownAnswerScore is 0%.</Result>
+      </ReviewAction>
+      <ReviewResult>
+        <ActionId>28CRCJK63ZVEX6OUHZ9AT9JL5R88X9</ActionId>
+        <SubjectId>2BC274J79KQW0Q5H1BLXICD45F1GIZ</SubjectId>
+        <SubjectType>Assignment</SubjectType>
+        <QuestionId/>
+        <Key>KnownAnswerScore</Key>
+        <Value>0</Value>
+      </ReviewResult>
+      <ReviewResult>
+        <ActionId>28CRCJK63ZVEX6OUHZ9AT9JL5R88X9</ActionId>
+        <SubjectId>2BC274J79KQW0Q5H1BLXICD45F1GIZ</SubjectId>
+        <SubjectType>Assignment</SubjectType>
+        <QuestionId>one</QuestionId>
+        <Key>AgreedWithKnownAnswer</Key>
+        <Value>false</Value>
+      </ReviewResult>
+      <ReviewResult>
+        <ActionId>28CRCJK63ZVEX6OUHZ9AT9JL5R88X9</ActionId>
+        <SubjectId>2BC274J79KQW0Q5H1BLXICD45F1GIZ</SubjectId>
+        <SubjectType>Assignment</SubjectType>
+        <QuestionId>test</QuestionId>
+        <Key>AgreedWithKnownAnswer</Key>
+        <Value>false</Value>
+      </ReviewResult>
     </AssignmentReviewReport>
     <HITReviewReport>
       <NumResults>0</NumResults>
       <TotalNumResults>0</TotalNumResults>
       <PageNumber>1</PageNumber>
+      <ReviewAction>
+        <ActionId>2VGVCPWZ9RNDQ7LPYXYSQ3DTGU6BQE</ActionId>
+        <ActionName>review</ActionName>
+        <ObjectId>2G4AZHHRRLFQUDKHSW81NHO9JX4ENR</ObjectId>
+        <ObjectType>HIT</ObjectType>
+        <Status>Intended</Status>
+      </ReviewAction>
     </HITReviewReport>
   </GetReviewResultsForHITResult>
 </GetReviewResultsForHITResponse>
