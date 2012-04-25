@@ -1,67 +1,109 @@
 <?xml version="1.0"?>
 <GetReviewResultsForHITResponse>
   <OperationRequest>
-    <RequestId>3078f7bc-7e8a-4f09-ad62-d6ff3abca5d5</RequestId>
+    <RequestId>aafc87f3-56d3-4dcf-9aca-ddafb9de38b8</RequestId>
   </OperationRequest>
   <GetReviewResultsForHITResult>
     <Request>
       <IsValid>True</IsValid>
     </Request>
-    <HITId>2G4AZHHRRLFQUDKHSW81NHO9JX4ENR</HITId>
-    <AssignmentReviewPolicy>
-      <PolicyName>ScoreMyKnownAnswers/2011-09-01</PolicyName>
-    </AssignmentReviewPolicy>
+    <HITId>2RB2D5NQYN5FXFXDDAKYPNCW3UTA6Y</HITId>
     <HITReviewPolicy>
       <PolicyName>SimplePlurality/2011-09-01</PolicyName>
     </HITReviewPolicy>
-    <AssignmentReviewReport>
-      <NumResults>3</NumResults>
-      <TotalNumResults>3</TotalNumResults>
+    <HITReviewReport>
+      <NumResults>10</NumResults>
+      <TotalNumResults>10</TotalNumResults>
       <PageNumber>1</PageNumber>
       <ReviewAction>
-        <ActionId>28CRCJK63ZVEX6OUHZ9AT9JL5R88X9</ActionId>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
         <ActionName>review</ActionName>
-        <ObjectId>2BC274J79KQW0Q5H1BLXICD45F1GIZ</ObjectId>
-        <ObjectType>Assignment</ObjectType>
+        <ObjectId>2RB2D5NQYN5FXFXDDAKYPNCW3UTA6Y</ObjectId>
+        <ObjectType>HIT</ObjectType>
         <Status>Succeeded</Status>
-        <Result>Assignment 2BC274J79KQW0Q5H1BLXICD45F1GIZ KnownAnswerScore is 0%.</Result>
+        <Result>Evaluated 1 question and found agreement on 100%</Result>
       </ReviewAction>
       <ReviewResult>
-        <ActionId>28CRCJK63ZVEX6OUHZ9AT9JL5R88X9</ActionId>
-        <SubjectId>2BC274J79KQW0Q5H1BLXICD45F1GIZ</SubjectId>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2CWE6AUBXHWSBWCF6EMB2WDRLF4Y2E</SubjectId>
         <SubjectType>Assignment</SubjectType>
         <QuestionId/>
-        <Key>KnownAnswerScore</Key>
+        <Key>PluralityAnswersCorrect</Key>
+        <Value>1</Value>
+      </ReviewResult>
+      <ReviewResult>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2CWE6AUBXHWSBWCF6EMB2WDRLF4Y2E</SubjectId>
+        <SubjectType>Assignment</SubjectType>
+        <QuestionId/>
+        <Key>PluralityAnswersIncorrect</Key>
         <Value>0</Value>
       </ReviewResult>
       <ReviewResult>
-        <ActionId>28CRCJK63ZVEX6OUHZ9AT9JL5R88X9</ActionId>
-        <SubjectId>2BC274J79KQW0Q5H1BLXICD45F1GIZ</SubjectId>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2CWE6AUBXHWSBWCF6EMB2WDRLF4Y2E</SubjectId>
         <SubjectType>Assignment</SubjectType>
-        <QuestionId>one</QuestionId>
-        <Key>AgreedWithKnownAnswer</Key>
-        <Value>false</Value>
+        <QuestionId/>
+        <Key>WorkerAgreementScore</Key>
+        <Value>100</Value>
       </ReviewResult>
       <ReviewResult>
-        <ActionId>28CRCJK63ZVEX6OUHZ9AT9JL5R88X9</ActionId>
-        <SubjectId>2BC274J79KQW0Q5H1BLXICD45F1GIZ</SubjectId>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2ESSPW1INMHGSF1D0S1B9BFMFYO4HK</SubjectId>
         <SubjectType>Assignment</SubjectType>
-        <QuestionId>test</QuestionId>
-        <Key>AgreedWithKnownAnswer</Key>
-        <Value>false</Value>
+        <QuestionId/>
+        <Key>PluralityAnswersCorrect</Key>
+        <Value>1</Value>
       </ReviewResult>
-    </AssignmentReviewReport>
-    <HITReviewReport>
-      <NumResults>0</NumResults>
-      <TotalNumResults>0</TotalNumResults>
-      <PageNumber>1</PageNumber>
-      <ReviewAction>
-        <ActionId>2VGVCPWZ9RNDQ7LPYXYSQ3DTGU6BQE</ActionId>
-        <ActionName>review</ActionName>
-        <ObjectId>2G4AZHHRRLFQUDKHSW81NHO9JX4ENR</ObjectId>
-        <ObjectType>HIT</ObjectType>
-        <Status>Intended</Status>
-      </ReviewAction>
+      <ReviewResult>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2ESSPW1INMHGSF1D0S1B9BFMFYO4HK</SubjectId>
+        <SubjectType>Assignment</SubjectType>
+        <QuestionId/>
+        <Key>PluralityAnswersIncorrect</Key>
+        <Value>0</Value>
+      </ReviewResult>
+      <ReviewResult>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2ESSPW1INMHGSF1D0S1B9BFMFYO4HK</SubjectId>
+        <SubjectType>Assignment</SubjectType>
+        <QuestionId/>
+        <Key>WorkerAgreementScore</Key>
+        <Value>100</Value>
+      </ReviewResult>
+      <ReviewResult>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2RB2D5NQYN5FXFXDDAKYPNCW3UTA6Y</SubjectId>
+        <SubjectType>HIT</SubjectType>
+        <QuestionId/>
+        <Key>HitAgreementScore</Key>
+        <Value>100</Value>
+      </ReviewResult>
+      <ReviewResult>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2RB2D5NQYN5FXFXDDAKYPNCW3UTA6Y</SubjectId>
+        <SubjectType>HIT</SubjectType>
+        <QuestionId>answer</QuestionId>
+        <Key>AgreedAnswer</Key>
+        <Value/>
+      </ReviewResult>
+      <ReviewResult>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2RB2D5NQYN5FXFXDDAKYPNCW3UTA6Y</SubjectId>
+        <SubjectType>HIT</SubjectType>
+        <QuestionId>answer</QuestionId>
+        <Key>AgreedAnswerFound</Key>
+        <Value>true</Value>
+      </ReviewResult>
+      <ReviewResult>
+        <ActionId>2X3L0XULRGNT580GJIO5IP7N62R4Q3</ActionId>
+        <SubjectId>2RB2D5NQYN5FXFXDDAKYPNCW3UTA6Y</SubjectId>
+        <SubjectType>HIT</SubjectType>
+        <QuestionId>answer</QuestionId>
+        <Key>AnswerAgreementScore</Key>
+        <Value>100</Value>
+      </ReviewResult>
     </HITReviewReport>
   </GetReviewResultsForHITResult>
 </GetReviewResultsForHITResponse>
+
